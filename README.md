@@ -25,14 +25,16 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |----|------|----|---|
 |`\a`|$\alpha$|lowercase Greek letters|`\alpha `|
 |`\D`|$\Delta$|uppercase Greek letters|`\Delta `|
-|`\R`, `\C`, `\Z`, `\N`|$\R$, $\Complex$, $\Z$, $\N$|frequently used letters|`\doubleR`, ...|
+|`\R`, `\C`, `\Z`, `\N`|$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$|frequently used letters|`\doubleR`, ...|
 |`\do X`, `\sc X`, `\fr X`|$\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$|fancy letter forms|`\doubleX `, `\scriptX `, `\frakturX `|
-|`\m3`, `\m4`, ...|$$\begin{bmatrix}\Box&\Box&\Box\\\Box&\Box&\Box\\\Box&\Box&\Box\\\end{bmatrix}$$|empty matrix|`\matrix(@@&&) `, ...|
+|`\m3`, `\m4`, ...|3 by 3 empty matrix, ...|matrices|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`|$\hat{x}$, $\tilde{x}$, $\ddot{x}$|modifiers|`\hat  `, `\tilde  `, `\ddot  `|
 |`\x`, `\X`, `\sq`, `\pa`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$|operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `|
 |`\pd`, `\inf`|$\partial$, $\infty$|frequently used symbols|`\partial `, `\infty `|
 |`\ls`|$^\Box_\Box P$|left super-and-lowerscript|`^_ P `|
 
-### Greek Letters
+### Full Table
+
+#### Greek Letters
 
 `TODO`
