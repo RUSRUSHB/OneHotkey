@@ -4,7 +4,7 @@ This is a script that simplifies math formula inputs in OneNote, Word and PowerP
 
 这是一个用于简化 OneNote, Word 和 PowerPoint 中数学公式输入的 AutoHotKey 脚本，例如，\a 代表 \alpha。
 
-中文版帮助文档请见[README_CN.md](README_CN.md). `TODO`
+中文版帮助文档请见[README_CN.md](README_CN.md)。
 
 This project is still updating.
 
@@ -12,7 +12,7 @@ This project is still updating.
 
 1. Download and run `symbol_assist.exe`.
 2. Input the code of the symbol, then press `Space` to get the symbol.
-3. For editting the symbol mapping, please refer to `symbol_assist.ahk`. Edit it, compile it with converter such as `Ahk2Exe` , and run the compiled `.exe` file. If you need help, go to the [AutoHotKey official website](www.autohotkey.com).
+3. For editting the symbol mapping, please refer to `symbol_assist.ahk`. Edit it, compile it with converter such as `Ahk2Exe` , and run the compiled `.exe` file. If you need help, go to the [AutoHotKey official website](https://www.autohotkey.com).
 4. To stop the script, right click the `H` icon in the system tray and select `Exit`.
 
 ## Symbol Mapping
@@ -33,6 +33,8 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |`\pd`, `\inf`|$\partial$, $\infty$|frequently used symbols|`\partial `, `\infty `|
 |`\ls`|$^\Box_\Box P$|left super-and-lowerscript|`^_ P `|
 
+You shall notice that ` `(space) are commonly used, which is the key feature of OneNote formula input.
+
 ### Full Table
 
 #### Greek Letters
@@ -43,9 +45,9 @@ The script contains multiple symbol mappings, including Greek letters, math font
 
 The code of `symbol_assist_OneNote.ahk` is very easy to understand, even if you have not learn about `AutoHotKey`. For newcomers, the explanation of the code is as follows:
 
-Each line of the code is a mapping of the input code to the output symbol. The format is `:parameters:input::output`. For example, `::\a::\alpha` means that when you input `\a`, the script will output `\alpha`.
+Each line of the code is a mapping of the input code to the output symbol. The format is `:parameters:input::output`. For example, `::\a::\alpha` means that when you input `\a`, the script will output `\alpha `.
 
-Inside the first two colons (`::`), I added some parameters:
+Inside the first two colons (`::`), I added some parameters ` co?`:
 
 |Parameter|Meaning|
 |-|-|
@@ -54,4 +56,4 @@ Inside the first two colons (`::`), I added some parameters:
 |`o`|Delete the `Space` you entered at the end.|
 |`?`|Output formula even if you type something before the code. Otherwise, it will fail in cases like `x\h`|
 
-You are recommended to learn more about `AutoHotKey` from its [website](www.autohotkey.com).
+You are recommended to learn more about `AutoHotKey` from its [website](https://www.autohotkey.com).
