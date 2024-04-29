@@ -1,4 +1,4 @@
-# OneHotKey
+# OneHotkey
 
 This is a script that simplifies math formula inputs in OneNote, Word and PowerPoint with AutoHotKey script, e.g., \a for \alpha.
 
@@ -12,7 +12,7 @@ This project is still updating.
 
 1. Download and run `symbol_assist.exe`.
 2. Input the code of the symbol, then press `Space` to get the symbol.
-3. For editting the symbol mapping, please refer to `symbol_assist.ahk`. Edit it, compile it with converter such as `Ahk2Exe` , and run the compiled `.exe` file.
+3. For editting the symbol mapping, please refer to `symbol_assist.ahk`. Edit it, compile it with converter such as `Ahk2Exe` , and run the compiled `.exe` file. If you need help, go to the [AutoHotKey official website](www.autohotkey.com).
 4. To stop the script, right click the `H` icon in the system tray and select `Exit`.
 
 ## Symbol Mapping
@@ -25,7 +25,7 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |----|------|----|---|
 |`\a`|$\alpha$|lowercase Greek letters|`\alpha `|
 |`\D`|$\Delta$|uppercase Greek letters|`\Delta `|
-|`\R`, `\C`, `\Z`, `\N`|$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$|frequently used letters|`\doubleR`, ...|
+|`\R`, `\C`, `\Z`, `\N`|$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$|frequently used letters|`\doubleR `, ...|
 |`\do X`, `\sc X`, `\fr X`|$\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$|fancy letter forms|`\doubleX `, `\scriptX `, `\frakturX `|
 |`\m3`, `\m4`, ...|3 by 3 empty matrix, ...|matrices|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`|$\hat{x}$, $\tilde{x}$, $\ddot{x}$|modifiers|`\hat  `, `\tilde  `, `\ddot  `|
@@ -38,3 +38,20 @@ The script contains multiple symbol mappings, including Greek letters, math font
 #### Greek Letters
 
 `TODO`
+
+## Code Editing Guide
+
+The code of `symbol_assist_OneNote.ahk` is very easy to understand, even if you have not learn about `AutoHotKey`. For newcomers, the explanation of the code is as follows:
+
+Each line of the code is a mapping of the input code to the output symbol. The format is `:parameters:input::output`. For example, `::\a::\alpha` means that when you input `\a`, the script will output `\alpha`.
+
+Inside the first two colons (`::`), I added some parameters:
+
+|Parameter|Meaning|
+|-|-|
+|` `(Space)|Output formula only after pressing `Space` at the end of a code.|
+|`c`|Case-sensitive. `\a` and `\A` are different.|
+|`o`|Delete the `Space` you entered at the end.|
+|`?`|Output formula even if you type something before the code. Otherwise, it will fail in cases like `x\h`|
+
+You are recommended to learn more about `AutoHotKey` from its [website](www.autohotkey.com).

@@ -60,7 +60,25 @@
 
 : co?:\lrs::\leftrightarrows{Enter}{Left}
 
-: co?:\la::\Leftarrow{Space}
+: co?:\la::\leftarrow{Space}
+
+: co?:\La::\Leftarrow{Space}
+
+: co?:\ss::\subset{Space}
+
+: co?:\sse::\subseteq{Space}
+
+: co?:\op::\oplus{Space}
+
+: co?:\ox::\otimes{Space}
+
+: co?:\od::\odot{Space}
+
+; Symbols
+
+: co?:\down::\downarrow{Space}
+
+: co?:\up::\uparrow{Space}
 
 
 ; Frequently Used Letters
