@@ -5,7 +5,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;
 
-; Prefix
+; Prefix for Fancy Letters
 
 : co?:\sc::\script
 
@@ -20,6 +20,8 @@
 : co?:\b::\beta{Space}
 
 : co?:\e::\varepsilon{Space}
+
+: co?:\k::\kappa{Space}
 
 : co?:\d::\delta{Space}        
 
@@ -45,6 +47,12 @@
 
 : co?:\O::\Omega{Space}
 
+: co?:\g::\gamma{Space}
+
+: co?:\G::\Gamma{Space}
+
+
+
 
 ; Operators
 
@@ -56,14 +64,6 @@
 
 : co?:\pa::\parallel{Space}
 
-: co?:\lr::\leftrightarrow{Space}
-
-: co?:\lrs::\leftrightarrows{Enter}{Left}
-
-: co?:\la::\leftarrow{Space}
-
-: co?:\La::\Leftarrow{Space}
-
 : co?:\ss::\subset{Space}
 
 : co?:\sse::\subseteq{Space}
@@ -74,12 +74,49 @@
 
 : co?:\od::\odot{Space}
 
+: co?:\dd::\ddots{Space}
+
+: co?:\map::\mapsto{Space}
+
+: co?:\pro::\propto{Space}
+
 ; Symbols
+
+: co?:\lr::\leftrightarrow{Space}
+
+: co?:\lrs::\leftrightarrows{Enter}{Left} ;{Space} might fail in OneNote
+
+: co?:\la::\leftarrow{Space}
+
+: co?:\La::\Leftarrow{Space}
+
+: co?:\cd::\cdots{Space}
+
+: co?:\vd::\vdots{Space}
 
 : co?:\down::\downarrow{Space}
 
 : co?:\up::\uparrow{Space}
 
+: co?:\ul::\upleftarrow{Space}
+
+: co?:\ur::\uprightarrow{Space}
+
+: co?:\dl::\downleftarrow{Space}
+
+: co?:\dr::\downrightarrow{Space}
+
+: co?:\de::\degree{Space}
+
+: co?:\st::\star{Space}
+
+: co?:\lc::\lceil{Space}
+
+: co?:\rc::\rceil{Space}
+
+: co?:\lf::\lfloor{Space}
+
+: co?:\rf::\rfloor{Space}
 
 ; Frequently Used Letters
 : co?:\pd::\partial{Space}
@@ -92,7 +129,9 @@
 
 : co?:\N::\doubleN{Space}
 
-: co?:\C::\doubleN{Space}
+: co?:\C::\doubleC{Space}
+
+: co?:\J::\doubleJ{Space}
 
 : co?:\inf::\infty{Space}
 
@@ -102,7 +141,7 @@
 : co?:\ls::Send,{^}{_}{Space}P{Space}{Left 4}
     ; left super script
 
-: co?:\fu::{BackSpace}\funcapply{Space 2}
+: co?:\fu::\funcapply{Space 2}
 
 ; Matrix
 
@@ -125,5 +164,10 @@
 
 : co?:\d2::\ddot{Space 2}
 
+: co?:\d3::\dddot{Space 2}
+
+: co?:\d4::\ddddot{Space 2}
+
 : co?:\~::\tilde{Space 2}
 
+: co?:\v::\vec{Space 2}
