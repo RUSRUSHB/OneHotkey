@@ -37,9 +37,95 @@ You shall notice that ` `(space) are commonly used, which is the key feature of 
 
 ### Full Table
 
+#### Frequently Used Letters
+
+| Code | Output | Source | Code | Output | Source |
+|------|--------|--------|------|--------|--------|
+| `\pd` | $\partial$ | `\partial{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
+| `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
+| `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
+| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` | `\inf` | $\infty$ | `\infty{Space}` |
+
+#### Operators
+
+| Code | Output | Source | Code | Output | Source |
+|------|--------|--------|------|--------|--------|
+| `\x` | $\cdot$ | `\cdot{Space}` | `\X` | $\times$ | `\times{Space}` |
+| `\sq` | $\sqrt{\Box}$ | `\sqrt{Space 2}{Left}` | `\pa` | $\parallel$ | `\parallel{Space}` |
+| `\ss` | $\subset$ | `\subset{Space}` | `\sse` | $\subseteq$ | `\subseteq{Space}` |
+| `\op` | $\oplus$ | `\oplus{Space}` | `\ox` | $\otimes$ | `\otimes{Space}` |
+| `\od` | $\odot$ | `\odot{Space}` | `\dd` | $\ddots$ | `\ddots{Space}` |
+| `\cd` | $\cdots$ | `\cdots{Space}` | `\vd` | $\vdots$ | `\vdots{Space}` |
+| `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
+
 #### Greek Letters
 
-`TODO`
+| Code | Output | Source | Code | Output | Source |
+|------|--------|--------|------|--------|--------|
+| `\a` | $\alpha$ | `\alpha{Space}` | `\b` | $\beta$ | `\beta{Space}` |
+| `\e` | $\varepsilon$ | `\varepsilon{Space}` | `\k` | $\kappa$ | `\kappa{Space}` |
+| `\d` | $\delta$ | `\delta{Space}` | `\D` | $\Delta$ | `\Delta{Space}` |
+| `\s` | $\sigma$ | `\sigma{Space}` | `\S` | $\Sigma$ | `\Sigma{Space}` |
+| `\l` | $\lambda$ | `\lambda{Space}` | `\L` | $\Lambda$ | `\Lambda{Space}` |
+| `\t` | $\theta$ | `\theta{Space}` | `\T` | $\Theta$ | `\Theta{Space}` |
+| `\p` | $\phi$ | `\phi{Space}` | `\P` | $\Phi$ | `\Phi{Space}` |
+| `\o` | $\omega$ | `\omega{Space}` | `\O` | $\Omega$ | `\Omega{Space}` |
+| `\g` | $\gamma$ | `\gamma{Space}` | `\G` | $\Gamma$ | `\Gamma{Space}` |
+
+#### Matrix
+
+| Code | Output | Source |
+|------|--------|--------|
+| `\m4` | 4 by 4 empty matrix | `[\matrix(@{@}{@}{@}{&}{&}{&}){Space}]{Space}` |
+| `\m3` | 3 by 3 empty matrix | `[\matrix(@{@}{@}{&}{&}){Space}]{Space}` |
+| `\m2` | 2 by 2 empty matrix | `[\matrix(@{@}{&}){Space}]{Space}` |
+| `\m` | empty matrix awaiting `&` `@` to set size. | `[]{Space}{Left}\matrix(){Left}` |
+
+#### Modifiers
+
+| Code | Output | Source |
+|------|--------|--------|
+| `\d1` | $\dot{x}$ | `\dot{Space 2}` |
+| `\d2` | $\ddot{x}$ | `\ddot{Space 2}` |
+| `\d3` | 3 dots above | `\dddot{Space 2}` |
+| `\d4` | 4 dots above | `\ddddot{Space 2}` |
+| `\~` | $\tilde{x}$ | `\tilde{Space 2}` |
+| `\v` | $\vec{x}$ | `\vec{Space 2}` |
+| `\h` | $\hat{x}$ | `\hat{Space 2}` |
+
+#### Arrows
+
+| Code | Output | Source | Code | Output | Source |
+|------|--------|--------|------|--------|--------|
+| `\lr` | $\leftrightarrow$ | `\leftrightarrow{Space}` | `\lrs` | $\leftrightarrows$ | `\leftrightarrows{Enter}{Left}` |
+| `\la` | $\leftarrow$ | `\leftarrow{Space}` | `\La` | $\Leftarrow$ | `\Leftarrow{Space}` |
+| `\down` | $\downarrow$ | `\downarrow{Space}` | `\up` | $\uparrow$ | `\uparrow{Space}` |
+| `\ul` | $\nwarrow$ | `\nwarrow{Space}` | `\ur` | $\nearrow$ | `\nearrow{Space}` |
+| `\dl` | $\swarrow$ | `\swarrow{Space}` | `\dr` | $\searrow$ | `\searrow{Space}` |
+
+#### Symbols
+
+| Code | Output | Source | Code | Output | Source |
+|------|--------|--------|------|--------|--------|
+| `\de` | $\degree$ | `\degree{Space}` | `\st` | $\star$ | `\star{Space}` |
+| `\lc` | $\lceil$ | `\lceil{Space}` | `\rc` | $\rceil$ | `\rceil{Space}` |
+| `\lf` | $\lfloor$ | `\lfloor{Space}` | `\rf` | $\rfloor$ | `\rfloor{Space}` |
+
+#### Structures
+
+| Code | Output | Source |
+|------|--------|--------|
+| `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
+| `\fu` | $\operatorname*{myfunction}{\Box}$ | `\funcapply  ` |
+
+#### Prefix for Fancy Letters
+
+| Code | Output | Source |
+|------|--------|--------|
+| `\sc` | $\mathcal{X}$ | `\script` |
+| `\do` | $\mathbb{X}$ | `\double` |
+| `\fr` | $\mathfrak{X}$ | `\fraktur` |
+
 
 ## Code Editing Guide
 

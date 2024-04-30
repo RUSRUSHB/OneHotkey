@@ -33,9 +33,94 @@
 
 ### 完整映射表格
 
+#### 常用字符
+
+| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
+|------|--------|--------|------|--------|--------|
+| `\pd` | $\partial$ | `\partial{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
+| `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
+| `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
+| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` | `\inf` | $\infty$ | `\infty{Space}` |
+
+#### 运算符
+
+| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
+|------|--------|--------|------|--------|--------|
+| `\x` | $\cdot$ | `\cdot{Space}` | `\X` | $\times$ | `\times{Space}` |
+| `\sq` | $\sqrt{\Box}$ | `\sqrt{Space 2}{Left}` | `\pa` | $\parallel$ | `\parallel{Space}` |
+| `\ss` | $\subset$ | `\subset{Space}` | `\sse` | $\subseteq$ | `\subseteq{Space}` |
+| `\op` | $\oplus$ | `\oplus{Space}` | `\ox` | $\otimes$ | `\otimes{Space}` |
+| `\od` | $\odot$ | `\odot{Space}` | `\dd` | $\ddots$ | `\ddots{Space}` |
+| `\cd` | $\cdots$ | `\cdots{Space}` | `\vd` | $\vdots$ | `\vdots{Space}` |
+| `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
+
 #### 希腊字母
 
-`TODO`
+| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
+|------|--------|--------|------|--------|--------|
+| `\a` | $\alpha$ | `\alpha{Space}` | `\b` | $\beta$ | `\beta{Space}` |
+| `\e` | $\varepsilon$ | `\varepsilon{Space}` | `\k` | $\kappa$ | `\kappa{Space}` |
+| `\d` | $\delta$ | `\delta{Space}` | `\D` | $\Delta$ | `\Delta{Space}` |
+| `\s` | $\sigma$ | `\sigma{Space}` | `\S` | $\Sigma$ | `\Sigma{Space}` |
+| `\l` | $\lambda$ | `\lambda{Space}` | `\L` | $\Lambda$ | `\Lambda{Space}` |
+| `\t` | $\theta$ | `\theta{Space}` | `\T` | $\Theta$ | `\Theta{Space}` |
+| `\p` | $\phi$ | `\phi{Space}` | `\P` | $\Phi$ | `\Phi{Space}` |
+| `\o` | $\omega$ | `\omega{Space}` | `\O` | $\Omega$ | `\Omega{Space}` |
+| `\g` | $\gamma$ | `\gamma{Space}` | `\G` | $\Gamma$ | `\Gamma{Space}` |
+
+#### 矩阵
+
+| 输入 | 输出| 源代码 |
+|------|--------|--------|
+| `\m4` | 4×4空白矩阵 | `[\matrix(@{@}{@}{@}{&}{&}{&}){Space}]{Space}` |
+| `\m3` | 3×3空白矩阵 | `[\matrix(@{@}{@}{&}{&}){Space}]{Space}` |
+| `\m2` | 2×2空白矩阵 | `[\matrix(@{@}{&}){Space}]{Space}` |
+| `\m` | 空白矩阵，输入`&` `@`来设置大小 | `[]{Space}{Left}\matrix(){Left}` |
+
+#### 修饰符
+
+| 输入 | 输出| 源代码 |
+|------|--------|--------|
+| `\d1` | $\dot{x}$ | `\dot{Space 2}` |
+| `\d2` | $\ddot{x}$ | `\ddot{Space 2}` |
+| `\d3` | 上方有3个点 | `\dddot{Space 2}` |
+| `\d4` | 上方有4个点 | `\ddddot{Space 2}` |
+| `\~` | $\tilde{x}$ | `\tilde{Space 2}` |
+| `\v` | $\vec{x}$ | `\vec{Space 2}` |
+| `\h` | $\hat{x}$ | `\hat{Space 2}` |
+
+#### 箭头
+
+| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
+|------|--------|--------|------|--------|--------|
+| `\lr` | $\leftrightarrow$ | `\leftrightarrow{Space}` | `\lrs` | $\leftrightarrows$ | `\leftrightarrows{Enter}{Left}` |
+| `\la` | $\leftarrow$ | `\leftarrow{Space}` | `\La` | $\Leftarrow$ | `\Leftarrow{Space}` |
+| `\down` | $\downarrow$ | `\downarrow{Space}` | `\up` | $\uparrow$ | `\uparrow{Space}` |
+| `\ul` | $\nwarrow$ | `\nwarrow{Space}` | `\ur` | $\nearrow$ | `\nearrow{Space}` |
+| `\dl` | $\swarrow$ | `\swarrow{Space}` | `\dr` | $\searrow$ | `\searrow{Space}` |
+
+#### 其他符号
+
+| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
+|------|--------|--------|------|--------|--------|
+| `\de` | $\degree$ | `\degree{Space}` | `\st` | $\star$ | `\star{Space}` |
+| `\lc` | $\lceil$ | `\lceil{Space}` | `\rc` | $\rceil$ | `\rceil{Space}` |
+| `\lf` | $\lfloor$ | `\lfloor{Space}` | `\rf` | $\rfloor$ | `\rfloor{Space}` |
+
+#### 结构
+
+| 输入 | 输出| 源代码 |
+|------|--------|--------|
+| `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
+| `\fu` | $\operatorname*{myfunction}{\Box}$ | `\funcapply  ` |
+
+#### 花体字母
+
+| 输入 | 输出| 源代码 |
+|------|--------|--------|
+| `\sc` | $\mathcal{X}$ | `\script` |
+| `\do` | $\mathbb{X}$ | `\double` |
+| `\fr` | $\mathfrak{X}$ | `\fraktur` |
 
 ## 映射自定义指南
 
