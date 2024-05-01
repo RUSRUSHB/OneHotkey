@@ -76,9 +76,9 @@ You shall notice that ` `(space) are commonly used, which is the key feature of 
 
 | Code | Output | Source |
 |------|--------|--------|
-| `\m4` | 4 by 4 empty matrix | `[\matrix(@{@}{@}{@}{&}{&}{&}){Space}]{Space}` |
-| `\m3` | 3 by 3 empty matrix | `[\matrix(@{@}{@}{&}{&}){Space}]{Space}` |
-| `\m2` | 2 by 2 empty matrix | `[\matrix(@{@}{&}){Space}]{Space}` |
+| `\m4` | 4 by 4 empty matrix | `[\matrix(@@@&&&){Space}]{Space}` |
+| `\m3` | 3 by 3 empty matrix | `[\matrix(@@&&){Space}]{Space}` |
+| `\m2` | 2 by 2 empty matrix | `[\matrix(@&){Space}]{Space}` |
 | `\m` | empty matrix awaiting `&` `@` to set size. | `[]{Space}{Left}\matrix(){Left}` |
 
 #### Modifiers
@@ -116,7 +116,7 @@ You shall notice that ` `(space) are commonly used, which is the key feature of 
 | Code | Output | Source |
 |------|--------|--------|
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
-| `\fu` | $\operatorname*{myfunction}{\Box}$ | `\funcapply  ` |
+| `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
 
 #### Prefix for Fancy Letters
 

@@ -72,9 +72,9 @@
 
 | 输入 | 输出| 源代码 |
 |------|--------|--------|
-| `\m4` | 4×4空白矩阵 | `[\matrix(@{@}{@}{@}{&}{&}{&}){Space}]{Space}` |
-| `\m3` | 3×3空白矩阵 | `[\matrix(@{@}{@}{&}{&}){Space}]{Space}` |
-| `\m2` | 2×2空白矩阵 | `[\matrix(@{@}{&}){Space}]{Space}` |
+| `\m4` | 4×4空白矩阵 | `[\matrix(@@@&&&){Space}]{Space}` |
+| `\m3` | 3×3空白矩阵 | `[\matrix(@@&&){Space}]{Space}` |
+| `\m2` | 2×2空白矩阵 | `[\matrix(@&){Space}]{Space}` |
 | `\m` | 空白矩阵，输入`&` `@`来设置大小 | `[]{Space}{Left}\matrix(){Left}` |
 
 #### 修饰符
@@ -112,7 +112,7 @@
 | 输入 | 输出| 源代码 |
 |------|--------|--------|
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
-| `\fu` | $\operatorname*{myfunction}{\Box}$ | `\funcapply  ` |
+| `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
 
 #### 花体字母
 
