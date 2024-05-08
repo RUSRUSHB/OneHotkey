@@ -19,7 +19,7 @@ This project is still updating.
 
 ### Overview
 
-The script contains multiple symbol mappings, including Greek letters, math fonts, frequently used letters, and structures. The following is a list of some typical mappings. Make sure that you have enter the formula input mode with `Alt`+`=` in OneNote or Word, or `Ctrl`+`=` in PowerPoint.
+The script contains multiple symbol mappings, including Greek letters, math fonts, frequently used letters, and structures. The following is a list of some typical mappings. Make sure that you have entered the formula input mode with `Alt`+`=`.
 
 |Code|Output|Category|Source|
 |----|------|----|---|
@@ -33,7 +33,7 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |`\pd`, `\inf`|$\partial$, $\infty$|frequently used symbols|`\partial `, `\infty `|
 |`\ls`|$^\Box_\Box P$|left super-and-lowerscript|`^_ P `|
 
-You shall notice that ` `(space) are commonly used, which is the key feature of OneNote formula input.
+You shall notice that ` `(space) is commonly used, which is the key feature of OneNote formula input.
 
 ### Full Table
 
@@ -126,10 +126,9 @@ You shall notice that ` `(space) are commonly used, which is the key feature of 
 | `\do` | $\mathbb{X}$ | `\double` |
 | `\fr` | $\mathfrak{X}$ | `\fraktur` |
 
-
 ## Code Editing Guide
 
-The code of `symbol_assist_OneNote.ahk` is very easy to understand, even if you have not learn about `AutoHotKey`. For newcomers, the explanation of the code is as follows:
+The code of `symbol_assist_OneNote.ahk` is very easy to understand, even if you have not learnt about `AutoHotKey`. For newcomers, the explanation of the code is as follows:
 
 Each line of the code is a mapping of the input code to the output symbol. The format is `:parameters:input::output`. For example, `::\a::\alpha` means that when you input `\a`, the script will output `\alpha `.
 
