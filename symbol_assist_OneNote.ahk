@@ -1,10 +1,3 @@
-; #SingleInstance, Force
-; SendMode Input
-; SetWorkingDir, %A_ScriptDir%
-; some helpful setup first
-
-;;;;;;;;;;;;;;;;;;;;;
-
 
 ; Frequently Used Letters
 : co?:\pd::\partial{Space}
@@ -94,13 +87,13 @@
 
 ; Matrix
 
-: co?:\m4::[\matrix({@}{@}{@}{&}{&}{&}){Space}]{Space}
+: co?:\m4::[\matrix({@}{@}{@}{&}{&}{&}){Space}]{Space}{Left 2}
 
 
-: co?:\m3::[\matrix({@}{@}{&}{&}){Space}]{Space}
+: co?:\m3::[\matrix({@}{@}{&}{&}){Space}]{Space}{Left 2}
 
 
-: co?:\m2::[\matrix({@}{&}){Space}]{Space}
+: co?:\m2::[\matrix({@}{&}){Space}]{Space}{Left 2}
 
 
 : co?:\m::[]{Space}{Left}\matrix(){Left}
@@ -169,6 +162,14 @@
     ; function structure
 
 
+: co?:\eq2::\eqarray(@){Space}
+    ; multicolomn equations
+
+: co?:\eq3::\eqarray(@@){Space}
+
+: co?:\eq4::\eqarray(@@@){Space}
+
+: co?:\eq5::\eqarray(@@@@){Space}
 
 ; Prefix for Fancy Letters
 
