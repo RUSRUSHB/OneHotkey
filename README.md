@@ -41,10 +41,10 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 
 | Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
-| `\pd` | $\partial$ | `\partial{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
+| `\pd` | $\partial$ | `\partial{Space}` | `\inf` | $\infty$ | `\infty{Space}` |
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
-| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` | `\inf` | $\infty$ | `\infty{Space}` |
+| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
 
 #### Operators
 
@@ -57,6 +57,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\od` | $\odot$ | `\odot{Space}` | `\dd` | $\ddots$ | `\ddots{Space}` |
 | `\cd` | $\cdots$ | `\cdots{Space}` | `\vd` | $\vdots$ | `\vdots{Space}` |
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
+| `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
 
 #### Greek Letters
 

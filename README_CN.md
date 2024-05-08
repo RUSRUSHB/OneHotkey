@@ -11,6 +11,10 @@
 3. 想要自行修改公式映射，请参考`symbol_assist.ahk`。编辑它，使用`Ahk2Exe`或者其他转换器编译，然后运行编译后的`.exe`文件。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
 4. 想要停止脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
 
+## 相关链接
+
+快速输入Unicode数学符号:<https://github.com/gtj1/symbol_assist>
+
 ## 符号映射
 
 ### 概览
@@ -37,10 +41,10 @@
 
 | 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
-| `\pd` | $\partial$ | `\partial{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
+| `\pd` | $\partial$ | `\partial{Space}` | `\inf` | $\infty$ | `\infty{Space}` |
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
-| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` | `\inf` | $\infty$ | `\infty{Space}` |
+| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
 
 #### 运算符
 
@@ -53,6 +57,7 @@
 | `\od` | $\odot$ | `\odot{Space}` | `\dd` | $\ddots$ | `\ddots{Space}` |
 | `\cd` | $\cdots$ | `\cdots{Space}` | `\vd` | $\vdots$ | `\vdots{Space}` |
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
+| `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
 
 #### 希腊字母
 

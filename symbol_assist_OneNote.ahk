@@ -47,6 +47,10 @@
 
 : co?:\pro::\propto{Space}
 
+: co?:\as::\because{Space}
+
+: co?:\so::\therefore{Space}
+
 ; Greek Letters
 
 : co?:\a::\alpha{Space}
@@ -156,14 +160,16 @@
 ; Structures
 
 : co?:\ls::{^}{_}{Space}P{Space}{Left 4}
-    ; left super script
+; left super script
 
 : co?:\fu::\funcapply{Space 2}
-    ; function structure
+; function structure
 
+; : co?:\pfu::\{\right.
+; ; piecewise function structure
 
 : co?:\eq2::\eqarray(@){Space}
-    ; multicolomn equations
+; multicolomn equations
 
 : co?:\eq3::\eqarray(@@){Space}
 
