@@ -32,6 +32,7 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |`\x`, `\X`, `\sq`, `\pa`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$|operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `|
 |`\pd`, `\inf`|$\partial$, $\infty$|frequently used symbols|`\partial `, `\infty `|
 |`\ls`|$^\Box_\Box P$|left super-and-lowerscript|`^_ P `|
+|`\i`, `\j`, `\k`|$\text{i}$, $\text{j}$, $\text{k}$|imaginary/quaternion symbols|`"i"`, `"j"`, `"k"`|
 
 You shall notice that ` `(space) is commonly used, which is the key feature of OneNote formula input.
 
@@ -64,7 +65,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
 | `\a` | $\alpha$ | `\alpha{Space}` | `\b` | $\beta$ | `\beta{Space}` |
-| `\e` | $\varepsilon$ | `\varepsilon{Space}` | `\k` | $\kappa$ | `\kappa{Space}` |
+| `\e` | $\varepsilon$ | `\varepsilon{Space}` | `\ve` | $\epsilon$ | `\epsilon{Space}` |
 | `\d` | $\delta$ | `\delta{Space}` | `\D` | $\Delta$ | `\Delta{Space}` |
 | `\s` | $\sigma$ | `\sigma{Space}` | `\S` | $\Sigma$ | `\Sigma{Space}` |
 | `\l` | $\lambda$ | `\lambda{Space}` | `\L` | $\Lambda$ | `\Lambda{Space}` |
@@ -72,6 +73,8 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\p` | $\phi$ | `\phi{Space}` | `\P` | $\Phi$ | `\Phi{Space}` |
 | `\o` | $\omega$ | `\omega{Space}` | `\O` | $\Omega$ | `\Omega{Space}` |
 | `\g` | $\gamma$ | `\gamma{Space}` | `\G` | $\Gamma$ | `\Gamma{Space}` |
+
+- `ve` means variant epsilon. For convenience, `\e` is set to $\varepsilon$ and `\ve` is set to $\epsilon$, which is different from their original code.
 
 #### Matrix
 

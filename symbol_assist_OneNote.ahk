@@ -16,7 +16,6 @@
 
 : co?:\inf::\infty{Space}
 
-
 ; Operators
 
 : co?:\x::\cdot{Space}
@@ -59,7 +58,7 @@
 
 : co?:\e::\varepsilon{Space}
 
-: co?:\k::\kappa{Space}
+: co?:\ve::\epsilon{Space}
 
 : co?:\d::\delta{Space}        
 
@@ -140,7 +139,13 @@
 
 : co?:\dr::\searrow{Space}
 
+; imaginary/quaternion symbols
 
+: co?:\i::"i"{Space}
+
+: co?:\j::"j"{Space}
+
+: co?:\k::"k"{Space}
 
 ; Symbols
 

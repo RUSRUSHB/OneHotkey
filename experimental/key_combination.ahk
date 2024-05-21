@@ -13,6 +13,8 @@
     Send "********************"
     Send "^a"
     Send "^u"
+    Send "{Right}{Enter}"
+    Send "^u"
 }
 
 ^!`;::{

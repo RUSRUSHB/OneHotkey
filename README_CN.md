@@ -9,7 +9,7 @@
 1. 下载并运行`symbol_assist.exe`。
 2. 输入代码，然后按`Space`键输出符号与公式。
 3. 想要自行修改公式映射，请参考`symbol_assist.ahk`。编辑它，使用`Ahk2Exe`或者其他转换器编译，然后运行编译后的`.exe`文件。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
-4. 想要停止脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
+4. 想要停用脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
 
 ## 相关链接
 
@@ -19,7 +19,7 @@
 
 ### 概览
 
-此脚本包括多种类型的符号映射，包括希腊字母、数学字体、常用字母和结构。以下是其中的一些映射。请确保您已经使用`Alt`+`=`进入了公式输入模式。
+此脚本包括多种类型的符号映射，包括希腊字母、数学字体、常用字母和结构。以下是其中的一些具有代表性的映射。请确保您已经使用`Alt`+`=`进入了公式输入模式。
 
 |输入|输出|分类|实际代码|
 |----|------|----|---|
@@ -32,6 +32,7 @@
 |`\x`, `\X`, `\sq`, `\pa`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$|运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `|
 |`\pd`, `\inf`|$\partial$, $\infty$|常用符号|`\partial `, `\infty `|
 |`\ls`|$^\Box_\Box P$|左侧上下标|`^_ P `|
+|`\i`, `\j`, `\k`|$\text{i}$, $\text{j}$, $\text{k}$|虚数/四元数符号|`"i"`, `"j"`, `"k"`|
 
 你应该注意到` `(空格键)是常用的，这是OneNote公式输入的关键特性。
 
@@ -64,7 +65,7 @@
 | 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
 | `\a` | $\alpha$ | `\alpha{Space}` | `\b` | $\beta$ | `\beta{Space}` |
-| `\e` | $\varepsilon$ | `\varepsilon{Space}` | `\k` | $\kappa$ | `\kappa{Space}` |
+| `\e` | $\varepsilon$ | `\varepsilon{Space}` | `\ve` | $\epsilon$ | `\epsilon{Space}` |
 | `\d` | $\delta$ | `\delta{Space}` | `\D` | $\Delta$ | `\Delta{Space}` |
 | `\s` | $\sigma$ | `\sigma{Space}` | `\S` | $\Sigma$ | `\Sigma{Space}` |
 | `\l` | $\lambda$ | `\lambda{Space}` | `\L` | $\Lambda$ | `\Lambda{Space}` |
@@ -72,6 +73,8 @@
 | `\p` | $\phi$ | `\phi{Space}` | `\P` | $\Phi$ | `\Phi{Space}` |
 | `\o` | $\omega$ | `\omega{Space}` | `\O` | $\Omega$ | `\Omega{Space}` |
 | `\g` | $\gamma$ | `\gamma{Space}` | `\G` | $\Gamma$ | `\Gamma{Space}` |
+
+- `ve`表示变体(variant) epsilon。为了方便，`\e`设置为$\varepsilon$，`\ve`设置为$\epsilon$，这与它们的原始代码不同。
 
 #### 矩阵
 
