@@ -29,6 +29,7 @@
 }
 
 ^!b::{
+    Send "!="
     Send "\boxed{enter}"
     send "{left 2}"
 }

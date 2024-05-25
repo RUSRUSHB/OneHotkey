@@ -173,14 +173,14 @@
 ; : co?:\pfu::\{\right.
 ; ; piecewise function structure
 
-: co?:\eq2::\eqarray(@){Space}
+: co?:\eq2::\eqarray(@){Space}{Left 2}
 ; multicolomn equations
 
-: co?:\eq3::\eqarray(@@){Space}
+: co?:\eq3::\eqarray(@@){Space}{Left 3}
 
-: co?:\eq4::\eqarray(@@@){Space}
+: co?:\eq4::\eqarray(@@@){Space}{Left 4}
 
-: co?:\eq5::\eqarray(@@@@){Space}
+: co?:\eq5::\eqarray(@@@@){Space}{Left 5}
 
 ; Prefix for Fancy Letters
 
