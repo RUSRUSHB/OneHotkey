@@ -1,28 +1,33 @@
 # OneHotkey
 
-This is a script that simplifies math formula inputs in OneNote, Word and PowerPoint with AutoHotKey script, e.g., \a for \alpha.
-
 这是一个用于简化 OneNote, Word 和 PowerPoint 中数学公式输入的 AutoHotKey 脚本，例如，\a 代表 \alpha。
 
-中文版帮助文档请见[README_CN.md](README_CN.md)。
+This is a script that simplifies math formula inputs in OneNote, Word and PowerPoint with AutoHotKey script, e.g., \a for \alpha.
 
-This project is still updating.
+English version of introduction: [README_EN.md](README_EN.md)
 
-## How to Use
+这一项目还在开发中，欢迎你的建议和参与。
 
-1. Download and run `symbol_assist.exe`.
-2. Input the code of the symbol, then press `Space` to get the symbol.
-3. For editting the symbol mapping, please refer to `symbol_assist.ahk`. Edit it, compile it with converter such as `Ahk2Exe` , and run the compiled `.exe` file. If you need help, go to the [AutoHotKey official website](https://www.autohotkey.com).
-4. To stop the script, right click the `H` icon in the system tray and select `Exit`.
+## 如何使用
 
-## Symbol Mapping
+1. 下载并运行`symbol_assist.exe`。
+2. 输入代码，然后按`Space`键输出符号与公式。
+3. 想要自行修改公式映射，请参考`symbol_assist.ahk`。编辑它，使用`Ahk2Exe`或者其他转换器编译，然后运行编译后的`.exe`文件。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
+4. 想要停止脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
 
-### Overview
+## 相关链接
 
-The script contains multiple symbol mappings, including Greek letters, math fonts, frequently used letters, and structures. The following is a list of some typical mappings. Make sure that you have entered the formula input mode with `Alt`+`=`.
+快速输入Unicode数学符号:<https://github.com/gtj1/symbol_assist>
 
-|Code|Output|Category|Source|
+## 符号映射
+
+### 概览
+
+此脚本包括多种类型的符号映射，包括希腊字母、数学字体、常用字母和结构。以下是其中的一些映射。请确保您已经使用`Alt`+`=`进入了公式输入模式。
+
+|输入|输出|分类|实际代码|
 |----|------|----|---|
+<<<<<<< Updated upstream
 |`\a`|$\alpha$|lowercase Greek letters|`\alpha `|
 |`\D`|$\Delta$|uppercase Greek letters|`\Delta `|
 |`\R`, `\C`, `\Z`, `\N`|$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$|frequently used letters|`\doubleR `, ...|
@@ -33,23 +38,34 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |`\pd`, `\inf`|$\partial$, $\infty$|frequently used symbols|`\partial `, `\infty `|
 |`\ls`|$^\Box_\Box P$|left super-and-lowerscript|`^_ P `|
 |`\i`, `\j`, `\k`|$\text{i}$, $\text{j}$, $\text{k}$|imaginary/quaternion symbols|`"i"`, `"j"`, `"k"`|
+=======
+|`\a`|$\alpha$|小写希腊字母|`\alpha `|
+|`\D`|$\Delta$|大写希腊字母|`\Delta `|
+|`\R`, `\C`, `\Z`, `\N`|$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$|常用字母|`\doubleR `, ...|
+|`\do X`, `\sc X`, `\fr X`|$\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$|花体字母|`\doubleX `, `\scriptX `, `\frakturX `|
+|`\m3`, `\m4`, ...|3×3空白矩阵, ...|矩阵|`[\matrix(@@&&)] `, ...|
+|`x\h`, `x\~`, `x\d1`,`x\d2`|$\hat{x}$, $\tilde{x}$, $\dot{x}$, $\ddot{x}$|修饰符|`\hat  `, `\tilde  `, `\ddot  `|
+|`\x`, `\X`, `\sq`, `\pa`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$|运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `|
+|`\pd`, `\inf`|$\partial$, $\infty$|常用符号|`\partial `, `\infty `|
+|`\ls`|$^\Box_\Box P$|左侧上下标|`^_ P `|
+>>>>>>> Stashed changes
 
-You shall notice that ` `(space) is commonly used, which is the key feature of OneNote formula input.
+你应该注意到` `(空格键)是常用的，这是OneNote公式输入的关键特性。
 
-### Full Table
+### 完整映射表格
 
-#### Frequently Used Letters
+#### 常用字符
 
-| Code | Output | Source | Code | Output | Source |
+| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
 | `\pd` | $\partial$ | `\partial{Space}` | `\inf` | $\infty$ | `\infty{Space}` |
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
 | `\J` | $\mathbb{J}$ | `\doubleJ{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
 
-#### Operators
+#### 运算符
 
-| Code | Output | Source | Code | Output | Source |
+| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
 | `\x` | $\cdot$ | `\cdot{Space}` | `\X` | $\times$ | `\times{Space}` |
 | `\sq` | $\sqrt{\Box}$ | `\sqrt{Space 2}{Left}` | `\pa` | $\parallel$ | `\parallel{Space}` |
@@ -60,9 +76,9 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
 | `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
 
-#### Greek Letters
+#### 希腊字母
 
-| Code | Output | Source | Code | Output | Source |
+| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
 | `\a` | $\alpha$ | `\alpha{Space}` | `\b` | $\beta$ | `\beta{Space}` |
 | `\e` | $\varepsilon$ | `\varepsilon{Space}` | `\ve` | $\epsilon$ | `\epsilon{Space}` |
@@ -74,32 +90,36 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\o` | $\omega$ | `\omega{Space}` | `\O` | $\Omega$ | `\Omega{Space}` |
 | `\g` | $\gamma$ | `\gamma{Space}` | `\G` | $\Gamma$ | `\Gamma{Space}` |
 
+<<<<<<< Updated upstream
 - `ve` means variant epsilon. For convenience, `\e` is set to $\varepsilon$ and `\ve` is set to $\epsilon$, which is different from their original code.
 
 #### Matrix
+=======
+#### 矩阵
+>>>>>>> Stashed changes
 
-| Code | Output | Source |
+| 输入 | 输出| 源代码 |
 |------|--------|--------|
-| `\m4` | 4 by 4 empty matrix | `[\matrix(@@@&&&){Space}]{Space}` |
-| `\m3` | 3 by 3 empty matrix | `[\matrix(@@&&){Space}]{Space}` |
-| `\m2` | 2 by 2 empty matrix | `[\matrix(@&){Space}]{Space}` |
-| `\m` | empty matrix awaiting `&` `@` to set size. | `[]{Space}{Left}\matrix(){Left}` |
+| `\m4` | 4×4空白矩阵 | `[\matrix(@@@&&&){Space}]{Space}` |
+| `\m3` | 3×3空白矩阵 | `[\matrix(@@&&){Space}]{Space}` |
+| `\m2` | 2×2空白矩阵 | `[\matrix(@&){Space}]{Space}` |
+| `\m` | 空白矩阵，输入`&` `@`来设置大小 | `[]{Space}{Left}\matrix(){Left}` |
 
-#### Modifiers
+#### 修饰符
 
-| Code | Output | Source |
+| 输入 | 输出| 源代码 |
 |------|--------|--------|
 | `\d1` | $\dot{x}$ | `\dot{Space 2}` |
 | `\d2` | $\ddot{x}$ | `\ddot{Space 2}` |
-| `\d3` | 3 dots above | `\dddot{Space 2}` |
-| `\d4` | 4 dots above | `\ddddot{Space 2}` |
+| `\d3` | 上方有3个点 | `\dddot{Space 2}` |
+| `\d4` | 上方有4个点 | `\ddddot{Space 2}` |
 | `\~` | $\tilde{x}$ | `\tilde{Space 2}` |
 | `\v` | $\vec{x}$ | `\vec{Space 2}` |
 | `\h` | $\hat{x}$ | `\hat{Space 2}` |
 
-#### Arrows
+#### 箭头
 
-| Code | Output | Source | Code | Output | Source |
+| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
 | `\lr` | $\leftrightarrow$ | `\leftrightarrow{Space}` | `\lrs` | $\leftrightarrows$ | `\leftrightarrows{Enter}{Left}` |
 | `\la` | $\leftarrow$ | `\leftarrow{Space}` | `\La` | $\Leftarrow$ | `\Leftarrow{Space}` |
@@ -107,42 +127,42 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\ul` | $\nwarrow$ | `\nwarrow{Space}` | `\ur` | $\nearrow$ | `\nearrow{Space}` |
 | `\dl` | $\swarrow$ | `\swarrow{Space}` | `\dr` | $\searrow$ | `\searrow{Space}` |
 
-#### Symbols
+#### 其他符号
 
-| Code | Output | Source | Code | Output | Source |
+| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
 | `\de` | $\degree$ | `\degree{Space}` | `\st` | $\star$ | `\star{Space}` |
 | `\lc` | $\lceil$ | `\lceil{Space}` | `\rc` | $\rceil$ | `\rceil{Space}` |
 | `\lf` | $\lfloor$ | `\lfloor{Space}` | `\rf` | $\rfloor$ | `\rfloor{Space}` |
 
-#### Structures
+#### 结构
 
-| Code | Output | Source |
+| 输入 | 输出| 源代码 |
 |------|--------|--------|
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
 
-#### Prefix for Fancy Letters
+#### 花体字母
 
-| Code | Output | Source |
+| 输入 | 输出| 源代码 |
 |------|--------|--------|
 | `\sc` | $\mathcal{X}$ | `\script` |
 | `\do` | $\mathbb{X}$ | `\double` |
 | `\fr` | $\mathfrak{X}$ | `\fraktur` |
 
-## Code Editing Guide
+## 映射自定义指南
 
-The code of `symbol_assist_OneNote.ahk` is very easy to understand, even if you have not learnt about `AutoHotKey`. For newcomers, the explanation of the code is as follows:
+`symbol_assist_OneNote.ahk`中的代码非常容易理解，即使你没有学习过`AutoHotKey`。对于新手，代码的解释如下：
 
-Each line of the code is a mapping of the input code to the output symbol. The format is `:parameters:input::output`. For example, `::\a::\alpha` means that when you input `\a`, the script will output `\alpha `.
+代码的每一行都是一个输入到符号的映射。格式为`:(参数):输入::输出`。例如，`::\a::\alpha `意味着当你输入`\a`时，脚本会输出`\alpha `。
 
-Inside the first two colons (`::`), I added some parameters ` co?`:
+我添加了一些参数` co?`：
 
-|Parameter|Meaning|
+|参数|作用|
 |-|-|
-|` `(Space)|Output formula only after pressing `Space` at the end of a code.|
-|`c`|Case-sensitive. `\a` and `\A` are different.|
-|`o`|Delete the `Space` you entered at the end.|
-|`?`|Output formula even if you type something before the code. Otherwise, it will fail in cases like `x\h`|
+|` `(空格键)|仅在代码末尾输入`空格键`后输出公式。|
+|`c`|区分大小写，比如`\a`和`\A`是不同的。|
+|`o`|删除你在代码末尾输入的`空格键`。|
+|`?`|即使代码紧跟在数字或字母后面，它也能正常输出。否则，在像是`x\h`的情况下它不会输出。|
 
-You are recommended to learn more about `AutoHotKey` from its [website](https://www.autohotkey.com).
+建议你从[AutoHotKey官网](https://www.autohotkey.com)了解更多关于`AutoHotKey`的知识。
