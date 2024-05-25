@@ -1,24 +1,17 @@
-# OneHotkey
+# OneHotkey -- Math Formula Input Simplification Tool
 
-This is a script that simplifies math formula inputs in OneNote, Word and PowerPoint with AutoHotKey script, e.g., \a for \alpha.
+This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., \a for \alpha.
 
-这是一个用于简化 OneNote, Word 和 PowerPoint 中数学公式输入的 AutoHotKey 脚本，例如，\a 代表 \alpha。
+这是一个用于简化 `OneNote`, `Word` 和 `PowerPoint` 中数学公式输入的 `AutoHotKey` 脚本，例如，\a 代表 \alpha。
 
 中文版帮助文档请见[README_CN.md](README_CN.md)。
 
 This project is still updating.
 
-<<<<<<< Updated upstream:README_CN.md
-1. 下载并运行`symbol_assist.exe`。
-2. 输入代码，然后按`Space`键输出符号与公式。
-3. 想要自行修改公式映射，请参考`symbol_assist.ahk`。编辑它，使用`Ahk2Exe`或者其他转换器编译，然后运行编译后的`.exe`文件。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
-4. 想要停用脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
-=======
 ## How to Use
->>>>>>> Stashed changes:README_EN.md
 
 1. Download and run `symbol_assist.exe`.
-2. Input the code of the symbol, then press `Space` to get the symbol.
+2. Input the code of the symbol, then press `Space` to get the symbol. For example, input `\a` and press `Space` to get $\alpha$.
 3. For editting the symbol mapping, please refer to `symbol_assist.ahk`. Edit it, compile it with converter such as `Ahk2Exe` , and run the compiled `.exe` file. If you need help, go to the [AutoHotKey official website](https://www.autohotkey.com).
 4. To stop the script, right click the `H` icon in the system tray and select `Exit`.
 
@@ -28,22 +21,6 @@ This project is still updating.
 
 The script contains multiple symbol mappings, including Greek letters, math fonts, frequently used letters, and structures. The following is a list of some typical mappings. Make sure that you have entered the formula input mode with `Alt`+`=`.
 
-<<<<<<< Updated upstream:README_CN.md
-此脚本包括多种类型的符号映射，包括希腊字母、数学字体、常用字母和结构。以下是其中的一些具有代表性的映射。请确保您已经使用`Alt`+`=`进入了公式输入模式。
-
-|输入|输出|分类|实际代码|
-|----|------|----|---|
-|`\a`|$\alpha$|小写希腊字母|`\alpha `|
-|`\D`|$\Delta$|大写希腊字母|`\Delta `|
-|`\R`, `\C`, `\Z`, `\N`|$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$|常用字母|`\doubleR `, ...|
-|`\do X`, `\sc X`, `\fr X`|$\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$|花体字母|`\doubleX `, `\scriptX `, `\frakturX `|
-|`\m3`, `\m4`, ...|3×3空白矩阵, ...|矩阵|`[\matrix(@@&&)] `, ...|
-|`x\h`, `x\~`, `x\d2`|$\hat{x}$, $\tilde{x}$, $\ddot{x}$|修饰符|`\hat  `, `\tilde  `, `\ddot  `|
-|`\x`, `\X`, `\sq`, `\pa`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$|运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `|
-|`\pd`, `\inf`|$\partial$, $\infty$|常用符号|`\partial `, `\infty `|
-|`\ls`|$^\Box_\Box P$|左侧上下标|`^_ P `|
-|`\i`, `\j`, `\k`|$\text{i}$, $\text{j}$, $\text{k}$|虚数/四元数符号|`"i"`, `"j"`, `"k"`|
-=======
 |Code|Output|Category|Source|
 |----|------|----|---|
 |`\a`|$\alpha$|lowercase Greek letters|`\alpha `|
@@ -55,7 +32,6 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |`\x`, `\X`, `\sq`, `\pa`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$|operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `|
 |`\pd`, `\inf`|$\partial$, $\infty$|frequently used symbols|`\partial `, `\infty `|
 |`\ls`|$^\Box_\Box P$|left super-and-lowerscript|`^_ P `|
->>>>>>> Stashed changes:README_EN.md
 
 You shall notice that ` `(space) is commonly used, which is the key feature of OneNote formula input.
 
@@ -97,13 +73,9 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\o` | $\omega$ | `\omega{Space}` | `\O` | $\Omega$ | `\Omega{Space}` |
 | `\g` | $\gamma$ | `\gamma{Space}` | `\G` | $\Gamma$ | `\Gamma{Space}` |
 
-<<<<<<< Updated upstream:README_CN.md
-- `ve`表示变体(variant) epsilon。为了方便，`\e`设置为$\varepsilon$，`\ve`设置为$\epsilon$，这与它们的原始代码不同。
+- `ve` means variant epsilon. For convenience, `\e` is set to $\varepsilon$ and `\ve` is set to $\epsilon$, which is different from their original code.
 
-#### 矩阵
-=======
 #### Matrix
->>>>>>> Stashed changes:README_EN.md
 
 | Code | Output | Source |
 |------|--------|--------|

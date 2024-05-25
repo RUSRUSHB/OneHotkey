@@ -1,8 +1,8 @@
-# OneHotkey
+# OneHotkey -- 公式输入简化工具
 
-这是一个用于简化 OneNote, Word 和 PowerPoint 中数学公式输入的 AutoHotKey 脚本，例如，\a 代表 \alpha。
+这是一个用于简化 `OneNote`, `Word` 和 `PowerPoint` 中数学公式输入的 `AutoHotKey` 脚本，例如，\a 代表 \alpha。
 
-This is a script that simplifies math formula inputs in OneNote, Word and PowerPoint with AutoHotKey script, e.g., \a for \alpha.
+This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., \a for \alpha.
 
 English version of introduction: [README_EN.md](README_EN.md)
 
@@ -11,7 +11,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 ## 如何使用
 
 1. 下载并运行`symbol_assist.exe`。
-2. 输入代码，然后按`Space`键输出符号与公式。
+2. 输入代码，然后按`Space`键输出符号与公式。例如，输入`\a`，然后按`Space`键，就会输出$\alpha$。
 3. 想要自行修改公式映射，请参考`symbol_assist.ahk`。编辑它，使用`Ahk2Exe`或者其他转换器编译，然后运行编译后的`.exe`文件。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
 4. 想要停止脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
 
@@ -27,28 +27,16 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 |输入|输出|分类|实际代码|
 |----|------|----|---|
-<<<<<<< Updated upstream
-|`\a`|$\alpha$|lowercase Greek letters|`\alpha `|
-|`\D`|$\Delta$|uppercase Greek letters|`\Delta `|
-|`\R`, `\C`, `\Z`, `\N`|$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$|frequently used letters|`\doubleR `, ...|
-|`\do X`, `\sc X`, `\fr X`|$\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$|fancy letter forms|`\doubleX `, `\scriptX `, `\frakturX `|
-|`\m3`, `\m4`, ...|3 by 3 empty matrix, ...|matrices|`[\matrix(@@&&)] `, ...|
-|`x\h`, `x\~`, `x\d2`|$\hat{x}$, $\tilde{x}$, $\ddot{x}$|modifiers|`\hat  `, `\tilde  `, `\ddot  `|
-|`\x`, `\X`, `\sq`, `\pa`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$|operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `|
-|`\pd`, `\inf`|$\partial$, $\infty$|frequently used symbols|`\partial `, `\infty `|
-|`\ls`|$^\Box_\Box P$|left super-and-lowerscript|`^_ P `|
-|`\i`, `\j`, `\k`|$\text{i}$, $\text{j}$, $\text{k}$|imaginary/quaternion symbols|`"i"`, `"j"`, `"k"`|
-=======
 |`\a`|$\alpha$|小写希腊字母|`\alpha `|
 |`\D`|$\Delta$|大写希腊字母|`\Delta `|
-|`\R`, `\C`, `\Z`, `\N`|$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$|常用字母|`\doubleR `, ...|
+|`\R`, `\C`, `\Z`, `\N`, `\J`|$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$, $\mathbb{J}$|常用双线体字母|`\doubleR `, ...|
 |`\do X`, `\sc X`, `\fr X`|$\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$|花体字母|`\doubleX `, `\scriptX `, `\frakturX `|
-|`\m3`, `\m4`, ...|3×3空白矩阵, ...|矩阵|`[\matrix(@@&&)] `, ...|
-|`x\h`, `x\~`, `x\d1`,`x\d2`|$\hat{x}$, $\tilde{x}$, $\dot{x}$, $\ddot{x}$|修饰符|`\hat  `, `\tilde  `, `\ddot  `|
+|`\m3`, `\m4`, ..., `\m`|3×3空白矩阵, 4×4空白矩阵..., 待定形状矩阵|矩阵|`[\matrix(@@&&)] `, ...|
+|`x\h`, `x\~`, `x\d2`|$\hat{x}$, $\tilde{x}$, $\ddot{x}$|修饰符|`\hat  `, `\tilde  `, `\ddot  `|
 |`\x`, `\X`, `\sq`, `\pa`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$|运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `|
 |`\pd`, `\inf`|$\partial$, $\infty$|常用符号|`\partial `, `\infty `|
 |`\ls`|$^\Box_\Box P$|左侧上下标|`^_ P `|
->>>>>>> Stashed changes
+|`\i`, `\j`, `\k`|$\text{i}$, $\text{j}$, $\text{k}$|虚数/四元数符号|`"i"`, `"j"`, `"k"`|
 
 你应该注意到` `(空格键)是常用的，这是OneNote公式输入的关键特性。
 
@@ -90,13 +78,9 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\o` | $\omega$ | `\omega{Space}` | `\O` | $\Omega$ | `\Omega{Space}` |
 | `\g` | $\gamma$ | `\gamma{Space}` | `\G` | $\Gamma$ | `\Gamma{Space}` |
 
-<<<<<<< Updated upstream
-- `ve` means variant epsilon. For convenience, `\e` is set to $\varepsilon$ and `\ve` is set to $\epsilon$, which is different from their original code.
+- `ve` 指的是epsilon的变体(variant epsilon)。为了方便，`\e`被设置为$\varepsilon$，`\ve`被设置为$\epsilon$。这和它们的原始代码相反。
 
 #### Matrix
-=======
-#### 矩阵
->>>>>>> Stashed changes
 
 | 输入 | 输出| 源代码 |
 |------|--------|--------|
