@@ -2,7 +2,7 @@
 ; Frequently Used Letters
 : co?:\pd::\partial{Space}
 
-:-co?:\ddots::\"d"
+:-co?:\di::"d"{Space}
 
 : co?:\R::\doubleR{Space}
 

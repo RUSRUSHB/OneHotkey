@@ -34,7 +34,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 |`\m3`, `\m4`, ..., `\m`|3×3空白矩阵, 4×4空白矩阵..., 待定形状矩阵|矩阵|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`|$\hat{x}$, $\tilde{x}$, $\ddot{x}$|修饰符|`\hat  `, `\tilde  `, `\ddot  `|
 |`\x`, `\X`, `\sq`, `\pa`, `\eq`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$, $\equiv$|运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv `|
-|`\pd`, `\inf`|$\partial$, $\infty$|常用符号|`\partial `, `\infty `|
+|`\pd`, `\di`, `\inf`|$\partial$, $\text{d}$, $\infty$|常用符号|`\partial `, `"d" `, `\infty `|
 |`\ls`|$^\Box_\Box P$|左侧上下标|`^_ P `|
 |`\i`, `\j`, `\k`|$\text{i}$, $\text{j}$, $\text{k}$|虚数/四元数符号|`"i"`, `"j"`, `"k"`|
 
@@ -46,7 +46,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 | 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
-| `\pd` | $\partial$ | `\partial{Space}` |`\dd`|$\text{d}$|`"d"`|
+| `\pd` | $\partial$ | `\partial{Space}` |`\di`|$\text{d}$|`"d"`|
 | `\inf` | $\infty$ | `\infty{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |

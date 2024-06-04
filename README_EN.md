@@ -30,9 +30,9 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |`\m3`, `\m4`, ...|3 by 3 empty matrix, ...|matrices|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`|$\hat{x}$, $\tilde{x}$, $\ddot{x}$|modifiers|`\hat  `, `\tilde  `, `\ddot  `|
 |`\x`, `\X`, `\sq`, `\pa`, `\eq`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$, $\equiv$|operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv`|
-|`\pd`, `\dd`, `\inf`|$\partial$, $\text{d}$,$\infty$|frequently used symbols|`\partial `, `"d"`,  `\infty `|
+|`\pd`, `\di`, `\inf`|$\partial$, $\text{d}$,$\infty$|frequently used symbols|`\partial `, `"d" `,  `\infty `|
 |`\ls`|$^\Box_\Box P$|left super-and-lowerscript|`^_ P `|
-|`\i`, `\j`, `\k`|$\text{i}$, $\text{j}$, $\text{k}$|Imaginary/quaternion symbols|`"i"`, `"j"`, `"k"`|
+|`\i`, `\j`, `\k`|$\text{i}$, $\text{j}$, $\text{k}$|imaginary/quaternion symbols|`"i"`, `"j"`, `"k"`|
 
 You shall notice that ` `(space) is commonly used, which is the key feature of OneNote formula input. Capital letter code should be inputted with `Shift`, not `CapsLock`.
 
@@ -42,7 +42,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 
 | Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
-| `\pd` | $\partial$ | `\partial{Space}` |`\dd`|$\text{d}$|`"d"`|
+| `\pd` | $\partial$ | `\partial{Space}` |`\di`|$\text{d}$|`"d"`|
 | `\inf` | $\infty$ | `\infty{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
