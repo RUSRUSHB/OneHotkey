@@ -2,6 +2,8 @@
 ; Frequently Used Letters
 : co?:\pd::\partial{Space}
 
+:-co?:\ddots::\"d"
+
 : co?:\R::\doubleR{Space}
 
 : co?:\Q::\doubleQ{Space}
@@ -49,6 +51,8 @@
 : co?:\as::\because{Space}
 
 : co?:\so::\therefore{Space}
+
+: co?:\eq::\equiv{Space}
 
 ; Greek Letters
 

@@ -33,12 +33,12 @@ English version of introduction: [README_EN.md](README_EN.md)
 |`\do X`, `\sc X`, `\fr X`|$\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$|花体字母|`\doubleX `, `\scriptX `, `\frakturX `|
 |`\m3`, `\m4`, ..., `\m`|3×3空白矩阵, 4×4空白矩阵..., 待定形状矩阵|矩阵|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`|$\hat{x}$, $\tilde{x}$, $\ddot{x}$|修饰符|`\hat  `, `\tilde  `, `\ddot  `|
-|`\x`, `\X`, `\sq`, `\pa`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$|运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `|
+|`\x`, `\X`, `\sq`, `\pa`, `\eq`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$, $\equiv$|运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv `|
 |`\pd`, `\inf`|$\partial$, $\infty$|常用符号|`\partial `, `\infty `|
 |`\ls`|$^\Box_\Box P$|左侧上下标|`^_ P `|
 |`\i`, `\j`, `\k`|$\text{i}$, $\text{j}$, $\text{k}$|虚数/四元数符号|`"i"`, `"j"`, `"k"`|
 
-你应该注意到` `(空格键)是常用的，这是OneNote公式输入的关键特性。
+你应该注意到` `(空格键)是常用的，这是OneNote公式输入的关键特性。代码中的大写字母应该使用`Shift`键输入，而不是`CapsLock`键。
 
 ### 完整映射表格
 
@@ -46,10 +46,11 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 | 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
-| `\pd` | $\partial$ | `\partial{Space}` | `\inf` | $\infty$ | `\infty{Space}` |
+| `\pd` | $\partial$ | `\partial{Space}` |`\dd`|$\text{d}$|`"d"`|
+| `\inf` | $\infty$ | `\infty{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
-| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
+| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |
 
 #### 运算符
 
@@ -63,6 +64,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\cd` | $\cdots$ | `\cdots{Space}` | `\vd` | $\vdots$ | `\vdots{Space}` |
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
 | `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
+|`\eq`|$\equiv$|`\equiv`|
 
 #### 希腊字母
 
