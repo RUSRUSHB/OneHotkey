@@ -1,3 +1,5 @@
+#If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE")
+; Activate only in OneNote or Word
 
 ; Frequently Used Letters
 : co?:\pd::\partial{Space}
@@ -193,3 +195,6 @@
 : co?:\do::\double
 
 : co?:\fr::\fraktur
+
+#If
+; Reset the condition in line 1
