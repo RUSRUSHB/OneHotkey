@@ -10,7 +10,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 ## 如何使用
 
-1. 下载并运行`symbol_assist.exe`。
+1. 下载并运行[symbol_assist_OneNote.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/symbol_assist_OneNote.exe)。
 2. 输入代码，然后按`Space`键输出符号与公式。例如，输入`\a`，然后按`Space`键，就会输出$\alpha$。
 3. 想要自行修改公式映射，请参考`symbol_assist.ahk`。编辑它，使用`Ahk2Exe`或者其他转换器编译，然后运行编译后的`.exe`文件。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
 4. 想要停止脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
