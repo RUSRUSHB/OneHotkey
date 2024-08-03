@@ -8,16 +8,32 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 这一项目还在开发中，欢迎你的建议和参与。
 
+## 目录
+
+- [OneHotkey -- 公式输入简化工具](#onehotkey----公式输入简化工具)
+  - [目录](#目录)
+  - [如何使用](#如何使用)
+  - [符号映射](#符号映射)
+    - [概览](#概览)
+    - [完整映射表格](#完整映射表格)
+      - [常用字符](#常用字符)
+      - [运算符](#运算符)
+      - [希腊字母](#希腊字母)
+      - [矩阵](#矩阵)
+      - [修饰符](#修饰符)
+      - [箭头](#箭头)
+      - [其他符号](#其他符号)
+      - [结构](#结构)
+      - [花体字母](#花体字母)
+  - [更多建议](#更多建议)
+  - [映射自定义指南](#映射自定义指南)
+
 ## 如何使用
 
 1. 下载并运行[symbol_assist_OneNote.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/symbol_assist_OneNote.exe)。
-2. 输入代码，然后按`Space`键输出符号与公式。例如，输入`\a`，然后按`Space`键，就会输出$\alpha$。
-3. 想要自行修改公式映射，请参考`symbol_assist.ahk`。编辑它，使用`Ahk2Exe`或者其他转换器编译，然后运行编译后的`.exe`文件。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
+2. 输入代码，然后按`Space`键输出符号与公式。例如，输入`\a`，然后按`Space`键，就会输出 $\alpha$ 。
+3. 想要自行修改公式映射，请参考[映射自定义指南](#映射自定义指南)。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
 4. 想要停止脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
-
-## 相关链接
-
-快速输入Unicode数学符号:<https://github.com/gtj1/symbol_assist>
 
 ## 符号映射
 
@@ -82,7 +98,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 - `ve` 指的是epsilon的变体(variant epsilon)。为了方便，`\e`被设置为$\varepsilon$，`\ve`被设置为$\epsilon$。这和它们的原始代码相反。
 
-#### Matrix
+#### 矩阵
 
 | 输入 | 输出| 源代码 |
 |------|--------|--------|
@@ -128,6 +144,8 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
 
+- `\funcapply` 与 `\of` 有些许不同。建议自行尝试一下。
+
 #### 花体字母
 
 | 输入 | 输出| 源代码 |
@@ -136,7 +154,17 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\do` | $\mathbb{X}$ | `\double` |
 | `\fr` | $\mathfrak{X}$ | `\fraktur` |
 
+- 对于以上代码，你实际应当输入的内容形如`\sc X `。
+
+## 更多建议
+
+- 了解更多关于公式输入的内容：[UTN28-PlainTextMath-v3.pdf](https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf)。第39~47页非常有用。
+- 直接输入Unicode数学符号：<https://github.com/gtj1/symbol_assist>
+- 符合直觉的类Vim文本光标控制：<https://github.com/RUSRUSHB/AutoTextCursor>
+
 ## 映射自定义指南
+
+想要自定义映射，请编辑`symbol_assist.ahk`，使用`Ahk2Exe`或者其他转换器编译，然后运行编译后的`.exe`文件。建议你从[AutoHotKey官网](https://www.autohotkey.com)了解更多关于`AutoHotKey`的知识。
 
 `symbol_assist_OneNote.ahk`中的代码非常容易理解，即使你没有学习过`AutoHotKey`。对于新手，代码的解释如下：
 
@@ -150,5 +178,3 @@ English version of introduction: [README_EN.md](README_EN.md)
 |`c`|区分大小写，比如`\a`和`\A`是不同的。|
 |`o`|删除你在代码末尾输入的`空格键`。|
 |`?`|即使代码紧跟在数字或字母后面，它也能正常输出。否则，在像是`x\h`的情况下它不会输出。|
-
-建议你从[AutoHotKey官网](https://www.autohotkey.com)了解更多关于`AutoHotKey`的知识。

@@ -6,13 +6,33 @@ This is a script that simplifies math formula inputs in `OneNote`, `Word` and `P
 
 中文版帮助文档请见[README_CN.md](README_CN.md)。
 
-This project is still updating.
+This project is still updating. Your suggestions and contributions are welcome.
+
+## Table of Contents
+
+- [OneHotkey -- Math Formula Input Simplification Tool](#onehotkey----math-formula-input-simplification-tool)
+  - [Table of Contents](#table-of-contents)
+  - [How to Use](#how-to-use)
+  - [Symbol Mapping](#symbol-mapping)
+    - [Overview](#overview)
+    - [Full Table](#full-table)
+      - [Frequently Used Letters](#frequently-used-letters)
+      - [Operators](#operators)
+      - [Greek Letters](#greek-letters)
+      - [Matrix](#matrix)
+      - [Modifiers](#modifiers)
+      - [Arrows](#arrows)
+      - [Symbols](#symbols)
+      - [Structures](#structures)
+      - [Prefix for Fancy Letters](#prefix-for-fancy-letters)
+  - [Recommendations](#recommendations)
+  - [Code Editing Guide](#code-editing-guide)
 
 ## How to Use
 
 1. Download and run `symbol_assist.exe`.
 2. Input the code of the symbol, then press `Space` to get the symbol. For example, input `\a` and press `Space` to get $\alpha$.
-3. For editting the symbol mapping, please refer to `symbol_assist.ahk`. Edit it, compile it with converter such as `Ahk2Exe` , and run the compiled `.exe` file. If you need help, go to the [AutoHotKey official website](https://www.autohotkey.com).
+3. For editting the symbol mapping, please refer to [Code Editing Guide](#code-editing-guide). If you need help, go to the [AutoHotKey official website](https://www.autohotkey.com).
 4. To stop the script, right click the `H` icon in the system tray and select `Exit`.
 
 ## Symbol Mapping
@@ -124,6 +144,8 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
 
+- `\funcapply` is a little different from `\of`. Have a try by yourself!
+
 #### Prefix for Fancy Letters
 
 | Code | Output | Source |
@@ -132,7 +154,17 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\do` | $\mathbb{X}$ | `\double` |
 | `\fr` | $\mathfrak{X}$ | `\fraktur` |
 
+- For these mappings, your input should be like `\sc X `.
+
+## Recommendations
+
+- Learn more about the math input from this document: [UTN28-PlainTextMath-v3.pdf](https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf). Page 39~47 is useful.
+- Input Unicode characters directly: <https://github.com/gtj1/symbol_assist>
+- Intuitive Vim-like text cursor control: <https://github.com/RUSRUSHB/AutoTextCursor>
+
 ## Code Editing Guide
+
+For editting the mapping, please: Edit `symbol_assist.ahk`, compile it with converter such as `Ahk2Exe` , and run the compiled `.exe` file. You are recommended to learn more about `AutoHotKey` from its [website](https://www.autohotkey.com).
 
 The code of `symbol_assist_OneNote.ahk` is very easy to understand, even if you have not learnt about `AutoHotKey`. For newcomers, the explanation of the code is as follows:
 
@@ -145,6 +177,5 @@ I added some parameters ` co?`:
 |` `(Space)|Output formula only after pressing `Space` at the end of a code.|
 |`c`|Case-sensitive. `\a` and `\A` are different.|
 |`o`|Delete the `Space` you entered at the end.|
-|`?`|Output formula even if you type something before the code. Otherwise, it will fail in cases like `x\h`|
+|`?`|Output formula even if you have typed something before the code. Otherwise, it will fail in cases like `x\h`|
 
-You are recommended to learn more about `AutoHotKey` from its [website](https://www.autohotkey.com).
