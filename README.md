@@ -43,16 +43,16 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 |输入|输出|分类|实际代码|
 |----|------|----|---|
-|`\a`|$\alpha$|小写希腊字母|`\alpha `|
-|`\D`|$\Delta$|大写希腊字母|`\Delta `|
-|`\R`, `\C`, `\Z`, `\N`, `\J`|$\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$, $\mathbb{J}$|常用双线体字母|`\doubleR `, ...|
-|`\do X`, `\sc X`, `\fr X`|$\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$|花体字母|`\doubleX `, `\scriptX `, `\frakturX `|
+|`\a`| $\alpha$ |小写希腊字母|`\alpha `|
+|`\D`| $\Delta$ |大写希腊字母|`\Delta `|
+|`\R`, `\C`, `\Z`, `\N`, `\J`| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$, $\mathbb{J}$|常用双线体字母|`\doubleR `, ...|
+|`\do X`, `\sc X`, `\fr X`| $\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$ |花体字母|`\doubleX `, `\scriptX `, `\frakturX `|
 |`\m3`, `\m4`, ..., `\m`|3×3空白矩阵, 4×4空白矩阵..., 待定形状矩阵|矩阵|`[\matrix(@@&&)] `, ...|
-|`x\h`, `x\~`, `x\d2`|$\hat{x}$, $\tilde{x}$, $\ddot{x}$|修饰符|`\hat  `, `\tilde  `, `\ddot  `|
-|`\x`, `\X`, `\sq`, `\pa`, `\eq`|$\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$, $\equiv$|运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv `|
-|`\pd`, `\di`, `\inf`|$\partial$, $\text{d}$, $\infty$|常用符号|`\partial `, `"d" `, `\infty `|
-|`\ls`|$^\Box_\Box P$|左侧上下标|`^_ P `|
-|`\i`, `\j`, `\k`|$\text{i}$, $\text{j}$, $\text{k}$|虚数/四元数符号|`"i"`, `"j"`, `"k"`|
+|`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |修饰符|`\hat  `, `\tilde  `, `\ddot  `|
+|`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$, $\equiv$ |运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv `|
+|`\pd`, `\di`, `\inf`| $\partial$, $\text{d}$, $\infty$ |常用符号|`\partial `, `"d" `, `\infty `|
+|`\ls`| $^\Box_\Box P$ |左侧上下标|`^_ P `|
+|`\i`, `\j`, `\k`| $\text{i}$, $\text{j}$, $\text{k}$ |虚数/四元数符号|`"i"`, `"j"`, `"k"`|
 
 你应该注意到` `(空格键)是常用的，这是OneNote公式输入的关键特性。代码中的大写字母应该使用`Shift`键输入，而不是`CapsLock`键。
 
@@ -80,7 +80,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\cd` | $\cdots$ | `\cdots{Space}` | `\vd` | $\vdots$ | `\vdots{Space}` |
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
 | `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
-|`\eq`|$\equiv$|`\equiv`|
+|`\eq`| $\equiv$ |`\equiv`|
 
 #### 希腊字母
 
@@ -96,7 +96,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\o` | $\omega$ | `\omega{Space}` | `\O` | $\Omega$ | `\Omega{Space}` |
 | `\g` | $\gamma$ | `\gamma{Space}` | `\G` | $\Gamma$ | `\Gamma{Space}` |
 
-- `ve` 指的是epsilon的变体(variant epsilon)。为了方便，`\e`被设置为$\varepsilon$，`\ve`被设置为$\epsilon$。这和它们的原始代码相反。
+- `ve` 指的是epsilon的变体(variant epsilon)。为了方便，`\e`被设置为 $\varepsilon$ ，`\ve`被设置为 $\epsilon$ 。这和它们的原始代码相反。
 
 #### 矩阵
 
