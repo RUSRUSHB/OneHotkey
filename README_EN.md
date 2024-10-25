@@ -50,7 +50,7 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |`\m3`, `\m4`, ...|3 by 3 empty matrix, ...|matrices|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |modifiers|`\hat  `, `\tilde  `, `\ddot  `|
 |`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$, $\equiv$ |operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv`|
-|`\pd`, `\di`, `\inf`| $\partial$, $\text{d}$,$\infty$ |frequently used symbols|`\partial `, `"d" `,  `\infty `|
+|`\pd`, `\di`, `\inf`| $\partial$, $\text{d}$, $\infty$ |frequently used symbols|`\partial `, `"d" `,  `\infty `|
 |`\ls`| $^\Box_\Box P$ |left super-and-lowerscript|`^_ P `|
 |`\i`, `\j`, `\k`| $\text{i}$, $\text{j}$, $\text{k}$ |imaginary/quaternion symbols|`"i"`, `"j"`, `"k"`|
 
@@ -134,13 +134,15 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
 | `\de` | $\degree$ | `\degree{Space}` | `\st` | $\star$ | `\star{Space}` |
-| `\lc` | $\lceil$ | `\lceil{Space}` | `\rc` | $\rceil$ | `\rceil{Space}` |
-| `\lf` | $\lfloor$ | `\lfloor{Space}` | `\rf` | $\rfloor$ | `\rfloor{Space}` |
 
 #### Structures
 
 | Code | Output | Source |
 |------|--------|--------|
+| `\r` | $\lbrace\Box$ | `\right.{Left}` |
+| `\ceil` | $\lceil\rceil$ | `\lceil{Space}\rceil{Space 2}{Left}` |
+| `\floor` | $\lfloor\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
+| `\brak` | $\lang\rang$ |`\bra{Space}\ket{Space 2}{Left}`|
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
 
@@ -170,11 +172,10 @@ The code of `symbol_assist_OneNote.ahk` is very easy to understand, even if you 
 
 Each line of the code is a mapping of the input code to the output symbol. The format is `:(parameters):input::output`. For example, `::\a::\alpha` means that when you input `\a`, the script will output `\alpha `.
 
-I added some parameters ` co?`:
+I added some parameters `co?`:
 
 |Parameter|Meaning|
 |-|-|
-|` `(Space)|Output formula only after pressing `Space` at the end of a code.|
 |`c`|Case-sensitive. `\a` and `\A` are different.|
 |`o`|Delete the `Space` you entered at the end.|
 |`?`|Output formula even if you have typed something before the code. Otherwise, it will fail in cases like `x\h`|

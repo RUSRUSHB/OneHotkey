@@ -134,13 +134,15 @@ English version of introduction: [README_EN.md](README_EN.md)
 | 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
 | `\de` | $\degree$ | `\degree{Space}` | `\st` | $\star$ | `\star{Space}` |
-| `\lc` | $\lceil$ | `\lceil{Space}` | `\rc` | $\rceil$ | `\rceil{Space}` |
-| `\lf` | $\lfloor$ | `\lfloor{Space}` | `\rf` | $\rfloor$ | `\rfloor{Space}` |
 
 #### 结构
 
 | 输入 | 输出| 源代码 |
 |------|--------|--------|
+| `\r` | $\lbrace\Box$ | `\right.{Left}` |
+| `\ceil` | $\lceil\rceil$ | `\lceil{Space}\rceil{Space 2}{Left}` |
+| `\floor` | $\lfloor\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
+| `\brak` | $\lang\rang$ |`\bra{Space}\ket{Space 2}{Left}`|
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
 
@@ -170,11 +172,10 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 代码的每一行都是一个输入到符号的映射。格式为`:(参数):输入::输出`。例如，`::\a::\alpha `意味着当你输入`\a`时，脚本会输出`\alpha `。
 
-我添加了一些参数` co?`：
+我添加了一些参数`co?`：
 
 |参数|作用|
 |-|-|
-|` `(空格键)|仅在代码末尾输入`空格键`后输出公式。|
 |`c`|区分大小写，比如`\a`和`\A`是不同的。|
 |`o`|删除你在代码末尾输入的`空格键`。|
 |`?`|即使代码紧跟在数字或字母后面，它也能正常输出。否则，在像是`x\h`的情况下它不会输出。|
