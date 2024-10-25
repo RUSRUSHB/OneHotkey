@@ -1,8 +1,8 @@
 # OneHotkey -- 公式输入简化工具
 
-这是一个用于简化 `OneNote`, `Word` 和 `PowerPoint` 中数学公式输入的 `AutoHotKey` 脚本，例如，\a 代表 \alpha。
+这是一个用于简化 `OneNote`, `Word` 和 `PowerPoint` 中数学公式输入的 `AutoHotKey` 脚本，例如，`\a` 代表 $\alpha$ (`\alpha`)。
 
-This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., \a for \alpha.
+This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
 
 English version of introduction: [README_EN.md](README_EN.md)
 
@@ -166,7 +166,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 ## 映射自定义指南
 
-想要自定义映射，请编辑`symbol_assist.ahk`，使用`Ahk2Exe`或者其他转换器编译，然后运行编译后的`.exe`文件。建议你从[AutoHotKey官网](https://www.autohotkey.com)了解更多关于`AutoHotKey`的知识。
+想要自定义映射，请编辑`symbol_assist.ahk`，使用`Ahk2Exe`或者其他转换器，在`Options-Base File (.bin, .exe)`中选择`v1.1.37.01c1 U32 Ahk2Exe.exe`进行编译，然后运行编译后的`.exe`文件。建议你从[AutoHotKey官网](https://www.autohotkey.com)了解更多关于`AutoHotKey`的知识。
 
 `symbol_assist_OneNote.ahk`中的代码非常容易理解，即使你没有学习过`AutoHotKey`。对于新手，代码的解释如下：
 
