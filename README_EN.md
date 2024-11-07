@@ -2,11 +2,17 @@
 
 This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
 
+Demonstration video 1 (Early version. New ones will be released soon):
+
+[AutoHotKey增强OneNote公式输入_测试1_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Jp421S78r/)
+
 这是一个用于简化 `OneNote`, `Word` 和 `PowerPoint` 中数学公式输入的 `AutoHotKey` 脚本，例如，`\a` 代表$\alpha$ (`\alpha`)。
 
-中文版帮助文档请见[README_CN.md](README_CN.md)。
+中文版帮助文档请见[README.md](README.md)。
 
 This project is still updating. Your suggestions and contributions are welcome.
+
+If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf).
 
 ## Table of Contents
 
