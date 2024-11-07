@@ -127,6 +127,8 @@
 
 :co?:\lr::\leftrightarrow{Space}
 
+:co?:\Lr::\Leftrightarrow{Space}
+
 :co?:\lrs::\leftrightarrows{Enter}{Left} ;{Space} might fail in OneNote
 
 :co?:\la::\leftarrow{Space}
