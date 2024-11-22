@@ -18,6 +18,8 @@
 
 :co?:\J::\doubleJ{Space}
 
+:co?:\E::\doubleE{Space}[]{Space}{Left}
+
 :co?:\inf::\infty{Space}
 
 ; Operators

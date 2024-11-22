@@ -72,7 +72,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\inf` | $\infty$ | `\infty{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
-| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |
+| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |`\E`|$\mathbb{E}[]$|`\doubleE{Space}[]{Space}{Left}`|
 
 #### Operators
 

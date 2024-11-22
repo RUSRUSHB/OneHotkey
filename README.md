@@ -72,7 +72,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\inf` | $\infty$ | `\infty{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
-| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |
+| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |`\E`|$\mathbb{E}[]$|`\doubleE{Space}[]{Space}{Left}`|
 
 #### 运算符
 
