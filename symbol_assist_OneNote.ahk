@@ -1,4 +1,5 @@
-#If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE")
+#Requires AutoHotkey v2.0
+If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 ; Activate only in OneNote or Word
 
 ; Frequently Used Letters
@@ -205,5 +206,4 @@
 
 :co?:\fr::\fraktur
 
-#If
-; Reset the condition in line 1
+}
