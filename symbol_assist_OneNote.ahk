@@ -23,6 +23,8 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 
 :co?:\inf::\infty{Space}
 
+:co?:\ejw::e{^}j\omega{Space 2}
+
 ; Operators
 
 :co?:\x::\cdot{Space}

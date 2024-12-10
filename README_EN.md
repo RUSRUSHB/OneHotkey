@@ -59,6 +59,7 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |`\pd`, `\di`, `\inf`| $\partial$, $\text{d}$, $\infty$ |frequently used symbols|`\partial `, `"d" `,  `\infty `|
 |`\ls`| $^\Box_\Box P$ |left super-and-lowerscript|`^_ P `|
 |`\i`, `\j`, `\k`| $\text{i}$, $\text{j}$, $\text{k}$ |imaginary/quaternion symbols|`"i"`, `"j"`, `"k"`|
+|`\ejw`| $e^{j\omega}$ |complex exponential factor|`e^j\omega  `|
 
 You shall notice that ` `(space) is commonly used, which is the key feature of OneNote formula input. Capital letter code should be inputted with `Shift`, not `CapsLock`.
 

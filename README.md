@@ -59,6 +59,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 |`\pd`, `\di`, `\inf`| $\partial$, $\text{d}$, $\infty$ |常用符号|`\partial `, `"d" `, `\infty `|
 |`\ls`| $^\Box_\Box P$ |左侧上下标|`^_ P `|
 |`\i`, `\j`, `\k`| $\text{i}$, $\text{j}$, $\text{k}$ |虚数/四元数符号|`"i"`, `"j"`, `"k"`|
+|`\ejw`| $e^{j\omega}$ |复指数旋转因子|`e^j\omega  `|
 
 你应该注意到` `(空格键)是常用的，这是OneNote公式输入的关键特性。代码中的大写字母应该使用`Shift`键输入，而不是`CapsLock`键。
 
