@@ -184,7 +184,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 
 ## Code Editing Guide
 
-For editting the mapping, please: Edit `symbol_assist.ahk`, compile it with converter such as `Ahk2Exe` choosing `v1.1.37.01c1 U32 Ahk2Exe.exe` in `Options-Base File (.bin, .exe)`, and run the compiled `.exe` file. You are recommended to learn more about `AutoHotKey` from its [website](https://www.autohotkey.com).
+For editing the mapping, please: Edit `symbol_assist.ahk`, compile it with `Ahk2Exe`, and run the compiled `.exe` file. You are recommended to learn more about `AutoHotKey` from its [website](https://www.autohotkey.com).
 
 The code of `symbol_assist_OneNote.ahk` is very easy to understand, even if you have not learnt about `AutoHotKey`. For newcomers, the explanation of the code is as follows:
 
