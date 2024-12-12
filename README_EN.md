@@ -2,13 +2,11 @@
 
 This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
 
-Demonstration video 1 (Early version. New ones will be released soon):
+Demonstration video 1 (Early version):
 
 [AutoHotKey增强OneNote公式输入_测试1_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Jp421S78r/)
 
 这是一个用于简化 `OneNote`, `Word` 和 `PowerPoint` 中数学公式输入的 `AutoHotKey` 脚本，例如，`\a` 代表$\alpha$ (`\alpha`)。
-
-中文版帮助文档请见[README.md](README.md)。
 
 This project is still updating. Your suggestions and contributions are welcome.
 
@@ -32,6 +30,7 @@ If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf)
       - [Structures](#structures)
       - [Prefix for Fancy Letters](#prefix-for-fancy-letters)
   - [Recommendations](#recommendations)
+  - [Experimental Features (In folder `experimental/`)](#Experimental Features (In folder `experimental/`))
   - [Code Editing Guide](#code-editing-guide)
 
 ## How to Use
@@ -170,6 +169,18 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 - Learn more about the math input from this document: [UTN28-PlainTextMath-v3.pdf](https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf). Page 39~47 is useful.
 - Input Unicode characters directly: <https://github.com/gtj1/symbol_assist>
 - Intuitive Vim-like text cursor control: <https://github.com/RUSRUSHB/AutoTextCursor>
+
+## Experimental Features (In folder `experimental/`)
+
+`key_combination.exe`
+
+- Contains: Start formula inputting; Division line; Boxed text; Text block
+
+`rus_hotkey.exe`
+
+- Input Russian alphabets. They can be integrated into formula inputting.
+- Format: `\`+Romanized Alphabet+`R`
+- e.g.,`\dR` generates д，`\DR` generates  Д
 
 ## Code Editing Guide
 

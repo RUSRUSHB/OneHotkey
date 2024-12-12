@@ -2,13 +2,13 @@
 
 这是一个用于简化 `OneNote`, `Word` 和 `PowerPoint` 中数学公式输入的 `AutoHotKey` 脚本，例如，`\a` 代表 $\alpha$ (`\alpha`)。
 
-展示视频1（早期版本。新版本演示视频待更新）：
-
-[AutoHotKey增强OneNote公式输入_测试1_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Jp421S78r/)
-
 This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
 
 English version of introduction: [README_EN.md](README_EN.md)
+
+展示视频（早期版本）：
+
+[AutoHotKey增强OneNote公式输入_测试1_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Jp421S78r/)
 
 这一项目还在开发中，欢迎你的建议和参与。
 
@@ -171,9 +171,22 @@ English version of introduction: [README_EN.md](README_EN.md)
 - 直接输入Unicode数学符号：<https://github.com/gtj1/symbol_assist>
 - 符合直觉的类Vim文本光标控制：<https://github.com/RUSRUSHB/AutoTextCursor>
 
+## 实验性功能(`experimental/`文件夹内)
+
+`key_combination.exe`
+
+- 使用组合键输入特别字符、结构
+- 包括：进入公式输入、分割线、boxed text、text block
+
+`rus_hotkey.exe`
+
+- 输入俄语字母。这可以和公式输入适应。
+- 输入格式：`\`+罗马转写+`R`
+- 例子：`\dR`输出д，`\DR`输出Д
+
 ## 映射自定义指南
 
-想要自定义映射，请编辑`symbol_assist.ahk`，使用`Ahk2Exe`或者其他转换器，在`Options-Base File (.bin, .exe)`中选择`v1.1.37.01c1 U32 Ahk2Exe.exe`进行编译，然后运行编译后的`.exe`文件。建议你从[AutoHotKey官网](https://www.autohotkey.com)了解更多关于`AutoHotKey`的知识。
+想要自定义映射，请编辑`symbol_assist.ahk`，使用`Ahk2Exe`进行编译，然后运行编译后的`.exe`文件。建议你从[AutoHotKey官网](https://www.autohotkey.com)了解更多关于`AutoHotKey`的知识。
 
 `symbol_assist_OneNote.ahk`中的代码非常容易理解，即使你没有学习过`AutoHotKey`。对于新手，代码的解释如下：
 
