@@ -176,7 +176,7 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 ; braket
 
 :co?:\r::\right.{Left}
-; right subscript, usually used after {
+; right subscript, usually used after left bracket "{"
 
 :co?:\ls::{^}{_}{Space}P{Space}{Left 4}
 ; left super script
@@ -190,15 +190,16 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 ;     Return
 ; piecewise function structure
 
+:co?:\test::{up 2}
 
-:co?:\eq2::\eqarray(@){Space}{Left 2}
 ; multicolomn equations
+:co?:\eq2::\eqarray(&=@&=){Space}{Left 6}
 
-:co?:\eq3::\eqarray(@@){Space}{Left 3}
+:co?:\eq3::\eqarray(&=@&=@&=){Space}{Left 9}
 
-:co?:\eq4::\eqarray(@@@){Space}{Left 4}
+:co?:\eq4::\eqarray(&=@&=@&=@&=){Space}{Left 12}
 
-:co?:\eq5::\eqarray(@@@@){Space}{Left 5}
+:co?:\eq5::\eqarray(&=@&=@&=@&=@&=){Space}{Left 15}
 
 ; Prefix for Fancy Letters
 
