@@ -175,6 +175,8 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 :co?:\brak::\bra{Space}\ket{Space 2}{Left}
 ; braket
 
+:co?:\Norm::\norm{Space}\norm{Space 2}{Left}
+
 :co?:\r::\right.{Left}
 ; right subscript, usually used after left bracket "{"
 

@@ -151,6 +151,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\brak` | $\lang\rang$ |`\bra{Space}\ket{Space 2}{Left}`|
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
+| `\Norm` | $ \Vert \Vert $ | `\norm{Space}\norm{Space 2}{Left}` |
 
 - `\funcapply` is a little different from `\of`. Have a try by yourself!
 
