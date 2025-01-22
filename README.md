@@ -153,6 +153,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
 | `\Norm` | $ \Vert \Vert $ | `\norm{Space}\norm{Space 2}{Left}` |
+| `\limx`, `\limn` | $ \lim_{x \rightarrow \infty} $, $ \lim_{n \rightarrow \infty} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->\infty{Space}){Space}` |
 
 - `\funcapply` 与 `\of` 有些许不同。建议自行尝试一下。
 

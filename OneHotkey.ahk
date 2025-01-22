@@ -176,6 +176,11 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 ; braket
 
 :co?:\Norm::\norm{Space}\norm{Space 2}{Left}
+; norm
+
+:co?:\limx::lim_(x->\infty{Space}){Space}
+
+:co?:\limn::lim_(n->\infty{Space}){Space}
 
 :co?:\r::\right.{Left}
 ; right subscript, usually used after left bracket "{"

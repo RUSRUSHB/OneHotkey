@@ -152,6 +152,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
 | `\Norm` | $ \Vert \Vert $ | `\norm{Space}\norm{Space 2}{Left}` |
+| `\limx`, `\limn` | $ \lim_{x \rightarrow \infty} $, $ \lim_{n \rightarrow \infty} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->\infty{Space}){Space}` |
 
 - `\funcapply` is a little different from `\of`. Have a try by yourself!
 
