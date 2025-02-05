@@ -5,7 +5,9 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 ; Frequently Used Letters
 :co?:\pd::\partial{Space}
 
-:-co?:\di::"d"{Space}
+:co?:\di::"d"{Space}
+
+:co?:\dt::"d"{Space}/"d"{Space}t{Space}
 
 :co?:\R::\doubleR{Space}
 
@@ -182,6 +184,12 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 
 :co?:\limn::lim_(n->\infty{Space}){Space}
 
+:co?:\limk::lim_(k->\infty{Space}){Space}
+
+:co?:\limt::lim_(t->0{Space}){Space}
+
+:co?:\limh::lim_(h->0{Space}){Space}
+
 :co?:\r::\right.{Left}
 ; right subscript, usually used after left bracket "{"
 
@@ -191,11 +199,7 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 :co?:\fu::\funcapply{Space 2}
 ; function structure
 
-; TODO: fix "{"
-; :co?:\pfu::
-;     Send "{"right.
-;     Return
-; piecewise function structure
+:co?:\xe::\times{Space}10{^}{Space}{Left}
 
 :co?:\test::{up 2}
 
