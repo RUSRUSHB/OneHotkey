@@ -10,11 +10,7 @@
 }
 
 ^!8::{
-    Send "********************"
-    Send "^a"
-    Send "^u"
-    Send "{Right}{Enter}"
-    Send "^u"
+    Send "-------------------------------------------"
 }
 
 ^!`;::{
@@ -32,6 +28,7 @@
     Send "!="
     Send "\boxed{enter}"
     send "{left 2}"
+    send "^i"
 }
 
 ; {alt} & {ctrl} & {right} ::{
