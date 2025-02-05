@@ -12,11 +12,18 @@ This project is still updating. Your suggestions and contributions are welcome.
 
 If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf).
 
+## How to Use
+
+1. Download and run `OneHotkey.exe`.
+2. Input the code of the symbol, then press `Space` to get the symbol. For example, input `\a` and press `Space` to get $\alpha$.
+3. For editting the symbol mapping, please refer to [Code Editing Guide](#code-editing-guide). If you need help, go to the [AutoHotKey official website](https://www.autohotkey.com).
+4. To stop the script, right click the `H` icon in the system tray and select `Exit`.
+
 ## Table of Contents
 
 - [OneHotkey -- Math Formula Input Simplification Tool](#onehotkey----math-formula-input-simplification-tool)
-  - [Table of Contents](#table-of-contents)
   - [How to Use](#how-to-use)
+  - [Table of Contents](#table-of-contents)
   - [Symbol Mapping](#symbol-mapping)
     - [Overview](#overview)
     - [Full Table](#full-table)
@@ -32,13 +39,6 @@ If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf)
   - [Recommendations](#recommendations)
   - [Experimental Features (In folder `experimental/`)](#experimental-features-in-folder-experimental)
   - [Code Editing Guide](#code-editing-guide)
-
-## How to Use
-
-1. Download and run `OneHotkey.exe`.
-2. Input the code of the symbol, then press `Space` to get the symbol. For example, input `\a` and press `Space` to get $\alpha$.
-3. For editting the symbol mapping, please refer to [Code Editing Guide](#code-editing-guide). If you need help, go to the [AutoHotKey official website](https://www.autohotkey.com).
-4. To stop the script, right click the `H` icon in the system tray and select `Exit`.
 
 ## Symbol Mapping
 
