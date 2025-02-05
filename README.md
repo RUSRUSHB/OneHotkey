@@ -8,7 +8,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 展示视频（早期版本）：
 
-[AutoHotKey增强OneNote公式输入_测试1_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Jp421S78r/)
+- [AutoHotKey增强OneNote公式输入_测试1_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Jp421S78r/)
 
 这一项目还在开发中，欢迎你的建议和参与。
 
@@ -16,7 +16,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 ## 如何使用
 
-1. 下载并运行[symbol_assist_OneNote.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/OneHotkey.exe)。
+1. 下载并运行[OneNote.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/OneHotkey.exe)。
 2. 输入代码，然后按`Space`键输出符号与公式。例如，输入`\a`，然后按`Space`键，就会输出 $\alpha$ 。
 3. 想要自行修改公式映射，请参考[映射自定义指南](#映射自定义指南)。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
 4. 想要停止脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
@@ -59,7 +59,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 |`\m3`, `\m4`, ..., `\m`|3×3空白矩阵, 4×4空白矩阵..., 待定形状矩阵|矩阵|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |修饰符|`\hat  `, `\tilde  `, `\ddot  `|
 |`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$, $\equiv$ |运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv `|
-|`\pd`, `\di`, `\inf`| $\partial$, $\text{d}$, $\infty$ |常用符号|`\partial `, `"d" `, `\infty `|
+|`\pd`, `\di`, `\dt`, `\inf`| $\partial$, $\text{d}$, $\frac{\text{d}}{\text{d}t}$, $\infty$ |常用符号|`\partial `, `"d" `, `"d" /"d" t `, `\infty `|
 |`\ls`| $^\Box_\Box P$ |左侧上下标|`^_ P `|
 |`\i`, `\j`, `\k`| $\text{i}$, $\text{j}$, $\text{k}$ |虚数/四元数符号|`"i"`, `"j"`, `"k"`|
 |`\ejw`| $e^{j\omega}$ |复指数旋转因子|`e^j\omega  `|
@@ -73,10 +73,11 @@ English version of introduction: [README_EN.md](README_EN.md)
 | 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
 | `\pd` | $\partial$ | `\partial{Space}` |`\di`|$\text{d}$|`"d"`|
-| `\inf` | $\infty$ | `\infty{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
+| `\inf` | $\infty$ | `\infty{Space}` | `\dt` | $\frac{\text{d}}{\text{d}t}$ | `"d"{Space}/"d"{Space}t{Space}` |
+| `\R` | $\mathbb{R}$ | `\doubleR{Space}` | `\E`|$\mathbb{E}[]$|`\doubleE{Space}[]{Space}{Left}`|
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
-| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |`\E`|$\mathbb{E}[]$|`\doubleE{Space}[]{Space}{Left}`|
+| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |
 
 #### 运算符
 
@@ -155,8 +156,8 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\brak` | $\lang\rang$ |`\bra{Space}\ket{Space 2}{Left}`|
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
-| `\Norm` | $ \Vert \Vert $ | `\norm{Space}\norm{Space 2}{Left}` |
-| `\limx`, `\limn` | $ \lim_{x \rightarrow \infty} $, $ \lim_{n \rightarrow \infty} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->\infty{Space}){Space}` |
+| `\Norm` | $\Vert \Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
+| `\limx`, `\limn`, `\limh` | $ \lim_{x \rightarrow \infty} $, $ \lim_{n \rightarrow \infty} $, $ \lim_{h \rightarrow 0} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->\infty{Space}){Space}` |
 
 - `\funcapply` 与 `\of` 有些许不同。建议自行尝试一下。
 

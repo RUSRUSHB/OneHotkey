@@ -4,9 +4,7 @@ This is a script that simplifies math formula inputs in `OneNote`, `Word` and `P
 
 Demonstration video 1 (Early version):
 
-[AutoHotKey增强OneNote公式输入_测试1_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Jp421S78r/)
-
-这是一个用于简化 `OneNote`, `Word` 和 `PowerPoint` 中数学公式输入的 `AutoHotKey` 脚本，例如，`\a` 代表$\alpha$ (`\alpha`)。
+- [AutoHotKey增强OneNote公式输入_测试1_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Jp421S78r/)
 
 This project is still updating. Your suggestions and contributions are welcome.
 
@@ -14,7 +12,7 @@ If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf)
 
 ## How to Use
 
-1. Download and run `OneHotkey.exe`.
+1. Download and run [OneNote.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/OneHotkey.exe).
 2. Input the code of the symbol, then press `Space` to get the symbol. For example, input `\a` and press `Space` to get $\alpha$.
 3. For editting the symbol mapping, please refer to [Code Editing Guide](#code-editing-guide). If you need help, go to the [AutoHotKey official website](https://www.autohotkey.com).
 4. To stop the script, right click the `H` icon in the system tray and select `Exit`.
@@ -55,7 +53,7 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |`\m3`, `\m4`, ...|3 by 3 empty matrix, ...|matrices|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |modifiers|`\hat  `, `\tilde  `, `\ddot  `|
 |`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$, $\equiv$ |operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv`|
-|`\pd`, `\di`, `\inf`| $\partial$, $\text{d}$, $\infty$ |frequently used symbols|`\partial `, `"d" `,  `\infty `|
+|`\pd`, `\di`, `\dt`, `\inf`| $\partial$, $\text{d}$, $\frac{\text{d}}{\text{d}t}$, $\infty$ |frequently used symbols|`\partial `, `"d" `, `"d" /"d" t `, `\infty `|
 |`\ls`| $^\Box_\Box P$ |left super-and-lowerscript|`^_ P `|
 |`\i`, `\j`, `\k`| $\text{i}$, $\text{j}$, $\text{k}$ |imaginary/quaternion symbols|`"i"`, `"j"`, `"k"`|
 |`\ejw`| $e^{j\omega}$ |complex exponential factor|`e^j\omega  `|
@@ -68,11 +66,12 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 
 | Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
-| `\pd` | $\partial$ | `\partial{Space}` |`\di`|$\text{d}$ |`"d"`|
-| `\inf` | $\infty$ | `\infty{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
-| `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\R` | $\mathbb{R}$ | `\doubleR{Space}` |
+| `\pd` | $\partial$ | `\partial{Space}` |`\di`|$\text{d}$|`"d"`|
+| `\inf` | $\infty$ | `\infty{Space}` | `\dt` | $\frac{\text{d}}{\text{d}t}$ | `"d"{Space}/"d"{Space}t{Space}` |
+| `\R` | $\mathbb{R}$ | `\doubleR{Space}` | `\E`|$\mathbb{E}[]$|`\doubleE{Space}[]{Space}{Left}`|
+| `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
-| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |`\E`|$\mathbb{E}[]$|`\doubleE{Space}[]{Space}{Left}`|
+| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |
 
 #### Operators
 
@@ -151,8 +150,8 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\brak` | $\lang\rang$ |`\bra{Space}\ket{Space 2}{Left}`|
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
-| `\Norm` | $ \Vert \Vert $ | `\norm{Space}\norm{Space 2}{Left}` |
-| `\limx`, `\limn` | $ \lim_{x \rightarrow \infty} $, $ \lim_{n \rightarrow \infty} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->\infty{Space}){Space}` |
+| `\Norm` | $\Vert \Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
+| `\limx`, `\limn`, `\limh` | $ \lim_{x \rightarrow \infty} $, $ \lim_{n \rightarrow \infty} $, $ \lim_{h \rightarrow 0} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->\infty{Space}){Space}` |
 
 - `\funcapply` is a little different from `\of`. Have a try by yourself!
 
