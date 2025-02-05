@@ -14,11 +14,18 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 如果网页公式显示异常，请阅读：[README.pdf](README.pdf)
 
+## 如何使用
+
+1. 下载并运行[symbol_assist_OneNote.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/OneHotkey.exe)。
+2. 输入代码，然后按`Space`键输出符号与公式。例如，输入`\a`，然后按`Space`键，就会输出 $\alpha$ 。
+3. 想要自行修改公式映射，请参考[映射自定义指南](#映射自定义指南)。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
+4. 想要停止脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
+
 ## 目录
 
 - [OneHotkey -- 公式输入简化工具](#onehotkey----公式输入简化工具)
-  - [目录](#目录)
   - [如何使用](#如何使用)
+  - [目录](#目录)
   - [符号映射](#符号映射)
     - [概览](#概览)
     - [完整映射表格](#完整映射表格)
@@ -32,14 +39,10 @@ English version of introduction: [README_EN.md](README_EN.md)
       - [结构](#结构)
       - [花体字母](#花体字母)
   - [更多建议](#更多建议)
+  - [实验性功能(`experimental/`文件夹内)](#实验性功能experimental文件夹内)
   - [映射自定义指南](#映射自定义指南)
 
-## 如何使用
 
-1. 下载并运行[symbol_assist_OneNote.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/symbol_assist_OneNote.exe)。
-2. 输入代码，然后按`Space`键输出符号与公式。例如，输入`\a`，然后按`Space`键，就会输出 $\alpha$ 。
-3. 想要自行修改公式映射，请参考[映射自定义指南](#映射自定义指南)。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
-4. 想要停止脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
 
 ## 符号映射
 
