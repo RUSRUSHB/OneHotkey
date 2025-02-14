@@ -1,6 +1,7 @@
 #Requires AutoHotkey v2.0
 If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 ; Activate only in OneNote or Word
+; TODO: this is still working outside of OneNote
 
 ; Frequently Used Letters
 :co?:\pd::\partial{Space}
@@ -129,6 +130,8 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 :co?:\v::\vec{Space 2}
 
 :co?:\h::\hat{Space 2}
+
+:co?:\ub::\underbar{Space 2}{Left} ; TODO: add to README
 
 ; Arrows
 
