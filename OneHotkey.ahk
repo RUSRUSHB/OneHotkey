@@ -145,6 +145,12 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 
 :co?:\La::\Leftarrow{Space}
 
+:co?:\ra::\rightarrow{Space}
+; TODO: add to README
+
+:co?:\Ra::\Rightarrow{Space}  ; this is needed for Word
+; TODO: add to README
+
 :co?:\down::\downarrow{Space}
 
 :co?:\up::\uparrow{Space}
@@ -201,6 +207,9 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 
 :co?:\fu::\funcapply{Space 2}
 ; function structure
+
+:co?:\lebox::\left\box{Space 2}{Left}
+; TODO: add to README
 
 :co?:\xe::\times{Space}10{^}{Space}{Left}
 
