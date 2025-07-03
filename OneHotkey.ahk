@@ -1,7 +1,11 @@
 #Requires AutoHotkey v2.0
 #HotIf WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE")
+; Only activate hotkeys in OneNote and Word
+; 仅在 OneNote 和 Word 中启用以下快捷键
 
 ; Frequently Used Letters
+; 常用字母和符号
+
 :co?:\pd::\partial{Space}
 
 :co?:\di::"d"{Space}
@@ -27,6 +31,7 @@
 :co?:\ejw::e{^}j\omega{Space 2}
 
 ; Operators
+; 运算符
 
 :co?:\x::\cdot{Space}
 
@@ -63,6 +68,7 @@
 :co?:\eq::\equiv{Space}
 
 ; Greek Letters
+; 希腊字母
 
 :co?:\a::\alpha{Space}
 
@@ -101,6 +107,7 @@
 :co?:\G::\Gamma{Space}
 
 ; Matrix
+; 矩阵相关
 
 :co?:\m4::[\matrix({@}{@}{@}{&}{&}{&}){Space}]{Space}{Left 2}
 
@@ -114,6 +121,7 @@
 :co?:\m::[]{Space}{Left}\matrix(){Left}
 
 ; Modifiers
+; 修饰符
 
 :co?:\d1::\dot{Space 2}
 
@@ -132,6 +140,7 @@
 :co?:\ub::\underbar{Space 2}{Left} ; TODO: add to README
 
 ; Arrows
+; 箭头符号
 
 :co?:\lr::\leftrightarrow{Space}
 
@@ -162,6 +171,7 @@
 :co?:\dr::\searrow{Space}
 
 ; imaginary/quaternion symbols
+; 虚数/四元数符号
 
 :co?:\i::"i"{Space}
 
@@ -170,12 +180,14 @@
 :co?:\k::"k"{Space}
 
 ; Symbols
+; 其他符号
 
 :co?:\de::\degree{Space}
 
 :co?:\st::\star{Space}
 
 ; Structures
+; 结构符号
 
 :co?:\ceil::\lceil{Space}\rceil{Space 2}{Left}
 
@@ -214,6 +226,8 @@
 :co?:\test::{up 2}
 
 ; multicolomn equations
+; 多列等式
+
 :co?:\eq2::\eqarray(&=@&=){Space}{Left 6}
 
 :co?:\eq3::\eqarray(&=@&=@&=){Space}{Left 9}
@@ -223,6 +237,7 @@
 :co?:\eq5::\eqarray(&=@&=@&=@&=@&=){Space}{Left 15}
 
 ; Prefix for Fancy Letters
+; 特殊字体前缀
 
 :co?:\sc::\script
 
@@ -231,3 +246,4 @@
 :co?:\fr::\fraktur
 
 #HotIf  ; Turn off context sensitivity
+; 关闭上下文敏感性
