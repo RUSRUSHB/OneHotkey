@@ -2,7 +2,7 @@
 
 This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
 
-Demonstration video 1 (Early version):
+Demonstration video (Early version):
 
 - [AutoHotKey增强OneNote公式输入_测试1_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Jp421S78r/)
 
@@ -48,7 +48,7 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |----|------|----|---|
 |`\a`| $\alpha$ |lowercase Greek letters|`\alpha `|
 |`\D`| $\Delta$ |uppercase Greek letters|`\Delta `|
-|`\R`, `\C`, `\Z`, `\N`| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$ |frequently used letters|`\doubleR `, ...|
+|`\R`, `\C`, `\Z`, `\N`, `\J`| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$, $\mathbb{J}$ |frequently used letters|`\doubleR `, ...|
 |`\do X`, `\sc X`, `\fr X`| $\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$ |fancy letter forms|`\doubleX `, `\scriptX `, `\frakturX `|
 |`\m3`, `\m4`, ...|3 by 3 empty matrix, ...|matrices|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |modifiers|`\hat  `, `\tilde  `, `\ddot  `|
@@ -85,7 +85,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\cd` | $\cdots$ | `\cdots{Space}` | `\vd` | $\vdots$ | `\vdots{Space}` |
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
 | `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
-|`\eq`| $\equiv$ |`\equiv`|
+| `\eq` | $\equiv$ | `\equiv{Space}` | `\xe` | $\times 10^{\Box}$ | `\times{Space}10{^}{Space}{Left}` |
 
 #### Greek Letters
 
@@ -123,6 +123,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\~` | $\tilde{x}$ | `\tilde{Space 2}` |
 | `\v` | $\vec{x}$ | `\vec{Space 2}` |
 | `\h` | $\hat{x}$ | `\hat{Space 2}` |
+| `\ub` | $\underline{x}$ | `\underbar{Space 2}{Left}` |
 
 #### Arrows
 
@@ -130,6 +131,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 |------|--------|--------|------|--------|--------|
 | `\lr` | $\leftrightarrow$ | `\leftrightarrow{Space}` | `\lrs` | $\leftrightarrows$ | `\leftrightarrows{Enter}{Left}` |
 | `\la` | $\leftarrow$ | `\leftarrow{Space}` | `\La` | $\Leftarrow$ | `\Leftarrow{Space}` |
+| `\ra` | $\rightarrow$ | `\rightarrow{Space}` | `\Ra` | $\Rightarrow$ | `\Rightarrow{Space}` |
 | `\down` | $\downarrow$ | `\downarrow{Space}` | `\up` | $\uparrow$ | `\uparrow{Space}` |
 | `\ul` | $\nwarrow$ | `\nwarrow{Space}` | `\ur` | $\nearrow$ | `\nearrow{Space}` |
 | `\dl` | $\swarrow$ | `\swarrow{Space}` | `\dr` | $\searrow$ | `\searrow{Space}` |
@@ -145,6 +147,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | Code | Output | Source |
 |------|--------|--------|
 | `\r` | $\lbrace\Box$ | `\right.{Left}` |
+| `\lebox` | $\Box\rbrace$ | `\left\box{Space 2}{Left}` |
 | `\ceil` | $\lceil\rceil$ | `\lceil{Space}\rceil{Space 2}{Left}` |
 | `\floor` | $\lfloor\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
 | `\brak` | $\lang\rang$ |`\bra{Space}\ket{Space 2}{Left}`|
@@ -165,6 +168,16 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 
 - For these mappings, your input should be like `\sc X `.
 
+#### Multi-column Equations
+| Code | Output | Source |
+|------|--------|--------|
+| `\eq2` | Two-column equation | `\eqarray(&=@&=){Space}{Left 6}` |
+| `\eq3` | Three-column equation | `\eqarray(&=@&=@&=){Space}{Left 9}` |
+| `\eq4` | Four-column equation | `\eqarray(&=@&=@&=@&=){Space}{Left 12}` |
+| `\eq5` | Five-column equation | `\eqarray(&=@&=@&=@&=@&=){Space}{Left 15}` |
+
+Note: Multi-column equations are used for aligning multiple equations, using @ as placeholder and & as alignment point.
+
 ## Recommendations
 
 - Learn more about the math input from this document: [UTN28-PlainTextMath-v3.pdf](https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf). Page 39~47 is useful.
@@ -175,13 +188,14 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 
 `key_combination.exe`
 
+- Use key combinations to input special characters and structures
 - Contains: Start formula inputting; Division line; Boxed text; Text block
 
 `rus_hotkey.exe`
 
 - Input Russian alphabets. They can be integrated into formula inputting.
 - Format: `\`+Romanized Alphabet+`R`
-- e.g.,`\dR` generates д，`\DR` generates  Д
+- e.g.,`\dR` generates д，`\DR` generates Д
 
 ## Code Editing Guide
 
@@ -189,7 +203,7 @@ For editing the mapping, please: Edit `symbol_assist.ahk`, compile it with `Ahk2
 
 The code of `symbol_assist_OneNote.ahk` is very easy to understand, even if you have not learnt about `AutoHotKey`. For newcomers, the explanation of the code is as follows:
 
-Each line of the code is a mapping of the input code to the output symbol. The format is `:(parameters):input::output`. For example, `::\a::\alpha` means that when you input `\a`, the script will output `\alpha `.
+Each line of the code is a mapping of the input code to the output symbol. The format is `:(parameters):input::output`. For example, `::\a::\alpha ` means that when you input `\a`, the script will output `\alpha `.
 
 I added some parameters `co?`:
 
@@ -198,4 +212,3 @@ I added some parameters `co?`:
 |`c`|Case-sensitive. `\a` and `\A` are different.|
 |`o`|Delete the `Space` you entered at the end.|
 |`?`|Output formula even if you have typed something before the code. Otherwise, it will fail in cases like `x\h`|
-

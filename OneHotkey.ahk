@@ -137,7 +137,7 @@
 
 :co?:\h::\hat{Space 2}
 
-:co?:\ub::\underbar{Space 2}{Left} ; TODO: add to README
+:co?:\ub::\underbar{Space 2}{Left}
 
 ; Arrows
 ; 箭头符号
@@ -146,17 +146,15 @@
 
 :co?:\Lr::\Leftrightarrow{Space}
 
-:co?:\lrs::\leftrightarrows{Enter}{Left} ;{Space} might fail in OneNote
+:co?:\lrs::\leftrightarrows{Enter}{Left} ;{Space} might fail in OneNote, so use {Enter} instead
 
 :co?:\la::\leftarrow{Space}
 
 :co?:\La::\Leftarrow{Space}
 
 :co?:\ra::\rightarrow{Space}
-; TODO: add to README
 
 :co?:\Ra::\Rightarrow{Space}  ; this is needed for Word
-; TODO: add to README
 
 :co?:\down::\downarrow{Space}
 
@@ -212,18 +210,16 @@
 :co?:\r::\right.{Left}
 ; right subscript, usually used after left bracket "{"
 
+:co?:\lebox::\left\box{Space 2}{Left}
+; left subscript, usually used before right bracket "}"
+
 :co?:\ls::{^}{_}{Space}P{Space}{Left 4}
 ; left super script
 
 :co?:\fu::\funcapply{Space 2}
 ; function structure
 
-:co?:\lebox::\left\box{Space 2}{Left}
-; TODO: add to README
-
 :co?:\xe::\times{Space}10{^}{Space}{Left}
-
-:co?:\test::{up 2}
 
 ; multicolomn equations
 ; 多列等式

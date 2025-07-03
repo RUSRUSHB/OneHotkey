@@ -91,7 +91,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\cd` | $\cdots$ | `\cdots{Space}` | `\vd` | $\vdots$ | `\vdots{Space}` |
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
 | `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
-|`\eq`| $\equiv$ |`\equiv`|
+| `\eq` | $\equiv$ | `\equiv{Space}` | `\xe` | $\times 10^{\Box}$ | `\times{Space}10{^}{Space}{Left}` |
 
 #### 希腊字母
 
@@ -129,6 +129,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\~` | $\tilde{x}$ | `\tilde{Space 2}` |
 | `\v` | $\vec{x}$ | `\vec{Space 2}` |
 | `\h` | $\hat{x}$ | `\hat{Space 2}` |
+| `\ub` | $\underline{x}$ | `\underbar{Space 2}{Left}` |
 
 #### 箭头
 
@@ -136,6 +137,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 |------|--------|--------|------|--------|--------|
 | `\lr` | $\leftrightarrow$ | `\leftrightarrow{Space}` | `\lrs` | $\leftrightarrows$ | `\leftrightarrows{Enter}{Left}` |
 | `\la` | $\leftarrow$ | `\leftarrow{Space}` | `\La` | $\Leftarrow$ | `\Leftarrow{Space}` |
+| `\ra` | $\rightarrow$ | `\rightarrow{Space}` | `\Ra` | $\Rightarrow$ | `\Rightarrow{Space}` |
 | `\down` | $\downarrow$ | `\downarrow{Space}` | `\up` | $\uparrow$ | `\uparrow{Space}` |
 | `\ul` | $\nwarrow$ | `\nwarrow{Space}` | `\ur` | $\nearrow$ | `\nearrow{Space}` |
 | `\dl` | $\swarrow$ | `\swarrow{Space}` | `\dr` | $\searrow$ | `\searrow{Space}` |
@@ -151,6 +153,7 @@ English version of introduction: [README_EN.md](README_EN.md)
 | 输入 | 输出| 源代码 |
 |------|--------|--------|
 | `\r` | $\lbrace\Box$ | `\right.{Left}` |
+| `\lebox` | $\Box\rbrace$ | `\left\box{Space 2}{Left}` |
 | `\ceil` | $\lceil\rceil$ | `\lceil{Space}\rceil{Space 2}{Left}` |
 | `\floor` | $\lfloor\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
 | `\brak` | $\lang\rang$ |`\bra{Space}\ket{Space 2}{Left}`|
@@ -170,6 +173,18 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\fr` | $\mathfrak{X}$ | `\fraktur` |
 
 - 对于以上代码，你实际应当输入的内容形如`\sc X `。
+
+#### 多列等式
+| 输入 | 输出| 源代码 |
+|------|--------|--------|
+| `\eq2` | 两列等式 | `\eqarray(&=@&=){Space}{Left 6}` |
+| `\eq3` | 三列等式 | `\eqarray(&=@&=@&=){Space}{Left 9}` |
+| `\eq4` | 四列等式 | `\eqarray(&=@&=@&=@&=){Space}{Left 12}` |
+| `\eq5` | 五列等式 | `\eqarray(&=@&=@&=@&=@&=){Space}{Left 15}` |
+
+注：多列等式用于对齐多个等式，使用 @ 作为占位符，使用 & 作为对齐点。
+
+Note: Multi-column equations are used for aligning multiple equations, using @ as placeholder and & as alignment point.
 
 ## 更多建议
 
