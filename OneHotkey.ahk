@@ -1,7 +1,5 @@
 #Requires AutoHotkey v2.0
-If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
-; Activate only in OneNote or Word
-; TODO: this is still working outside of OneNote
+#HotIf WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE")
 
 ; Frequently Used Letters
 :co?:\pd::\partial{Space}
@@ -232,4 +230,4 @@ If WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE"){
 
 :co?:\fr::\fraktur
 
-}
+#HotIf  ; Turn off context sensitivity
