@@ -147,11 +147,13 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | Code | Output | Source |
 |------|--------|--------|
 | `\r` | $\lbrace\Box$ | `\right.{Left}` |
-| `\lebox` | $\Box\rbrace$ | `\left\box{Space 2}{Left}` |
+| `\leb` | $\Box\rbrace$ | `\left\box{Space 2}{Left}` |
 | `\ceil` | $\lceil\rceil$ | `\lceil{Space}\rceil{Space 2}{Left}` |
 | `\floor` | $\lfloor\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
 | `\brak` | $\lang\rang$ |`\bra{Space}\ket{Space 2}{Left}`|
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
+| `\ab` | $\above{\Box}$ | `\above{Space 2}` |
+| `\be` | $\below{\Box}$ | `\below{Space 2}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
 | `\Norm` | $\Vert \Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
 | `\limx`, `\limn`, `\limh` | $ \lim_{x \rightarrow \infty} $, $ \lim_{n \rightarrow \infty} $, $ \lim_{h \rightarrow 0} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->\infty{Space}){Space}` |

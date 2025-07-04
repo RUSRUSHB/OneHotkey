@@ -68,6 +68,11 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 ### 完整映射表格
 
+OneNote 原版的映射可以在这里找到：
+
+> [文件] - [选项] - [校对] - [自动更正选项] - [数学符号自动更正]
+![数学符号来源](reference/数学符号来源.png)
+
 #### 常用字符
 
 | 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
@@ -153,11 +158,13 @@ English version of introduction: [README_EN.md](README_EN.md)
 | 输入 | 输出| 源代码 |
 |------|--------|--------|
 | `\r` | $\lbrace\Box$ | `\right.{Left}` |
-| `\lebox` | $\Box\rbrace$ | `\left\box{Space 2}{Left}` |
+| `\leb` | $\Box\rbrace$ | `\left\box{Space 2}{Left}` |
 | `\ceil` | $\lceil\rceil$ | `\lceil{Space}\rceil{Space 2}{Left}` |
 | `\floor` | $\lfloor\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
 | `\brak` | $\lang\rang$ |`\bra{Space}\ket{Space 2}{Left}`|
 | `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
+| `\ab` | $\above{\Box}$ | `\above{Space 2}` |
+| `\be` | $\below{\Box}$ | `\below{Space 2}` |
 | `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
 | `\Norm` | $\Vert \Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
 | `\limx`, `\limn`, `\limh` | $ \lim_{x \rightarrow \infty} $, $ \lim_{n \rightarrow \infty} $, $ \lim_{h \rightarrow 0} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->\infty{Space}){Space}` |
@@ -183,8 +190,6 @@ English version of introduction: [README_EN.md](README_EN.md)
 | `\eq5` | 五列等式 | `\eqarray(&=@&=@&=@&=@&=){Space}{Left 15}` |
 
 注：多列等式用于对齐多个等式，使用 @ 作为占位符，使用 & 作为对齐点。
-
-Note: Multi-column equations are used for aligning multiple equations, using @ as placeholder and & as alignment point.
 
 ## 更多建议
 
