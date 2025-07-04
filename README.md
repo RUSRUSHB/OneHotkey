@@ -59,9 +59,9 @@
 |----|------|----|---|
 |`\a`| $\alpha$ |小写希腊字母|`\alpha `|
 |`\D`| $\Delta$ |大写希腊字母|`\Delta `|
-|`\R`, `\C`, `\Z`, `\N`, `\J`| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$, $\mathbb{J}$|常用双线体字母|`\doubleR `, ...|
-|`\do X`, `\sc X`, `\fr X`| $\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$ |花体字母|`\doubleX `, `\scriptX `, `\frakturX `|
-|`\m3`, `\m4`, ..., `\m`|3×3空白矩阵, 4×4空白矩阵..., 待定形状矩阵|矩阵|`[\matrix(@@&&)] `, ...|
+|`\R`, `\C`, `\Z`, `\N`, `\J`| ℝ, ℂ, ℤ, ℕ, 𝕁 |常用双线体字母|`\doubleR `, ...|
+|`\do X`, `\sc X`, `\fr X`| 𝕏, 𝒳, 𝔛 |花体字母|`\doubleX `, `\scriptX `, `\frakturX `|
+|`\m3`, `\m4`, ..., `\m`|特定形状矩阵|矩阵|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |修饰符|`\hat  `, `\tilde  `, `\ddot  `|
 |`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$, $\equiv$ |运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv `|
 |`\pd`, `\di`, `\dt`, `\inf`| $\partial$, $\text{d}$, $\frac{\text{d}}{\text{d}t}$, $\infty$ |常用符号|`\partial `, `"d" `, `"d" /"d" t `, `\infty `|
@@ -166,12 +166,12 @@ OneNote 原版的映射可以在这里找到：
 | `\leb` | $\Box\rbrace$ | `\left\box{Space 2}{Left}` |
 | `\ceil` | $\lceil\rceil$ | `\lceil{Space}\rceil{Space 2}{Left}` |
 | `\floor` | $\lfloor\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
-| `\brak` | $\lang\rang$ |`\bra{Space}\ket{Space 2}{Left}`|
-| `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
-| `\ab` | $\above{\Box}$ | `\above{Space 2}` |
-| `\be` | $\below{\Box}$ | `\below{Space 2}` |
-| `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
-| `\Norm` | $\Vert \Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
+| `\brak` | ⟨⬚⟩ |`\bra{Space}\ket{Space 2}{Left}`|
+| `\ls` | $^⬚_⬚ P$ | `^_ P {Left 4}` |
+| `\ab` | $\stackrel{⬚}{=}$ | `\above{Space 2}` |
+| `\be` | $\underset{⬚}{=}$ | `\below{Space 2}` |
+| `\fu` | $\text{myfunction}{⬚}$ | `\funcapply  ` |
+| `\Norm` | $\Vert ⬚ \Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
 | `\limx`, `\limn`, `\limh` | $ \lim_{x \rightarrow \infty} $, $ \lim_{n \rightarrow \infty} $, $ \lim_{h \rightarrow 0} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->\infty{Space}){Space}` |
 
 - `\funcapply` 与 `\of` 有些许不同。建议自行尝试一下。

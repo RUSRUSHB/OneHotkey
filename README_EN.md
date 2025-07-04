@@ -53,9 +53,9 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |----|------|----|---|
 |`\a`| $\alpha$ |lowercase Greek letters|`\alpha `|
 |`\D`| $\Delta$ |uppercase Greek letters|`\Delta `|
-|`\R`, `\C`, `\Z`, `\N`, `\J`| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{N}$, $\mathbb{J}$ |frequently used letters|`\doubleR `, ...|
-|`\do X`, `\sc X`, `\fr X`| $\mathbb{X}$, $\mathcal{X}$, $\mathfrak{X}$ |fancy letter forms|`\doubleX `, `\scriptX `, `\frakturX `|
-|`\m3`, `\m4`, ...|3 by 3 empty matrix, ...|matrices|`[\matrix(@@&&)] `, ...|
+|`\R`, `\C`, `\Z`, `\N`, `\J`| ℝ, ℂ, ℤ, ℕ, 𝕁 |frequently used letters|`\doubleR `, ...|
+|`\do X`, `\sc X`, `\fr X`| 𝕏, 𝒳, 𝔛 |fancy letter forms|`\doubleX `, `\scriptX `, `\frakturX `|
+|`\m3`, `\m4`, ...|specific shape matrices|matrices|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |modifiers|`\hat  `, `\tilde  `, `\ddot  `|
 |`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$, $\equiv$ |operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv`|
 |`\pd`, `\di`, `\dt`, `\inf`| $\partial$, $\text{d}$, $\frac{\text{d}}{\text{d}t}$, $\infty$ |frequently used symbols|`\partial `, `"d" `, `"d" /"d" t `, `\infty `|
@@ -155,12 +155,12 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\leb` | $\Box\rbrace$ | `\left\box{Space 2}{Left}` |
 | `\ceil` | $\lceil\rceil$ | `\lceil{Space}\rceil{Space 2}{Left}` |
 | `\floor` | $\lfloor\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
-| `\brak` | $\lang\rang$ |`\bra{Space}\ket{Space 2}{Left}`|
-| `\ls` | $^\Box_\Box P$ | `^_ P {Left 4}` |
-| `\ab` | $\above{\Box}$ | `\above{Space 2}` |
-| `\be` | $\below{\Box}$ | `\below{Space 2}` |
-| `\fu` | $\text{myfunction}{\Box}$ | `\funcapply  ` |
-| `\Norm` | $\Vert \Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
+| `\brak` | ⟨⬚⟩ |`\bra{Space}\ket{Space 2}{Left}`|
+| `\ls` | $^⬚_⬚ P$ | `^_ P {Left 4}` |
+| `\ab` | $\stackrel{⬚}{=}$ | `\above{Space 2}` |
+| `\be` | $\underset{⬚}{=}$ | `\below{Space 2}` |
+| `\fu` | $\text{myfunction}{⬚}$ | `\funcapply  ` |
+| `\Norm` | $\Vert ⬚ \Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
 | `\limx`, `\limn`, `\limh` | $ \lim_{x \rightarrow \infty} $, $ \lim_{n \rightarrow \infty} $, $ \lim_{h \rightarrow 0} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->\infty{Space}){Space}` |
 
 - `\funcapply` is a little different from `\of`. Have a try by yourself!
