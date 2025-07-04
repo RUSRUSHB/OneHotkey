@@ -19,24 +19,29 @@ If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf)
 
 ## Table of Contents
 
+<!-- TOC -->
+
 - [OneHotkey -- Math Formula Input Simplification Tool](#onehotkey----math-formula-input-simplification-tool)
-  - [How to Use](#how-to-use)
-  - [Table of Contents](#table-of-contents)
-  - [Symbol Mapping](#symbol-mapping)
-    - [Overview](#overview)
-    - [Full Table](#full-table)
-      - [Frequently Used Letters](#frequently-used-letters)
-      - [Operators](#operators)
-      - [Greek Letters](#greek-letters)
-      - [Matrix](#matrix)
-      - [Modifiers](#modifiers)
-      - [Arrows](#arrows)
-      - [Symbols](#symbols)
-      - [Structures](#structures)
-      - [Prefix for Fancy Letters](#prefix-for-fancy-letters)
-  - [Recommendations](#recommendations)
-  - [Experimental Features (In folder `experimental/`)](#experimental-features-in-folder-experimental)
-  - [Code Editing Guide](#code-editing-guide)
+    - [How to Use](#how-to-use)
+    - [Table of Contents](#table-of-contents)
+    - [Symbol Mapping](#symbol-mapping)
+        - [Overview](#overview)
+        - [Full Table](#full-table)
+            - [Frequently Used Letters](#frequently-used-letters)
+            - [Operators](#operators)
+            - [Greek Letters](#greek-letters)
+            - [Matrix](#matrix)
+            - [Modifiers](#modifiers)
+            - [Arrows](#arrows)
+            - [Symbols](#symbols)
+            - [Structures](#structures)
+            - [Prefix for Fancy Letters](#prefix-for-fancy-letters)
+            - [Multi-column Equations](#multi-column-equations)
+    - [Recommendations](#recommendations)
+    - [Experimental Features In folder experimental/](#experimental-features-in-folder-experimental)
+    - [Code Editing Guide](#code-editing-guide)
+
+<!-- /TOC -->
 
 ## Symbol Mapping
 

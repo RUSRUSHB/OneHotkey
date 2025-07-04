@@ -2,9 +2,8 @@
 
 这是一个用于简化 `OneNote`, `Word` 和 `PowerPoint` 中数学公式输入的 `AutoHotKey` 脚本，例如，`\a` 代表 $\alpha$ (`\alpha`)。
 
-This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
-
-English version of introduction: [README_EN.md](README_EN.md)
+- This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
+- English version of introduction: [README_EN.md](README_EN.md)
 
 展示视频（早期版本）：
 
@@ -18,31 +17,37 @@ English version of introduction: [README_EN.md](README_EN.md)
 
 1. 下载并运行[OneNote.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/OneHotkey.exe)。
 2. 输入代码，然后按`Space`键输出符号与公式。例如，输入`\a`，然后按`Space`键，就会输出 $\alpha$ 。
+
+更多：
+
 3. 想要自行修改公式映射，请参考[映射自定义指南](#映射自定义指南)。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
 4. 想要停止脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
 
 ## 目录
 
-- [OneHotkey -- 公式输入简化工具](#onehotkey----公式输入简化工具)
-  - [如何使用](#如何使用)
-  - [目录](#目录)
-  - [符号映射](#符号映射)
-    - [概览](#概览)
-    - [完整映射表格](#完整映射表格)
-      - [常用字符](#常用字符)
-      - [运算符](#运算符)
-      - [希腊字母](#希腊字母)
-      - [矩阵](#矩阵)
-      - [修饰符](#修饰符)
-      - [箭头](#箭头)
-      - [其他符号](#其他符号)
-      - [结构](#结构)
-      - [花体字母](#花体字母)
-  - [更多建议](#更多建议)
-  - [实验性功能(`experimental/`文件夹内)](#实验性功能experimental文件夹内)
-  - [映射自定义指南](#映射自定义指南)
+<!-- TOC -->
 
+- [OneHotkey -- 公式输入简化工具](#onehotkey----%E5%85%AC%E5%BC%8F%E8%BE%93%E5%85%A5%E7%AE%80%E5%8C%96%E5%B7%A5%E5%85%B7)
+    - [如何使用](#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8)
+    - [目录](#%E7%9B%AE%E5%BD%95)
+    - [符号映射](#%E7%AC%A6%E5%8F%B7%E6%98%A0%E5%B0%84)
+        - [概览](#%E6%A6%82%E8%A7%88)
+        - [完整映射表格](#%E5%AE%8C%E6%95%B4%E6%98%A0%E5%B0%84%E8%A1%A8%E6%A0%BC)
+            - [常用字符](#%E5%B8%B8%E7%94%A8%E5%AD%97%E7%AC%A6)
+            - [运算符](#%E8%BF%90%E7%AE%97%E7%AC%A6)
+            - [希腊字母](#%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D)
+            - [矩阵](#%E7%9F%A9%E9%98%B5)
+            - [修饰符](#%E4%BF%AE%E9%A5%B0%E7%AC%A6)
+            - [箭头](#%E7%AE%AD%E5%A4%B4)
+            - [其他符号](#%E5%85%B6%E4%BB%96%E7%AC%A6%E5%8F%B7)
+            - [结构](#%E7%BB%93%E6%9E%84)
+            - [花体字母](#%E8%8A%B1%E4%BD%93%E5%AD%97%E6%AF%8D)
+            - [多列等式](#%E5%A4%9A%E5%88%97%E7%AD%89%E5%BC%8F)
+    - [更多建议](#%E6%9B%B4%E5%A4%9A%E5%BB%BA%E8%AE%AE)
+    - [实验性功能experimental/文件夹内](#%E5%AE%9E%E9%AA%8C%E6%80%A7%E5%8A%9F%E8%83%BDexperimental%E6%96%87%E4%BB%B6%E5%A4%B9%E5%86%85)
+    - [映射自定义指南](#%E6%98%A0%E5%B0%84%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E5%8D%97)
 
+<!-- /TOC -->
 
 ## 符号映射
 
