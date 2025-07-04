@@ -57,13 +57,14 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |`\do X`, `\sc X`, `\fr X`| 𝕏, 𝒳, 𝔛 |fancy letter forms|`\doubleX `, `\scriptX `, `\frakturX `|
 |`\m3`, `\m4`, ...|specific shape matrices|matrices|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |modifiers|`\hat  `, `\tilde  `, `\ddot  `|
-|`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{\Box}$, $\parallel$, $\equiv$ |operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv`|
+|`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{⬚}$, $\parallel$, $\equiv$ |operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv`|
 |`\pd`, `\di`, `\dt`, `\inf`| $\partial$, $\text{d}$, $\frac{\text{d}}{\text{d}t}$, $\infty$ |frequently used symbols|`\partial `, `"d" `, `"d" /"d" t `, `\infty `|
-|`\ls`| $^\Box_\Box P$ |left super-and-lowerscript|`^_ P `|
+|`\limx`, `\limx0`| $ \lim_{x \rightarrow \infty} $, $ \lim_{x \rightarrow 0} $ |limits|`lim_(x->\infty ) `, `lim_(x->0 ) `|
+|`\ls`| $^⬚_⬚ P$ |left super-and-lowerscript|`^_ P `|
 |`\i`, `\j`, `\k`| $\text{i}$, $\text{j}$, $\text{k}$ |imaginary/quaternion symbols|`"i"`, `"j"`, `"k"`|
 |`\ejw`| $e^{j\omega}$ |complex exponential factor|`e^j\omega  `|
 
-You shall notice that ` `(space) is commonly used, which is the key feature of OneNote formula input. Capital letter code should be inputted with `Shift`, not `CapsLock`.
+You shall notice that ` `(space) is commonly used, which is the key feature of OneNote formula input.
 
 ### Full Table
 
@@ -73,7 +74,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 |------|--------|--------|------|--------|--------|
 | `\pd` | $\partial$ | `\partial{Space}` |`\di`|$\text{d}$|`"d"`|
 | `\inf` | $\infty$ | `\infty{Space}` | `\dt` | $\frac{\text{d}}{\text{d}t}$ | `"d"{Space}/"d"{Space}t{Space}` |
-| `\R` | $\mathbb{R}$ | `\doubleR{Space}` | `\E`|$\mathbb{E}[]$|`\doubleE{Space}[]{Space}{Left}`|
+| `\R` | $\mathbb{R}$ | `\doubleR{Space}` | `\E`|$\mathbb{E}[⬚]$|`\doubleE{Space}[]{Space}{Left}`|
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
 | `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |
@@ -83,14 +84,14 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
 | `\x` | $\cdot$ | `\cdot{Space}` | `\X` | $\times$ | `\times{Space}` |
-| `\sq` | $\sqrt{\Box}$ | `\sqrt{Space 2}{Left}` | `\pa` | $\parallel$ | `\parallel{Space}` |
+| `\sq` | $\sqrt{⬚}$ | `\sqrt{Space 2}{Left}` | `\pa` | $\parallel$ | `\parallel{Space}` |
 | `\ss` | $\subset$ | `\subset{Space}` | `\sse` | $\subseteq$ | `\subseteq{Space}` |
 | `\op` | $\oplus$ | `\oplus{Space}` | `\ox` | $\otimes$ | `\otimes{Space}` |
 | `\od` | $\odot$ | `\odot{Space}` | `\dd` | $\ddots$ | `\ddots{Space}` |
 | `\cd` | $\cdots$ | `\cdots{Space}` | `\vd` | $\vdots$ | `\vdots{Space}` |
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
 | `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
-| `\eq` | $\equiv$ | `\equiv{Space}` | `\xe` | $\times 10^{\Box}$ | `\times{Space}10{^}{Space}{Left}` |
+| `\eq` | $\equiv$ | `\equiv{Space}` | `\xe` | $\times 10^{⬚}$ | `\times{Space}10{^}{Space}{Left}` |
 
 #### Greek Letters
 
@@ -151,17 +152,20 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 
 | Code | Output | Source |
 |------|--------|--------|
-| `\r` | $\lbrace\Box$ | `\right.{Left}` |
-| `\leb` | $\Box\rbrace$ | `\left\box{Space 2}{Left}` |
-| `\ceil` | $\lceil\rceil$ | `\lceil{Space}\rceil{Space 2}{Left}` |
-| `\floor` | $\lfloor\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
+| `\r` | $\lbrace⬚$ | `\right.{Left}` |
+| `\leb` | $⬚\rbrace$ | `\left\box{Space 2}{Left}` |
+| `\ceil` | $\lceil⬚\rceil$ | `\lceil{Space}\rceil{Space 2}{Left}` |
+| `\floor` | $\lfloor⬚\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
 | `\brak` | ⟨⬚⟩ |`\bra{Space}\ket{Space 2}{Left}`|
 | `\ls` | $^⬚_⬚ P$ | `^_ P {Left 4}` |
 | `\ab` | $\stackrel{⬚}{=}$ | `\above{Space 2}` |
 | `\be` | $\underset{⬚}{=}$ | `\below{Space 2}` |
 | `\fu` | $\text{myfunction}{⬚}$ | `\funcapply  ` |
-| `\Norm` | $\Vert ⬚ \Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
-| `\limx`, `\limn`, `\limh` | $ \lim_{x \rightarrow \infty} $, $ \lim_{n \rightarrow \infty} $, $ \lim_{h \rightarrow 0} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->\infty{Space}){Space}` |
+| `\Norm` | $\Vert⬚\Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
+| `\limx`, `\limx0` | $ \lim_{x \rightarrow \infty} $, $ \lim_{x \rightarrow 0} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->0{Space}){Space}` |
+| `\limt`, `\limt0` | $ \lim_{t \rightarrow \infty} $, $ \lim_{t \rightarrow 0} $ | `lim_(t->\infty{Space}){Space}`, `lim_(t->0{Space}){Space}` |
+| `\limn`, `\limk` | $ \lim_{n \rightarrow \infty} $, $ \lim_{k \rightarrow \infty} $ | `lim_(n->\infty{Space}){Space}`, `lim_(k->\infty{Space}){Space}` |
+| `\limh` | $ \lim_{h \rightarrow 0} $ | `lim_(h->0{Space}){Space}` |
 
 - `\funcapply` is a little different from `\of`. Have a try by yourself!
 

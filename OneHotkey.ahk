@@ -210,11 +210,15 @@
 
 :co?:\limx::lim_(x->\infty{Space}){Space}
 
+:co?:\limx0::lim_(x->0{Space}){Space}
+
+:co?:\limt::lim_(t->\infty{Space}){Space}
+
+:co?:\limt0::lim_(t->0{Space}){Space}
+
 :co?:\limn::lim_(n->\infty{Space}){Space}
 
 :co?:\limk::lim_(k->\infty{Space}){Space}
-
-:co?:\limt::lim_(t->0{Space}){Space}
 
 :co?:\limh::lim_(h->0{Space}){Space}
 
