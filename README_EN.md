@@ -116,7 +116,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\m4` | 4 by 4 empty matrix | `[\matrix(@@@&&&){Space}]{Space}` |
 | `\m3` | 3 by 3 empty matrix | `[\matrix(@@&&){Space}]{Space}` |
 | `\m2` | 2 by 2 empty matrix | `[\matrix(@&){Space}]{Space}` |
-| `\m` | empty matrix awaiting `&` `@` to set size. | `[]{Space}{Left}\matrix(){Left}` |
+| `\m` | empty matrix awaiting `&` `@` to set size | `[]{Space}{Left}\matrix(){Left}` |
 
 #### Modifiers
 
@@ -130,6 +130,8 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\v` | $\vec{x}$ | `\vec{Space 2}` |
 | `\h` | $\hat{x}$ | `\hat{Space 2}` |
 | `\ub` | $\underline{x}$ | `\underbar{Space 2}{Left}` |
+
+- For the above codes, you should input like `x\h  `.
 
 #### Arrows
 
@@ -187,7 +189,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\eq4` | Four-column equation | `\eqarray(&=@&=@&=@&=){Space}{Left 12}` |
 | `\eq5` | Five-column equation | `\eqarray(&=@&=@&=@&=@&=){Space}{Left 15}` |
 
-Note: Multi-column equations are used for aligning multiple equations, using @ as placeholder and & as alignment point.
+Note: Multi-column equations are used for aligning multiple equations, using `@` as placeholder and `&` as alignment point.
 
 ## Recommendations
 
