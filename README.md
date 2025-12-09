@@ -1,8 +1,8 @@
 # OneHotkey -- 公式输入简化工具
 
-这是一个用于简化 `OneNote`, `Word` 和 `PowerPoint` 中数学公式输入的 `AutoHotKey` 脚本，例如，`\a` 代表 $\alpha$ (`\alpha`)。
+这是一个用于简化 `OneNote` 和 `Word` 中数学公式输入的 `AutoHotKey` 脚本，例如，`\a` 代表 $\alpha$ (`\alpha`)。
 
-- This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
+- This is a script that simplifies math formula inputs in `OneNote` and `Word` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
 - English version of introduction: [README_EN.md](README_EN.md)
 
 展示视频（早期版本）：
@@ -15,7 +15,7 @@
 
 ## 如何使用
 
-1. 下载并运行[OneNote.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/OneHotkey.exe)。
+1. 下载并运行[OneHotkey.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/OneHotkey.exe)。
 2. 输入代码，然后按`Space`键输出符号与公式。例如，输入`\a`，然后按`Space`键，就会输出 $\alpha$ 。
 
 更多：
@@ -88,7 +88,7 @@ OneNote 原版的映射可以在这里找到：
 | `\R` | $\mathbb{R}$ | `\doubleR{Space}` | `\E`|$\mathbb{E}[⬚]$|`\doubleE{Space}[]{Space}{Left}`|
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
-| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |
+| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` | `\n` | $\nabla$ | `\nabla{Space}` |
 
 #### 运算符
 
@@ -103,6 +103,7 @@ OneNote 原版的映射可以在这里找到：
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
 | `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
 | `\eq` | $\equiv$ | `\equiv{Space}` | `\xe` | $\times 10^{⬚}$ | `\times{Space}10{^}{Space}{Left}` |
+| `\ppd` | $\frac{\partial}{\partial}$ | `\partial{Space}/\partial{Space 2}{Left 3}` |
 
 #### 希腊字母
 
@@ -148,12 +149,11 @@ OneNote 原版的映射可以在这里找到：
 
 | 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
-| `\lr` | $\leftrightarrow$ | `\leftrightarrow{Space}` | `\lrs` | $\leftrightarrows$ | `\leftrightarrows{Enter}{Left}` |
-| `\la` | $\leftarrow$ | `\leftarrow{Space}` | `\La` | $\Leftarrow$ | `\Leftarrow{Space}` |
-| `\ra` | $\rightarrow$ | `\rightarrow{Space}` | `\Ra` | $\Rightarrow$ | `\Rightarrow{Space}` |
-| `\down` | $\downarrow$ | `\downarrow{Space}` | `\up` | $\uparrow$ | `\uparrow{Space}` |
-| `\ul` | $\nwarrow$ | `\nwarrow{Space}` | `\ur` | $\nearrow$ | `\nearrow{Space}` |
-| `\dl` | $\swarrow$ | `\swarrow{Space}` | `\dr` | $\searrow$ | `\searrow{Space}` |
+| `\lr` | $\leftrightarrow$ | `\leftrightarrow{Space}` | `\Lr` | $\Leftrightarrow$ | `\Leftrightarrow{Space}` |
+| `\lrs` | $\leftrightarrows$ | `\leftrightarrows{Enter}{Left}` | `\la` | $\leftarrow$ | `\leftarrow{Space}` |
+| `\La` | $\Leftarrow$ | `\Leftarrow{Space}` | `\ra` | $\rightarrow$ | `\rightarrow{Space}` |
+| `\Ra` | $\Rightarrow$ | `\Rightarrow{Space}` | `\down` | $\downarrow$ | `\downarrow{Space}` |
+| `\up` | $\uparrow$ | `\uparrow{Space}` |
 
 #### 其他符号
 
@@ -171,14 +171,17 @@ OneNote 原版的映射可以在这里找到：
 | `\floor` | $\lfloor⬚\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
 | `\brak` | ⟨⬚⟩ |`\bra{Space}\ket{Space 2}{Left}`|
 | `\ls` | $^⬚_⬚ P$ | `^_ P {Left 4}` |
-| `\ab` | $\stackrel{⬚}{=}$ | `\above{Space 2}` |
-| `\be` | $\underset{⬚}{=}$ | `\below{Space 2}` |
+| `\ab` | $\stackrel{⬚}{x}$ | `\above{Space 2}{Left}` |
+| `\be` | $\underset{⬚}{x}$ | `\below{Space 2}{Left}` |
+| `\abb` | $\overbrace{x}$ | `\overbrace{Space 2}` |
+| `\beb` | $\underbrace{x}$ | `\underbrace{Space 2}` |
 | `\fu` | $\text{myfunction}{⬚}$ | `\funcapply  ` |
 | `\Norm` | $\Vert⬚\Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
 | `\limx`, `\limx0` | $ \lim_{x \rightarrow \infty} $, $ \lim_{x \rightarrow 0} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->0{Space}){Space}` |
 | `\limt`, `\limt0` | $ \lim_{t \rightarrow \infty} $, $ \lim_{t \rightarrow 0} $ | `lim_(t->\infty{Space}){Space}`, `lim_(t->0{Space}){Space}` |
 | `\limn`, `\limk` | $ \lim_{n \rightarrow \infty} $, $ \lim_{k \rightarrow \infty} $ | `lim_(n->\infty{Space}){Space}`, `lim_(k->\infty{Space}){Space}` |
 | `\limh` | $ \lim_{h \rightarrow 0} $ | `lim_(h->0{Space}){Space}` |
+| `\BO` | $\boxed{⬚}$ | `\boxed{Enter}{Left 2}` |
 
 - `\funcapply` 与 `\of` 有些许不同。建议自行尝试一下。
 
@@ -223,9 +226,9 @@ OneNote 原版的映射可以在这里找到：
 
 ## 映射自定义指南
 
-想要自定义映射，请编辑`symbol_assist.ahk`，使用`Ahk2Exe`进行编译，然后运行编译后的`.exe`文件。建议你从[AutoHotKey官网](https://www.autohotkey.com)了解更多关于`AutoHotKey`的知识。
+想要自定义映射，请编辑`OneHotkey.ahk`，使用`Ahk2Exe`进行编译，然后运行编译后的`.exe`文件。建议你从[AutoHotKey官网](https://www.autohotkey.com)了解更多关于`AutoHotKey`的知识。
 
-`symbol_assist_OneNote.ahk`中的代码非常容易理解，即使你没有学习过`AutoHotKey`。对于新手，代码的解释如下：
+`OneHotkey.ahk`中的代码非常容易理解，即使你没有学习过`AutoHotKey`。对于新手，代码的解释如下：
 
 代码的每一行都是一个输入到符号的映射。格式为`:(参数):输入::输出`。例如，`::\a::\alpha `意味着当你输入`\a`时，脚本会输出`\alpha `。
 

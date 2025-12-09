@@ -1,6 +1,6 @@
 # OneHotkey -- Math Formula Input Simplification Tool
 
-This is a script that simplifies math formula inputs in `OneNote`, `Word` and `PowerPoint` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
+This is a script that simplifies math formula inputs in `OneNote` and `Word` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
 
 Demonstration video (Early version):
 
@@ -12,7 +12,7 @@ If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf)
 
 ## How to Use
 
-1. Download and run [OneNote.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/OneHotkey.exe).
+1. Download and run [OneHotkey.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/OneHotkey.exe).
 2. Input the code of the symbol, then press `Space` to get the symbol. For example, input `\a` and press `Space` to get $\alpha$.
 3. For editting the symbol mapping, please refer to [Code Editing Guide](#code-editing-guide). If you need help, go to the [AutoHotKey official website](https://www.autohotkey.com).
 4. To stop the script, right click the `H` icon in the system tray and select `Exit`.
@@ -22,24 +22,24 @@ If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf)
 <!-- TOC -->
 
 - [OneHotkey -- Math Formula Input Simplification Tool](#onehotkey----math-formula-input-simplification-tool)
-    - [How to Use](#how-to-use)
-    - [Table of Contents](#table-of-contents)
-    - [Symbol Mapping](#symbol-mapping)
-        - [Overview](#overview)
-        - [Full Table](#full-table)
-            - [Frequently Used Letters](#frequently-used-letters)
-            - [Operators](#operators)
-            - [Greek Letters](#greek-letters)
-            - [Matrix](#matrix)
-            - [Modifiers](#modifiers)
-            - [Arrows](#arrows)
-            - [Symbols](#symbols)
-            - [Structures](#structures)
-            - [Prefix for Fancy Letters](#prefix-for-fancy-letters)
-            - [Multi-column Equations](#multi-column-equations)
-    - [Recommendations](#recommendations)
-    - [Experimental Features In folder experimental/](#experimental-features-in-folder-experimental)
-    - [Code Editing Guide](#code-editing-guide)
+  - [How to Use](#how-to-use)
+  - [Table of Contents](#table-of-contents)
+  - [Symbol Mapping](#symbol-mapping)
+    - [Overview](#overview)
+    - [Full Table](#full-table)
+      - [Frequently Used Letters](#frequently-used-letters)
+      - [Operators](#operators)
+      - [Greek Letters](#greek-letters)
+      - [Matrix](#matrix)
+      - [Modifiers](#modifiers)
+      - [Arrows](#arrows)
+      - [Symbols](#symbols)
+      - [Structures](#structures)
+      - [Prefix for Fancy Letters](#prefix-for-fancy-letters)
+      - [Multi-column Equations](#multi-column-equations)
+  - [Recommendations](#recommendations)
+  - [Experimental Features (In folder `experimental/`)](#experimental-features-in-folder-experimental)
+  - [Code Editing Guide](#code-editing-guide)
 
 <!-- /TOC -->
 
@@ -77,7 +77,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\R` | $\mathbb{R}$ | `\doubleR{Space}` | `\E`|$\mathbb{E}[⬚]$|`\doubleE{Space}[]{Space}{Left}`|
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
-| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` |
+| `\J` | $\mathbb{J}$ | `\doubleJ{Space}` | `\n` | $\nabla$ | `\nabla{Space}` |
 
 #### Operators
 
@@ -92,6 +92,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
 | `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
 | `\eq` | $\equiv$ | `\equiv{Space}` | `\xe` | $\times 10^{⬚}$ | `\times{Space}10{^}{Space}{Left}` |
+| `\ppd` | $\frac{\partial}{\partial}$ | `\partial{Space}/\partial{Space 2}{Left 3}` |
 
 #### Greek Letters
 
@@ -137,12 +138,11 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 
 | Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
-| `\lr` | $\leftrightarrow$ | `\leftrightarrow{Space}` | `\lrs` | $\leftrightarrows$ | `\leftrightarrows{Enter}{Left}` |
-| `\la` | $\leftarrow$ | `\leftarrow{Space}` | `\La` | $\Leftarrow$ | `\Leftarrow{Space}` |
-| `\ra` | $\rightarrow$ | `\rightarrow{Space}` | `\Ra` | $\Rightarrow$ | `\Rightarrow{Space}` |
-| `\down` | $\downarrow$ | `\downarrow{Space}` | `\up` | $\uparrow$ | `\uparrow{Space}` |
-| `\ul` | $\nwarrow$ | `\nwarrow{Space}` | `\ur` | $\nearrow$ | `\nearrow{Space}` |
-| `\dl` | $\swarrow$ | `\swarrow{Space}` | `\dr` | $\searrow$ | `\searrow{Space}` |
+| `\lr` | $\leftrightarrow$ | `\leftrightarrow{Space}` | `\Lr` | $\Leftrightarrow$ | `\Leftrightarrow{Space}` |
+| `\lrs` | $\leftrightarrows$ | `\leftrightarrows{Enter}{Left}` | `\la` | $\leftarrow$ | `\leftarrow{Space}` |
+| `\La` | $\Leftarrow$ | `\Leftarrow{Space}` | `\ra` | $\rightarrow$ | `\rightarrow{Space}` |
+| `\Ra` | $\Rightarrow$ | `\Rightarrow{Space}` | `\down` | $\downarrow$ | `\downarrow{Space}` |
+| `\up` | $\uparrow$ | `\uparrow{Space}` |
 
 #### Symbols
 
@@ -160,14 +160,17 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\floor` | $\lfloor⬚\rfloor$ | `\lfloor{Space}\rfloor{Space 2}{Left}` |
 | `\brak` | ⟨⬚⟩ |`\bra{Space}\ket{Space 2}{Left}`|
 | `\ls` | $^⬚_⬚ P$ | `^_ P {Left 4}` |
-| `\ab` | $\stackrel{⬚}{=}$ | `\above{Space 2}` |
-| `\be` | $\underset{⬚}{=}$ | `\below{Space 2}` |
+| `\ab` | $\stackrel{⬚}{x}$ | `\above{Space 2}{Left}` |
+| `\be` | $\underset{⬚}{x}$ | `\below{Space 2}{Left}` |
+| `\abb` | $\overbrace{x}$ | `\overbrace{Space 2}` |
+| `\beb` | $\underbrace{x}$ | `\underbrace{Space 2}` |
 | `\fu` | $\text{myfunction}{⬚}$ | `\funcapply  ` |
 | `\Norm` | $\Vert⬚\Vert$ | `\norm{Space}\norm{Space 2}{Left}` |
 | `\limx`, `\limx0` | $ \lim_{x \rightarrow \infty} $, $ \lim_{x \rightarrow 0} $ | `lim_(x->\infty{Space}){Space}`, `lim_(x->0{Space}){Space}` |
 | `\limt`, `\limt0` | $ \lim_{t \rightarrow \infty} $, $ \lim_{t \rightarrow 0} $ | `lim_(t->\infty{Space}){Space}`, `lim_(t->0{Space}){Space}` |
 | `\limn`, `\limk` | $ \lim_{n \rightarrow \infty} $, $ \lim_{k \rightarrow \infty} $ | `lim_(n->\infty{Space}){Space}`, `lim_(k->\infty{Space}){Space}` |
 | `\limh` | $ \lim_{h \rightarrow 0} $ | `lim_(h->0{Space}){Space}` |
+| `\BO` | $\boxed{⬚}$ | `\boxed{Enter}{Left 2}` |
 
 - `\funcapply` is a little different from `\of`. Have a try by yourself!
 
@@ -212,9 +215,9 @@ Note: Multi-column equations are used for aligning multiple equations, using `@`
 
 ## Code Editing Guide
 
-For editing the mapping, please: Edit `symbol_assist.ahk`, compile it with `Ahk2Exe`, and run the compiled `.exe` file. You are recommended to learn more about `AutoHotKey` from its [website](https://www.autohotkey.com).
+For editing the mapping, please: Edit `OneHotkey.ahk`, compile it with `Ahk2Exe`, and run the compiled `.exe` file. You are recommended to learn more about `AutoHotKey` from its [website](https://www.autohotkey.com).
 
-The code of `symbol_assist_OneNote.ahk` is very easy to understand, even if you have not learnt about `AutoHotKey`. For newcomers, the explanation of the code is as follows:
+The code of `OneHotkey.ahk` is very easy to understand, even if you have not learnt about `AutoHotKey`. For newcomers, the explanation of the code is as follows:
 
 Each line of the code is a mapping of the input code to the output symbol. The format is `:(parameters):input::output`. For example, `::\a::\alpha ` means that when you input `\a`, the script will output `\alpha `.
 
