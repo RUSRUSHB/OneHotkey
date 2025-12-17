@@ -58,7 +58,7 @@ The script contains multiple symbol mappings, including Greek letters, math font
 |`\m3`, `\m4`, ...|specific shape matrices|matrices|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |modifiers|`\hat  `, `\tilde  `, `\ddot  `|
 |`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{⬚}$, $\parallel$, $\equiv$ |operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv`|
-|`\pd`, `\di`, `\dt`, `\inf`| $\partial$, $\text{d}$, $\frac{\text{d}}{\text{d}t}$, $\infty$ |frequently used symbols|`\partial `, `"d" `, `"d" /"d" t `, `\infty `|
+|`\pd`, `\d`, `\dt`, `\inf`| $\partial$, $\text{d}$, $\frac{\text{d}}{\text{d}t}$, $\infty$ |frequently used symbols|`\partial `, `"d" `, `"d" /"d" t `, `\infty `|
 |`\limx`, `\limx0`| $ \lim_{x \rightarrow \infty} $, $ \lim_{x \rightarrow 0} $ |limits|`lim_(x->\infty ) `, `lim_(x->0 ) `|
 |`\ls`| $^⬚_⬚ P$ |left super-and-lowerscript|`^_ P `|
 |`\i`, `\j`, `\k`| $\text{i}$, $\text{j}$, $\text{k}$ |imaginary/quaternion symbols|`"i"`, `"j"`, `"k"`|
@@ -72,7 +72,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 
 | Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
-| `\pd` | $\partial$ | `\partial{Space}` |`\di`|$\text{d}$|`"d"`|
+| `\pd` | $\partial$ | `\partial{Space}` |`\d`|$\text{d}$|`"d"{Space}`|
 | `\inf` | $\infty$ | `\infty{Space}` | `\dt` | $\frac{\text{d}}{\text{d}t}$ | `"d"{Space}/"d"{Space}t{Space}` |
 | `\R` | $\mathbb{R}$ | `\doubleR{Space}` | `\E`|$\mathbb{E}[⬚]$|`\doubleE{Space}[]{Space}{Left}`|
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
@@ -101,7 +101,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 |------|--------|--------|------|--------|--------|
 | `\a` | $\alpha$ | `\alpha{Space}` | `\b` | $\beta$ | `\beta{Space}` |
 | `\e` | $\varepsilon$ | `\varepsilon{Space}` | `\ve` | $\epsilon$ | `\epsilon{Space}` |
-| `\d` | $\delta$ | `\delta{Space}` | `\D` | $\Delta$ | `\Delta{Space}` |
+| `\de` | $\delta$ | `\delta{Space}` | `\D` | $\Delta$ | `\Delta{Space}` |
 | `\s` | $\sigma$ | `\sigma{Space}` | `\S` | $\Sigma$ | `\Sigma{Space}` |
 | `\l` | $\lambda$ | `\lambda{Space}` | `\L` | $\Lambda$ | `\Lambda{Space}` |
 | `\t` | $\theta$ | `\theta{Space}` | `\T` | $\Theta$ | `\Theta{Space}` |
@@ -149,7 +149,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 
 | Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
-| `\de` | $\degree$ | `\degree{Space}` | `\st` | $\star$ | `\star{Space}` |
+| `\deg` | $\degree$ | `\degree{Space}` | `\st` | $\star$ | `\star{Space}` |
 
 #### Structures
 
@@ -227,7 +227,7 @@ The code of `OneHotkey.ahk` is very easy to understand, even if you have not lea
 
 Each line of the code is a mapping of the input code to the output symbol. The format is `:(parameters):input::output`. For example, `::\a::\alpha ` means that when you input `\a`, the script will output `\alpha `.
 
-I added some parameters `co?`:
+The script uses global hotstring settings `#Hotstring c o ?`, which apply to all mappings:
 
 |Parameter|Meaning|
 |-|-|

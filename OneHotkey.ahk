@@ -18,7 +18,7 @@
 
 ::\pd::\partial{Space}
 
-::\di::"d"{Space}
+::\d::"d"{Space}
 
 ::\dt::"d"{Space}/"d"{Space}t{Space}
 
@@ -94,7 +94,7 @@
 
 ::\ve::\epsilon{Space}
 
-::\d::\delta{Space}        
+::\de::\delta{Space}        
 
 ::\D::\Delta{Space}
 
@@ -195,7 +195,7 @@
 ; Symbols | 其他符号
 ;===============================================================================
 
-::\de::\degree{Space}
+::\deg::\degree{Space}
 
 ::\st::\star{Space}
 

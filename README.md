@@ -64,7 +64,7 @@
 |`\m3`, `\m4`, ..., `\m`|特定形状矩阵|矩阵|`[\matrix(@@&&)] `, ...|
 |`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |修饰符|`\hat  `, `\tilde  `, `\ddot  `|
 |`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{⬚}$, $\parallel$, $\equiv$ |运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv `|
-|`\pd`, `\di`, `\dt`, `\inf`| $\partial$, $\text{d}$, $\frac{\text{d}}{\text{d}t}$, $\infty$ |常用符号|`\partial `, `"d" `, `"d" /"d" t `, `\infty `|
+|`\pd`, `\d`, `\dt`, `\inf`| $\partial$, $\text{d}$, $\frac{\text{d}}{\text{d}t}$, $\infty$ |常用符号|`\partial `, `"d" `, `"d" /"d" t `, `\infty `|
 |`\limx`, `\limx0`| $ \lim_{x \rightarrow \infty} $, $ \lim_{x \rightarrow 0} $ |极限|`lim_(x->\infty ) `, `lim_(x->0 ) `|
 |`\ls`| $^⬚_⬚ P$ |左侧上下标|`^_ P `|
 |`\i`, `\j`, `\k`| $\text{i}$, $\text{j}$, $\text{k}$ |虚数/四元数符号|`"i"`, `"j"`, `"k"`|
@@ -83,7 +83,7 @@ OneNote 原版的映射可以在这里找到：
 
 | 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
-| `\pd` | $\partial$ | `\partial{Space}` |`\di`|$\text{d}$|`"d"`|
+| `\pd` | $\partial$ | `\partial{Space}` |`\d`|$\text{d}$|`"d"{Space}`|
 | `\inf` | $\infty$ | `\infty{Space}` | `\dt` | $\frac{\text{d}}{\text{d}t}$ | `"d"{Space}/"d"{Space}t{Space}` |
 | `\R` | $\mathbb{R}$ | `\doubleR{Space}` | `\E`|$\mathbb{E}[⬚]$|`\doubleE{Space}[]{Space}{Left}`|
 | `\Q` | $\mathbb{Q}$ | `\doubleQ{Space}` | `\Z` | $\mathbb{Z}$ | `\doubleZ{Space}` |
@@ -112,7 +112,7 @@ OneNote 原版的映射可以在这里找到：
 |------|--------|--------|------|--------|--------|
 | `\a` | $\alpha$ | `\alpha{Space}` | `\b` | $\beta$ | `\beta{Space}` |
 | `\e` | $\varepsilon$ | `\varepsilon{Space}` | `\ve` | $\epsilon$ | `\epsilon{Space}` |
-| `\d` | $\delta$ | `\delta{Space}` | `\D` | $\Delta$ | `\Delta{Space}` |
+| `\de` | $\delta$ | `\delta{Space}` | `\D` | $\Delta$ | `\Delta{Space}` |
 | `\s` | $\sigma$ | `\sigma{Space}` | `\S` | $\Sigma$ | `\Sigma{Space}` |
 | `\l` | $\lambda$ | `\lambda{Space}` | `\L` | $\Lambda$ | `\Lambda{Space}` |
 | `\t` | $\theta$ | `\theta{Space}` | `\T` | $\Theta$ | `\Theta{Space}` |
@@ -160,7 +160,7 @@ OneNote 原版的映射可以在这里找到：
 
 | 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
 |------|--------|--------|------|--------|--------|
-| `\de` | $\degree$ | `\degree{Space}` | `\st` | $\star$ | `\star{Space}` |
+| `\deg` | $\degree$ | `\degree{Space}` | `\st` | $\star$ | `\star{Space}` |
 
 #### 结构
 
@@ -238,7 +238,7 @@ OneNote 原版的映射可以在这里找到：
 
 代码的每一行都是一个输入到符号的映射。格式为`:(参数):输入::输出`。例如，`::\a::\alpha `意味着当你输入`\a`时，脚本会输出`\alpha `。
 
-我添加了一些参数`co?`：
+脚本使用了全局热字串设置 `#Hotstring c o ?`，这些选项对所有映射生效：
 
 |参数|作用|
 |-|-|
