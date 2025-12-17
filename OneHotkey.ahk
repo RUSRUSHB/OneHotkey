@@ -1,283 +1,289 @@
 #Requires AutoHotkey v2.0
+;===============================================================================
 #HotIf WinActive("ahk_exe ONENOTE.EXE") or WinActive("ahk_exe WINWORD.EXE")
-;===============================================================================
 ; Context Sensitivity Settings | 上下文敏感性设置
-;===============================================================================
 ; Only activate hotkeys in OneNote and Word
 ; 仅在 OneNote 和 Word 中启用以下快捷键
+;===============================================================================
+#Hotstring c o ?
+; 设置热字串默认选项：
+; c -> Case-sensitive (区分大小写)
+; o -> Omit ending character (自动删除触发用的空格/回车)
+; ? -> Trigger inside words (允许在字母/数字后直接触发，如 x\pd)
+;===============================================================================
 
 ;===============================================================================
 ; Frequently Used Letters | 常用字母和符号
 ;===============================================================================
 
-:co?:\pd::\partial{Space}
+::\pd::\partial{Space}
 
-:co?:\di::"d"{Space}
+::\di::"d"{Space}
 
-:co?:\dt::"d"{Space}/"d"{Space}t{Space}
+::\dt::"d"{Space}/"d"{Space}t{Space}
 
-:co?:\R::\doubleR{Space}
+::\R::\doubleR{Space}
 
-:co?:\Q::\doubleQ{Space}
+::\Q::\doubleQ{Space}
 
-:co?:\Z::\doubleZ{Space}
+::\Z::\doubleZ{Space}
 
-:co?:\N::\doubleN{Space}
+::\N::\doubleN{Space}
 
-:co?:\C::\doubleC{Space}
+::\C::\doubleC{Space}
 
-:co?:\J::\doubleJ{Space}
+::\J::\doubleJ{Space}
 
-:co?:\E::\doubleE{Space}[]{Space}{Left}
+::\E::\doubleE{Space}[]{Space}{Left}
 
-:co?:\inf::\infty{Space}
+::\inf::\infty{Space}
 
-:co?:\ejw::e{^}j\omega{Space 2}
+::\ejw::e{^}j\omega{Space 2}
 
 ;===============================================================================
 ; Operators | 运算符
 ;===============================================================================
 
-:co?:\x::\cdot{Space}
+::\x::\cdot{Space}
 
-:co?:\X::\times{Space}
+::\X::\times{Space}
 
-:co?:\sq::\sqrt{Space 2}{Left}
+::\sq::\sqrt{Space 2}{Left}
 
-:co?:\pa::\parallel{Space}
+::\pa::\parallel{Space}
 
-:co?:\ss::\subset{Space}
+::\ss::\subset{Space}
 
-:co?:\sse::\subseteq{Space}
+::\sse::\subseteq{Space}
 
-:co?:\op::\oplus{Space}
+::\op::\oplus{Space}
 
-:co?:\ox::\otimes{Space}
+::\ox::\otimes{Space}
 
-:co?:\od::\odot{Space}
+::\od::\odot{Space}
 
-:co?:\dd::\ddots{Space}
+::\dd::\ddots{Space}
 
-:co?:\cd::\cdots{Space}
+::\cd::\cdots{Space}
 
-:co?:\vd::\vdots{Space}
+::\vd::\vdots{Space}
 
-:co?:\map::\mapsto{Space}
+::\map::\mapsto{Space}
 
-:co?:\pro::\propto{Space}
+::\pro::\propto{Space}
 
-:co?:\as::\because{Space}
+::\as::\because{Space}
 
-:co?:\so::\therefore{Space}
+::\so::\therefore{Space}
 
-:co?:\eq::\equiv{Space}
+::\eq::\equiv{Space}
 
-:co?:\ex::\exists{Space}
+::\ex::\exists{Space}
 
-:co?:\fa::\forall{Space}
+::\fa::\forall{Space}
 
 ;===============================================================================
 ; Greek Letters | 希腊字母
 ;===============================================================================
 
-:co?:\a::\alpha{Space}
+::\a::\alpha{Space}
 
-:co?:\b::\beta{Space}
+::\b::\beta{Space}
 
-:co?:\e::\varepsilon{Space}
+::\e::\varepsilon{Space}
 
-:co?:\ve::\epsilon{Space}
+::\ve::\epsilon{Space}
 
-:co?:\d::\delta{Space}        
+::\d::\delta{Space}        
 
-:co?:\D::\Delta{Space}
+::\D::\Delta{Space}
 
-:co?:\s::\sigma{Space}
+::\s::\sigma{Space}
 
-:co?:\S::\Sigma{Space}
+::\S::\Sigma{Space}
 
-:co?:\l::\lambda{Space}
+::\l::\lambda{Space}
 
-:co?:\L::\Lambda{Space}
+::\L::\Lambda{Space}
 
-:co?:\t::\theta{Space}
+::\t::\theta{Space}
 
-:co?:\T::\Theta{Space}
+::\T::\Theta{Space}
 
-:co?:\p::\phi{Space}
+::\p::\phi{Space}
 
-:co?:\P::\Phi{Space}
+::\P::\Phi{Space}
 
-:co?:\o::\omega{Space}
+::\o::\omega{Space}
 
-:co?:\O::\Omega{Space}
+::\O::\Omega{Space}
 
-:co?:\g::\gamma{Space}
+::\g::\gamma{Space}
 
-:co?:\G::\Gamma{Space}
+::\G::\Gamma{Space}
 
-:co?:\n::\nabla{Space}
+::\n::\nabla{Space}
 
 ;===============================================================================
 ; Matrix | 矩阵相关
 ;===============================================================================
 
-:co?:\m4::[\matrix({@}{@}{@}{&}{&}{&}){Space}]{Space}{Left 2}
+::\m4::[\matrix({@}{@}{@}{&}{&}{&}){Space}]{Space}{Left 2}
 
 
-:co?:\m3::[\matrix({@}{@}{&}{&}){Space}]{Space}{Left 2}
+::\m3::[\matrix({@}{@}{&}{&}){Space}]{Space}{Left 2}
 
 
-:co?:\m2::[\matrix({@}{&}){Space}]{Space}{Left 2}
+::\m2::[\matrix({@}{&}){Space}]{Space}{Left 2}
 
 
-:co?:\m::[]{Space}{Left}\matrix(){Left}
+::\m::[]{Space}{Left}\matrix(){Left}
 
 ;===============================================================================
 ; Modifiers | 修饰符
 ;===============================================================================
 
-:co?:\d1::\dot{Space 2}
+::\d1::\dot{Space 2}
 
-:co?:\d2::\ddot{Space 2}
+::\d2::\ddot{Space 2}
 
-:co?:\d3::\dddot{Space 2}
+::\d3::\dddot{Space 2}
 
-:co?:\d4::\ddddot{Space 2}
+::\d4::\ddddot{Space 2}
 
-:co?:\~::\tilde{Space 2}
+::\~::\tilde{Space 2}
 
-:co?:\v::\vec{Space 2}
+::\v::\vec{Space 2}
 
-:co?:\h::\hat{Space 2}
+::\h::\hat{Space 2}
 
-:co?:\ub::\underbar{Space 2}{Left}
+::\ub::\underbar{Space 2}{Left}
 
 ;===============================================================================
 ; Arrows | 箭头符号
 ;===============================================================================
 
-:co?:\lr::\leftrightarrow{Space}
+::\lr::\leftrightarrow{Space}
 
-:co?:\Lr::\Leftrightarrow{Space}
+::\Lr::\Leftrightarrow{Space}
 
-:co?:\lrs::\leftrightarrows{Enter}{Left} ;{Space} might fail in OneNote, so use {Enter} instead
+::\lrs::\leftrightarrows{Enter}{Left} ;{Space} might fail in OneNote, so use {Enter} instead
 
-:co?:\la::\leftarrow{Space}
+::\la::\leftarrow{Space}
 
-:co?:\La::\Leftarrow{Space}
+::\La::\Leftarrow{Space}
 
-:co?:\ra::\rightarrow{Space}
+::\ra::\rightarrow{Space}
 
-:co?:\Ra::\Rightarrow{Space}  ; this is needed for Word
+::\Ra::\Rightarrow{Space}  ; this is needed for Word
 
-:co?:\down::\downarrow{Space}
+::\down::\downarrow{Space}
 
-:co?:\up::\uparrow{Space}
+::\up::\uparrow{Space}
 
 ;===============================================================================
 ; Imaginary/Quaternion Symbols | 虚数/四元数符号
 ;===============================================================================
 
-:co?:\i::"i"{Space}
+::\i::"i"{Space}
 
-:co?:\j::"j"{Space}
+::\j::"j"{Space}
 
-:co?:\k::"k"{Space}
+::\k::"k"{Space}
 
 ;===============================================================================
 ; Symbols | 其他符号
 ;===============================================================================
 
-:co?:\de::\degree{Space}
+::\de::\degree{Space}
 
-:co?:\st::\star{Space}
+::\st::\star{Space}
 
 ;===============================================================================
 ; Structures | 结构符号
 ;===============================================================================
 
-:co?:\ceil::\lceil{Space}\rceil{Space 2}{Left}
+::\ceil::\lceil{Space}\rceil{Space 2}{Left}
 
-:co?:\floor::\lfloor{Space}\rfloor{Space 2}{Left}
+::\floor::\lfloor{Space}\rfloor{Space 2}{Left}
 
-:co?:\brak::\bra{Space}\ket{Space 2}{Left}
+::\brak::\bra{Space}\ket{Space 2}{Left}
 ; braket
 
-:co?:\Norm::\norm{Space}\norm{Space 2}{Left}
+::\Norm::\norm{Space}\norm{Space 2}{Left}
 
-:co?:\limx::lim_(x->\infty{Space}){Space}
+::\limx::lim_(x->\infty{Space}){Space}
 
-:co?:\limx0::lim_(x->0{Space}){Space}
+::\limx0::lim_(x->0{Space}){Space}
 
-:co?:\limt::lim_(t->\infty{Space}){Space}
+::\limt::lim_(t->\infty{Space}){Space}
 
-:co?:\limt0::lim_(t->0{Space}){Space}
+::\limt0::lim_(t->0{Space}){Space}
 
-:co?:\limn::lim_(n->\infty{Space}){Space}
+::\limn::lim_(n->\infty{Space}){Space}
 
-:co?:\limk::lim_(k->\infty{Space}){Space}
+::\limk::lim_(k->\infty{Space}){Space}
 
-:co?:\limh::lim_(h->0{Space}){Space}
+::\limh::lim_(h->0{Space}){Space}
 
-:co?:\r::\right.{Left}
+::\r::\right.{Left}
 ; right subscript, usually used after left bracket "{"
 
-:co?:\leb::\left\box{Space 2}{Left}
+::\leb::\left\box{Space 2}{Left}
 ; left subscript, usually used before right bracket "}"
 
-:co?:\ls::{^}{_}{Space}P{Space}{Left 4}
+::\ls::{^}{_}{Space}P{Space}{Left 4}
 ; left super script
 
-:co?:\ab::\above{Space 2}{Left}
+::\ab::\above{Space 2}{Left}
 
-:co?:\be::\below{Space 2}{Left}
+::\be::\below{Space 2}{Left}
 
-:co?:\abb::\overbrace{Space 2}
+::\abb::\overbrace{Space 2}
 
-:co?:\beb::\underbrace{Space 2}
+::\beb::\underbrace{Space 2}
 
-:co?:\fu::\funcapply{Space 2}
+::\fu::\funcapply{Space 2}
 ; function structure
 
-:co?:\xe::\times{Space}10{^}{Space}{Left}
+::\xe::\times{Space}10{^}{Space}{Left}
 
-:co?:\ppd::\partial{Space}/\partial{Space 2}{Left 3}
+::\ppd::\partial{Space}/\partial{Space 2}{Left 3}
 
-:co?:\BO::\boxed{Enter}{Left 2}
+::\BO::\boxed{Enter}{Left 2}
 
-:co?:\qu::\quad{Enter}{Left}
+::\qu::\quad{Enter}{Left}
 
-:co?:\diverge::\partial/\partial{Space}x{Space}{+}\partial/\partial{Space}y{Space}{+}\partial/\partial{Space}z{Space}
+::\diverge::\partial/\partial{Space}x{Space}{+}\partial/\partial{Space}y{Space}{+}\partial/\partial{Space}z{Space}
 
-:co?:\gradient::\partial/\partial{Space}x{Space}a\vec_x{+}\partial/\partial{Space}y{Space}a\vec_y{+}\partial/\partial{Space}z{Space}a\vec_z{Space}
+::\gradient::\partial/\partial{Space}x{Space}a\vec_x{+}\partial/\partial{Space}y{Space}a\vec_y{+}\partial/\partial{Space}z{Space}a\vec_z{Space}
 
-:co?:\curl::|\matrix(a\vec_x&a\vec_y&a\vec_z@\partial/\partial{Space}x&\partial/\partial{Space}y&\partial/\partial{Space}z@A\vec_x&A\vec_y&A\vec_z)|{Space}
+::\curl::|\matrix(a\vec_x&a\vec_y&a\vec_z@\partial/\partial{Space}x&\partial/\partial{Space}y&\partial/\partial{Space}z@A\vec_x&A\vec_y&A\vec_z)|{Space}
 
 ;===============================================================================
 ; Multi-column Equations | 多列等式
 ;===============================================================================
 
-:co?:\eq2::\eqarray(&=@&=){Space}{Left 6}
+::\eq2::\eqarray(&=@&=){Space}{Left 6}
 
-:co?:\eq3::\eqarray(&=@&=@&=){Space}{Left 9}
+::\eq3::\eqarray(&=@&=@&=){Space}{Left 9}
 
-:co?:\eq4::\eqarray(&=@&=@&=@&=){Space}{Left 12}
+::\eq4::\eqarray(&=@&=@&=@&=){Space}{Left 12}
 
-:co?:\eq5::\eqarray(&=@&=@&=@&=@&=){Space}{Left 15}
+::\eq5::\eqarray(&=@&=@&=@&=@&=){Space}{Left 15}
 
 ;===============================================================================
 ; Prefix for Fancy Letters | 特殊字体前缀
 ;===============================================================================
 
-:co?:\sc::\script
+::\sc::\script
 
-:co?:\do::\double
+::\do::\double
 
-:co?:\fr::\fraktur
+::\fr::\fraktur
 
 ;===============================================================================
 ; End of Context Sensitivity | 结束上下文敏感性
 ;===============================================================================
-#HotIf  ; Turn off context sensitivity
-; 关闭上下文敏感性
+#HotIf  ; 关闭窗口过滤
+#Hotstring Reset  ; 恢复热字串默认设置
