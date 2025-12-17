@@ -183,9 +183,9 @@ OneNote 原版的映射可以在这里找到：
 | `\limn`, `\limk` | $ \lim_{n \rightarrow \infty} $, $ \lim_{k \rightarrow \infty} $ | `lim_(n->\infty{Space}){Space}`, `lim_(k->\infty{Space}){Space}` |
 | `\limh` | $ \lim_{h \rightarrow 0} $ | `lim_(h->0{Space}){Space}` |
 | `\BO` | $\boxed{⬚}$ | `\boxed{Enter}{Left 2}` |
-| `\qu` | $\quad$ | `\quad{Enter}{Left}` |
-| `\diverge` | $\frac{\partial}{\partial x}+\frac{\partial}{\partial y}+\frac{\partial}{\partial z}$ | `\partial/\partial{Space}x{Space}{+}\partial/\partial{Space}y{Space}{+}\partial/\partial{Space}z{Space}` |
-| `\gradient` | $\frac{\partial}{\partial x}\vec{a}_x+\frac{\partial}{\partial y}\vec{a}_y+\frac{\partial}{\partial z}\vec{a}_z$ | `\partial/\partial{Space}x{Space}a\vec_x{+}\partial/\partial{Space}y{Space}a\vec_y{+}\partial/\partial{Space}z{Space}a\vec_z{Space}` |
+| `\qu` | 全角空格 | `\quad{Enter}{Left}` |
+| `\diverge` | $\frac{\partial}{\partial x}+\frac{\partial}{\partial y}+\frac{\partial}{\partial z}$ | 略 |
+| `\gradient` | $\frac{\partial}{\partial x}\vec{a}_x+\frac{\partial}{\partial y}\vec{a}_y+\frac{\partial}{\partial z}\vec{a}_z$ | 略 |
 | `\curl` | 旋度矩阵 |  |
 
 - `\funcapply` 与 `\of` 有些许不同。建议自行尝试一下。
