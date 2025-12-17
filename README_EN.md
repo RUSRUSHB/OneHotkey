@@ -190,6 +190,7 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 - For these mappings, your input should be like `\sc X `.
 
 #### Multi-column Equations
+
 | Code | Output | Source |
 |------|--------|--------|
 | `\eq2` | Two-column equation | `\eqarray(&=@&=){Space}{Left 6}` |
