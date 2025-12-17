@@ -72,6 +72,10 @@
 
 :co?:\eq::\equiv{Space}
 
+:co?:\ex::\exists{Space}
+
+:co?:\fa::\forall{Space}
+
 ;===============================================================================
 ; Greek Letters | 希腊字母
 ;===============================================================================
@@ -241,6 +245,14 @@
 :co?:\ppd::\partial{Space}/\partial{Space 2}{Left 3}
 
 :co?:\BO::\boxed{Enter}{Left 2}
+
+:co?:\qu::\quad{Enter}{Left}
+
+:co?:\diverge::\partial/\partial{Space}x{Space}{+}\partial/\partial{Space}y{Space}{+}\partial/\partial{Space}z{Space}
+
+:co?:\gradient::\partial/\partial{Space}x{Space}a\vec_x{+}\partial/\partial{Space}y{Space}a\vec_y{+}\partial/\partial{Space}z{Space}a\vec_z{Space}
+
+:co?:\curl::|\matrix(a\vec_x&a\vec_y&a\vec_z@\partial/\partial{Space}x&\partial/\partial{Space}y&\partial/\partial{Space}z@A\vec_x&A\vec_y&A\vec_z)|{Space}
 
 ;===============================================================================
 ; Multi-column Equations | 多列等式
