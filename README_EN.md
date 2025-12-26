@@ -37,6 +37,7 @@ If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf)
       - [Structures](#structures)
       - [Prefix for Fancy Letters](#prefix-for-fancy-letters)
       - [Multi-column Equations](#multi-column-equations)
+      - [Theorem Structures](#theorem-structures)
   - [Recommendations](#recommendations)
   - [Experimental Features (In folder `experimental/`)](#experimental-features-in-folder-experimental)
   - [Code Editing Guide](#code-editing-guide)
@@ -91,8 +92,9 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\cd` | $\cdots$ | `\cdots{Space}` | `\vd` | $\vdots$ | `\vdots{Space}` |
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
 | `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
-| `\eq` | $\equiv$ | `\equiv{Space}` | `\xe` | $\times 10^{⬚}$ | `\times{Space}10{^}{Space}{Left}` |
-| `\ex` | $\exists$ | `\exists{Space}` | `\fa` | $\forall$ | `\forall{Space}` |
+| `\eq` | $\equiv$ | `\equiv{Space}` | `\deq` | $\triangleq$ | `\Deltaeq{Space}` |
+| `\xe` | $\times 10^{⬚}$ | `\times{Space}10{^}{Space}{Left}` | `\ex` | $\exists$ | `\exists{Space}` |
+| `\fa` | $\forall$ | `\forall{Space}` | `\ppd` | $\frac{\partial}{\partial}$ | `\partial{Space}/\partial{Space 2}{Left 3}` |
 | `\ppd` | $\frac{\partial}{\partial}$ | `\partial{Space}/\partial{Space 2}{Left 3}` |
 
 #### Greek Letters
@@ -194,11 +196,17 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | Code | Output | Source |
 |------|--------|--------|
 | `\eq2` | Two-column equation | `\eqarray(&=@&=){Space}{Left 6}` |
-| `\eq3` | Three-column equation | `\eqarray(&=@&=@&=){Space}{Left 9}` |
-| `\eq4` | Four-column equation | `\eqarray(&=@&=@&=@&=){Space}{Left 12}` |
-| `\eq5` | Five-column equation | `\eqarray(&=@&=@&=@&=@&=){Space}{Left 15}` |
+| `\eqs` | Example equation array | `\eqarray(a\quad&b@c\quad&e){Enter}{Left 11}` |
 
 Note: Multi-column equations are used for aligning multiple equations, using `@` as placeholder and `&` as alignment point.
+
+#### Theorem Structures
+
+| Code | Output | Source |
+|------|--------|--------|
+| `\pf` | Proof structure | `^bProof.^b{Enter 2}!={Space}{#}\qed{Enter}{Left 7}` |
+| `\thm` | Theorem structure | `^bTheorem{Space}.^b^i{Space}{Left 2}` |
+| `\que` | Question structure | `^bQuestion{Space}.^b{Space}{Left 2}` |
 
 ## Recommendations
 

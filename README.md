@@ -102,9 +102,9 @@ OneNote 原版的映射可以在这里找到：
 | `\cd` | $\cdots$ | `\cdots{Space}` | `\vd` | $\vdots$ | `\vdots{Space}` |
 | `\map` | $\mapsto$ | `\mapsto{Space}` | `\pro` | $\propto$ | `\propto{Space}` |
 | `\as` | $\because$ | `\because{Space}` | `\so` | $\therefore$ | `\therefore{Space}` |
-| `\eq` | $\equiv$ | `\equiv{Space}` | `\xe` | $\times 10^{⬚}$ | `\times{Space}10{^}{Space}{Left}` |
-| `\ex` | $\exists$ | `\exists{Space}` | `\fa` | $\forall$ | `\forall{Space}` |
-| `\ppd` | $\frac{\partial}{\partial}$ | `\partial{Space}/\partial{Space 2}{Left 3}` |
+| `\eq` | $\equiv$ | `\equiv{Space}` | `\deq` | $\triangleq$ | `\Deltaeq{Space}` |
+| `\xe` | $\times 10^{⬚}$ | `\times{Space}10{^}{Space}{Left}` | `\ex` | $\exists$ | `\exists{Space}` |
+| `\fa` | $\forall$ | `\forall{Space}` | `\ppd` | $\frac{\partial}{\partial}$ | `\partial{Space}/\partial{Space 2}{Left 3}` |
 
 #### 希腊字母
 
@@ -205,11 +205,17 @@ OneNote 原版的映射可以在这里找到：
 | 输入 | 输出| 源代码 |
 |------|--------|--------|
 | `\eq2` | 两列等式 | `\eqarray(&=@&=){Space}{Left 6}` |
-| `\eq3` | 三列等式 | `\eqarray(&=@&=@&=){Space}{Left 9}` |
-| `\eq4` | 四列等式 | `\eqarray(&=@&=@&=@&=){Space}{Left 12}` |
-| `\eq5` | 五列等式 | `\eqarray(&=@&=@&=@&=@&=){Space}{Left 15}` |
+| `\eqs` | 示例等式数组 | `\eqarray(a\quad&b@c\quad&e){Enter}{Left 11}` |
 
 注：多列等式用于对齐多个等式，使用 `@` 作为占位符，使用 `&` 作为对齐点。
+
+#### 定理结构
+
+| 输入 | 输出| 源代码 |
+|------|--------|--------|
+| `\pf` | Proof 结构 | `^bProof.^b{Enter 2}!={Space}{#}\qed{Enter}{Left 7}` |
+| `\thm` | Theorem 结构 | `^bTheorem{Space}.^b^i{Space}{Left 2}` |
+| `\que` | Question 结构 | `^bQuestion{Space}.^b{Space}{Left 2}` |
 
 ## 更多建议
 
