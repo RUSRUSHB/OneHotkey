@@ -20,7 +20,7 @@
 
 ::\d::"d"{Space}
 
-::\dt::"d"{Space}/"d"{Space}t{Space}
+::\dt::"d"{Space}/"d"{Space}t{Space}{Left 4}^i
 
 ::\R::\doubleR{Space}
 
@@ -37,6 +37,8 @@
 ::\E::\doubleE{Space}[]{Space}{Left}
 
 ::\inf::\infty{Space}
+
+::\oo::\infty{Space}
 
 ::\ejw::e{^}j\omega{Space 2}
 
