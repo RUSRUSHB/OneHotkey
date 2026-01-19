@@ -1,87 +1,78 @@
-# OneHotkey -- 公式输入简化工具
+# OneHotkey: Faster Math Input in OneNote/Word
 
-这是一个用于简化 `OneNote` 和 `Word` 中数学公式输入的 `AutoHotKey` 脚本，例如，`\a` 代表 $\alpha$ (`\alpha`)。
+- 中文版介绍：[README_CN.md](README_CN.md)
+- 这是一个用于简化 `OneNote` 和 `Word` 中数学公式输入的 `AutoHotKey` 脚本，例如，`\a` 代表 $\alpha$ (`\alpha`)。
 
-- This is a script that simplifies math formula inputs in `OneNote` and `Word` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
-- English version of introduction: [README_EN.md](README_EN.md)
+This is a script that simplifies math formula inputs in `OneNote` and `Word` with `AutoHotKey` script, e.g., `\a` for $\alpha$ (`\alpha`).
 
-展示视频（早期版本）：
+Demonstration video (Early version):
 - [OneNote快速数学公式输入实战演示1](https://www.bilibili.com/video/BV1wpB6B5E5J/)
 - [AutoHotKey增强OneNote公式输入_测试1_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Jp421S78r/)
 
-这一项目还在开发中，欢迎你的建议和参与。
+If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf).
 
-如果网页公式显示异常，请阅读：[README.pdf](README.pdf)
+## How to Use
 
-## 如何使用
+1. Download and run [OneHotkey.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/OneHotkey.exe).
+2. Input the code of the symbol, then press `Space` to get the symbol. For example, input `\a` and press `Space` to get $\alpha$.
+3. For editting the symbol mapping, please refer to [Code Editing Guide](#code-editing-guide). If you need help, go to the [AutoHotKey official website](https://www.autohotkey.com).
+4. To stop the script, right click the `H` icon in the system tray and select `Exit`.
 
-1. 下载并运行[OneHotkey.exe](https://github.com/RUSRUSHB/OneHotkey/raw/main/OneHotkey.exe)。
-2. 输入代码，然后按`Space`键输出符号与公式。例如，输入`\a`，然后按`Space`键，就会输出 $\alpha$ 。
-
-更多：
-
-3. 想要自行修改公式映射，请参考[映射自定义指南](#映射自定义指南)。如果需要帮助，请前往[AutoHotKey官网](https://www.autohotkey.com)。
-4. 想要停止脚本，用鼠标右键点击系统状态栏中的`H`图标，然后选择`Exit`。
-
-## 目录
+## Table of Contents
 
 <!-- TOC -->
 
-- [OneHotkey -- 公式输入简化工具](#onehotkey----%E5%85%AC%E5%BC%8F%E8%BE%93%E5%85%A5%E7%AE%80%E5%8C%96%E5%B7%A5%E5%85%B7)
-    - [如何使用](#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8)
-    - [目录](#%E7%9B%AE%E5%BD%95)
-    - [符号映射](#%E7%AC%A6%E5%8F%B7%E6%98%A0%E5%B0%84)
-        - [概览](#%E6%A6%82%E8%A7%88)
-        - [完整映射表格](#%E5%AE%8C%E6%95%B4%E6%98%A0%E5%B0%84%E8%A1%A8%E6%A0%BC)
-            - [常用字符](#%E5%B8%B8%E7%94%A8%E5%AD%97%E7%AC%A6)
-            - [运算符](#%E8%BF%90%E7%AE%97%E7%AC%A6)
-            - [希腊字母](#%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D)
-            - [矩阵](#%E7%9F%A9%E9%98%B5)
-            - [修饰符](#%E4%BF%AE%E9%A5%B0%E7%AC%A6)
-            - [箭头](#%E7%AE%AD%E5%A4%B4)
-            - [其他符号](#%E5%85%B6%E4%BB%96%E7%AC%A6%E5%8F%B7)
-            - [结构](#%E7%BB%93%E6%9E%84)
-            - [花体字母](#%E8%8A%B1%E4%BD%93%E5%AD%97%E6%AF%8D)
-            - [多列等式](#%E5%A4%9A%E5%88%97%E7%AD%89%E5%BC%8F)
-    - [更多建议](#%E6%9B%B4%E5%A4%9A%E5%BB%BA%E8%AE%AE)
-    - [实验性功能experimental/文件夹内](#%E5%AE%9E%E9%AA%8C%E6%80%A7%E5%8A%9F%E8%83%BDexperimental%E6%96%87%E4%BB%B6%E5%A4%B9%E5%86%85)
-    - [映射自定义指南](#%E6%98%A0%E5%B0%84%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E5%8D%97)
+- [OneHotkey: Faster Math Input in OneNote/Word](#onehotkey-faster-math-input-in-onenoteword)
+  - [How to Use](#how-to-use)
+  - [Table of Contents](#table-of-contents)
+  - [Symbol Mapping](#symbol-mapping)
+    - [Overview](#overview)
+    - [Full Table](#full-table)
+      - [Frequently Used Letters](#frequently-used-letters)
+      - [Operators](#operators)
+      - [Greek Letters](#greek-letters)
+      - [Matrix](#matrix)
+      - [Modifiers](#modifiers)
+      - [Arrows](#arrows)
+      - [Symbols](#symbols)
+      - [Structures](#structures)
+      - [Prefix for Fancy Letters](#prefix-for-fancy-letters)
+      - [Multi-column Equations](#multi-column-equations)
+      - [Theorem Structures](#theorem-structures)
+  - [Recommendations](#recommendations)
+  - [Experimental Features (In folder `experimental/`)](#experimental-features-in-folder-experimental)
+  - [Code Editing Guide](#code-editing-guide)
 
 <!-- /TOC -->
 
-## 符号映射
+## Symbol Mapping
 
-### 概览
+### Overview
 
-此脚本包括多种类型的符号映射，包括希腊字母、数学字体、常用字母和结构。以下是其中的一些映射。请确保您已经使用`Alt`+`=`进入了公式输入模式。
+The script contains multiple symbol mappings, including Greek letters, math fonts, frequently used letters, and structures. The following is a list of some typical mappings. Make sure that you have entered the formula input mode with `Alt`+`=`.
 
-|输入|输出|分类|实际代码|
+|Code|Output|Category|Source|
 |----|------|----|---|
-|`\a`| $\alpha$ |小写希腊字母|`\alpha `|
-|`\D`| $\Delta$ |大写希腊字母|`\Delta `|
-|`\R`, `\C`, `\Z`, `\N`, `\J`| ℝ, ℂ, ℤ, ℕ, 𝕁 |常用双线体字母|`\doubleR `, ...|
-|`\do X`, `\sc X`, `\fr X`| 𝕏, 𝒳, 𝔛 |花体字母|`\doubleX `, `\scriptX `, `\frakturX `|
-|`\m3`, `\m4`, ..., `\m`|特定形状矩阵|矩阵|`[\matrix(@@&&)] `, ...|
-|`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |修饰符|`\hat  `, `\tilde  `, `\ddot  `|
-|`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{⬚}$, $\parallel$, $\equiv$ |运算符|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv `|
-|`\pd`, `\d`, `\dt`, `\inf`| $\partial$, $\text{d}$, $\frac{\text{d}}{\text{d}t}$, $\infty$ |常用符号|`\partial `, `"d" `, `"d" /"d" t `, `\infty `|
-|`\limx`, `\limx0`| $ \lim_{x \rightarrow \infty} $, $ \lim_{x \rightarrow 0} $ |极限|`lim_(x->\infty ) `, `lim_(x->0 ) `|
-|`\ls`| $^⬚_⬚ P$ |左侧上下标|`^_ P `|
-|`\i`, `\j`, `\k`| $\text{i}$, $\text{j}$, $\text{k}$ |虚数/四元数符号|`"i"`, `"j"`, `"k"`|
-|`\ejw`| $e^{j\omega}$ |复指数旋转因子|`e^j\omega  `|
+|`\a`| $\alpha$ |lowercase Greek letters|`\alpha `|
+|`\D`| $\Delta$ |uppercase Greek letters|`\Delta `|
+|`\R`, `\C`, `\Z`, `\N`, `\J`| ℝ, ℂ, ℤ, ℕ, 𝕁 |frequently used letters|`\doubleR `, ...|
+|`\do X`, `\sc X`, `\fr X`| 𝕏, 𝒳, 𝔛 |fancy letter forms|`\doubleX `, `\scriptX `, `\frakturX `|
+|`\m3`, `\m4`, ...|specific shape matrices|matrices|`[\matrix(@@&&)] `, ...|
+|`x\h`, `x\~`, `x\d2`| $\hat{x}$, $\tilde{x}$, $\ddot{x}$ |modifiers|`\hat  `, `\tilde  `, `\ddot  `|
+|`\x`, `\X`, `\sq`, `\pa`, `\eq`| $\cdot$, $\times$, $\sqrt{⬚}$, $\parallel$, $\equiv$ |operators|`\cdot `, `\times`, `\sqrt  `, `\parallel `, `\equiv`|
+|`\pd`, `\d`, `\dt`, `\inf`| $\partial$, $\text{d}$, $\frac{\text{d}}{\text{d}t}$, $\infty$ |frequently used symbols|`\partial `, `"d" `, `"d" /"d" t `, `\infty `|
+|`\limx`, `\limx0`| $ \lim_{x \rightarrow \infty} $, $ \lim_{x \rightarrow 0} $ |limits|`lim_(x->\infty ) `, `lim_(x->0 ) `|
+|`\ls`| $^⬚_⬚ P$ |left super-and-lowerscript|`^_ P `|
+|`\i`, `\j`, `\k`| $\text{i}$, $\text{j}$, $\text{k}$ |imaginary/quaternion symbols|`"i"`, `"j"`, `"k"`|
+|`\ejw`| $e^{j\omega}$ |complex exponential factor|`e^j\omega  `|
 
-你应该注意到` `(空格键)是常用的，这是OneNote公式输入的关键特性。
+You shall notice that ` `(space) is commonly used, which is the key feature of OneNote formula input.
 
-### 完整映射表格
+### Full Table
 
-OneNote 原版的映射可以在这里找到：
+#### Frequently Used Letters
 
-> [文件] - [选项] - [校对] - [自动更正选项] - [数学符号自动更正]
-![数学符号来源](reference/数学符号来源.png)
-
-#### 常用字符
-
-| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
+| Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
 | `\pd` | $\partial$ | `\partial{Space}` |`\d`|$\text{d}$|`"d"{Space}`|
 | `\inf` | $\infty$ | `\infty{Space}` | `\dt` | $\frac{\text{d}}{\text{d}t}$ | `"d"{Space}/"d"{Space}t{Space}{Left 4}^i` |
@@ -90,9 +81,9 @@ OneNote 原版的映射可以在这里找到：
 | `\N` | $\mathbb{N}$ | `\doubleN{Space}` | `\C` | $\mathbb{C}$ | `\doubleC{Space}` |
 | `\J` | $\mathbb{J}$ | `\doubleJ{Space}` | `\n` | $\nabla$ | `\nabla{Space}` |
 
-#### 运算符
+#### Operators
 
-| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
+| Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
 | `\x` | $\cdot$ | `\cdot{Space}` | `\X` | $\times$ | `\times{Space}` |
 | `\sq` | $\sqrt{⬚}$ | `\sqrt{Space 2}{Left}` | `\pa` | $\parallel$ | `\parallel{Space}` |
@@ -105,10 +96,11 @@ OneNote 原版的映射可以在这里找到：
 | `\eq` | $\equiv$ | `\equiv{Space}` | `\deq` | $\triangleq$ | `\Deltaeq{Space}` |
 | `\xe` | $\times 10^{⬚}$ | `\times{Space}10{^}{Space}{Left}` | `\ex` | $\exists$ | `\exists{Space}` |
 | `\fa` | $\forall$ | `\forall{Space}` | `\ppd` | $\frac{\partial}{\partial}$ | `\partial{Space}/\partial{Space 2}{Left 3}` |
+| `\ppd` | $\frac{\partial}{\partial}$ | `\partial{Space}/\partial{Space 2}{Left 3}` |
 
-#### 希腊字母
+#### Greek Letters
 
-| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
+| Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
 | `\a` | $\alpha$ | `\alpha{Space}` | `\b` | $\beta$ | `\beta{Space}` |
 | `\e` | $\varepsilon$ | `\varepsilon{Space}` | `\ve` | $\epsilon$ | `\epsilon{Space}` |
@@ -120,35 +112,35 @@ OneNote 原版的映射可以在这里找到：
 | `\o` | $\omega$ | `\omega{Space}` | `\O` | $\Omega$ | `\Omega{Space}` |
 | `\g` | $\gamma$ | `\gamma{Space}` | `\G` | $\Gamma$ | `\Gamma{Space}` |
 
-- `ve` 指的是epsilon的变体(variant epsilon)。为了方便，`\e`被设置为 $\varepsilon$ ，`\ve`被设置为 $\epsilon$ 。这和它们的原始代码相反。
+- `ve` means variant epsilon. For convenience, `\e` is set to $\varepsilon$ and `\ve` is set to $\epsilon$, which is different from their original code.
 
-#### 矩阵
+#### Matrix
 
-| 输入 | 输出| 源代码 |
+| Code | Output | Source |
 |------|--------|--------|
-| `\m4` | 4×4空白矩阵 | `[\matrix(@@@&&&){Space}]{Space}` |
-| `\m3` | 3×3空白矩阵 | `[\matrix(@@&&){Space}]{Space}` |
-| `\m2` | 2×2空白矩阵 | `[\matrix(@&){Space}]{Space}` |
-| `\m` | 空白矩阵，输入`&` `@`来设置大小 | `[]{Space}{Left}\matrix(){Left}` |
+| `\m4` | 4 by 4 empty matrix | `[\matrix(@@@&&&){Space}]{Space}` |
+| `\m3` | 3 by 3 empty matrix | `[\matrix(@@&&){Space}]{Space}` |
+| `\m2` | 2 by 2 empty matrix | `[\matrix(@&){Space}]{Space}` |
+| `\m` | empty matrix awaiting `&` `@` to set size | `[]{Space}{Left}\matrix(){Left}` |
 
-#### 修饰符
+#### Modifiers
 
-| 输入 | 输出| 源代码 |
+| Code | Output | Source |
 |------|--------|--------|
 | `\d1` | $\dot{x}$ | `\dot{Space 2}` |
 | `\d2` | $\ddot{x}$ | `\ddot{Space 2}` |
-| `\d3` | 上方有3个点 | `\dddot{Space 2}` |
-| `\d4` | 上方有4个点 | `\ddddot{Space 2}` |
+| `\d3` | 3 dots above | `\dddot{Space 2}` |
+| `\d4` | 4 dots above | `\ddddot{Space 2}` |
 | `\~` | $\tilde{x}$ | `\tilde{Space 2}` |
 | `\v` | $\vec{x}$ | `\vec{Space 2}` |
 | `\h` | $\hat{x}$ | `\hat{Space 2}` |
 | `\ub` | $\underline{x}$ | `\underbar{Space 2}{Left}` |
 
-- 对于以上代码，你应当输入的代码形如`x\h  `。
+- For the above codes, you should input like `x\h  `.
 
-#### 箭头
+#### Arrows
 
-| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
+| Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
 | `\lr` | $\leftrightarrow$ | `\leftrightarrow{Space}` | `\Lr` | $\Leftrightarrow$ | `\Leftrightarrow{Space}` |
 | `\lrs` | $\leftrightarrows$ | `\leftrightarrows{Enter}{Left}` | `\la` | $\leftarrow$ | `\leftarrow{Space}` |
@@ -156,15 +148,15 @@ OneNote 原版的映射可以在这里找到：
 | `\Ra` | $\Rightarrow$ | `\Rightarrow{Space}` | `\down` | $\downarrow$ | `\downarrow{Space}` |
 | `\up` | $\uparrow$ | `\uparrow{Space}` |
 
-#### 其他符号
+#### Symbols
 
-| 输入 | 输出| 源代码 | 输入 | 输出| 源代码 |
+| Code | Output | Source | Code | Output | Source |
 |------|--------|--------|------|--------|--------|
 | `\deg` | $\degree$ | `\degree{Space}` | `\st` | $\star$ | `\star{Space}` |
 
-#### 结构
+#### Structures
 
-| 输入 | 输出| 源代码 |
+| Code | Output | Source |
 |------|--------|--------|
 | `\r` | $\lbrace⬚$ | `\right.{Left}` |
 | `\leb` | $⬚\rbrace$ | `\left\box{Space 2}{Left}` |
@@ -183,71 +175,71 @@ OneNote 原版的映射可以在这里找到：
 | `\limn`, `\limk` | $ \lim_{n \rightarrow \infty} $, $ \lim_{k \rightarrow \infty} $ | `lim_(n->\infty{Space}){Space}`, `lim_(k->\infty{Space}){Space}` |
 | `\limh` | $ \lim_{h \rightarrow 0} $ | `lim_(h->0{Space}){Space}` |
 | `\BO` | $\boxed{⬚}$ | `\boxed{Enter}{Left 2}` |
-| `\qu` | 全角空格 | `\quad{Enter}{Left}` |
-| `\diverge` | $\frac{\partial}{\partial x}+\frac{\partial}{\partial y}+\frac{\partial}{\partial z}$ | 略 |
-| `\gradient` | $\frac{\partial}{\partial x}\vec{a}_x+\frac{\partial}{\partial y}\vec{a}_y+\frac{\partial}{\partial z}\vec{a}_z$ | 略 |
-| `\curl` | 旋度矩阵 |  |
+| `\qu` | Quad space | `\quad{Enter}{Left}` |
+| `\diverge` | $\frac{\partial}{\partial x}+\frac{\partial}{\partial y}+\frac{\partial}{\partial z}$ | Omitted |
+| `\gradient` | $\frac{\partial}{\partial x}\vec{a}_x+\frac{\partial}{\partial y}\vec{a}_y+\frac{\partial}{\partial z}\vec{a}_z$ | Omitted |
+| `\curl` | Curl matrix |  |
 
-- `\funcapply` 与 `\of` 有些许不同。建议自行尝试一下。
+- `\funcapply` is a little different from `\of`. Have a try by yourself!
 
-#### 花体字母
+#### Prefix for Fancy Letters
 
-| 输入 | 输出| 源代码 |
+| Code | Output | Source |
 |------|--------|--------|
 | `\sc` | $\mathcal{X}$ | `\script` |
 | `\do` | $\mathbb{X}$ | `\double` |
 | `\fr` | $\mathfrak{X}$ | `\fraktur` |
 
-- 对于以上代码，你实际应当输入的内容形如`\sc X `。
+- For these mappings, your input should be like `\sc X `.
 
-#### 多列等式
+#### Multi-column Equations
 
-| 输入 | 输出| 源代码 |
+| Code | Output | Source |
 |------|--------|--------|
-| `\eq2` | 两列等式 | `\eqarray(&=@&=){Space}{Left 6}` |
-| `\eqs` | 示例等式数组 | `\eqarray(a\quad&b@c\quad&e){Enter}{Left 11}` |
+| `\eq2` | Two-column equation | `\eqarray(&=@&=){Space}{Left 6}` |
+| `\eqs` | Example equation array | `\eqarray(a\quad&b@c\quad&e){Enter}{Left 11}` |
 
-注：多列等式用于对齐多个等式，使用 `@` 作为占位符，使用 `&` 作为对齐点。
+Note: Multi-column equations are used for aligning multiple equations, using `@` as placeholder and `&` as alignment point.
 
-#### 定理结构
+#### Theorem Structures
 
-| 输入 | 输出| 源代码 |
+| Code | Output | Source |
 |------|--------|--------|
-| `\pf` | Proof 结构 | `^bProof.^b{Enter 2}!={Space}{#}\qed{Enter}{Left 7}` |
-| `\thm` | Theorem 结构 | `^bTheorem{Space}.^b^i{Space}{Left 2}` |
-| `\que` | Question 结构 | `^bQuestion{Space}.^b{Space}{Left 2}` |
+| `\pf` | Proof structure | `^bProof.^b{Enter 2}!={Space}{#}\qed{Enter}{Left 7}` |
+| `\thm` | Theorem structure | `^bTheorem{Space}.^b^i{Space}{Left 2}` |
+| `\que` | Question structure | `^bQuestion{Space}.^b{Space}{Left 2}` |
 
-## 更多建议
+## Recommendations
 
-- 了解更多关于公式输入的内容：[UTN28-PlainTextMath-v3.pdf](https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf)。第39~47页非常有用。
-- 直接输入Unicode数学符号：<https://github.com/gtj1/symbol_assist>
-- 符合直觉的类Vim文本光标控制：<https://github.com/RUSRUSHB/AutoTextCursor>
+- Learn more about the math input from this document: [UTN28-PlainTextMath-v3.pdf](https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf). Page 39~47 is useful.
+- Input Unicode characters directly: <https://github.com/gtj1/symbol_assist>
+- Intuitive Vim-like text cursor control: <https://github.com/RUSRUSHB/AutoTextCursor>
 
-## 实验性功能(`experimental/`文件夹内)
+## Experimental Features (In folder `experimental/`)
 
 `key_combination.exe`
 
-- 使用组合键输入特别字符、结构
-- 包括：进入公式输入、分割线、boxed text、text block
+- Use key combinations to input special characters and structures
+- Contains: Start formula inputting; Division line; Boxed text; Text block
 
 `rus_hotkey.exe`
 
-- 输入俄语字母。这可以和公式输入适应。
-- 输入格式：`\`+罗马转写+`R`
-- 例子：`\dR`输出д，`\DR`输出Д
+- Input Russian alphabets. They can be integrated into formula inputting.
+- Format: `\`+Romanized Alphabet+`R`
+- e.g.,`\dR` generates д，`\DR` generates Д
 
-## 映射自定义指南
+## Code Editing Guide
 
-想要自定义映射，请编辑`OneHotkey.ahk`，使用`Ahk2Exe`进行编译，然后运行编译后的`.exe`文件。建议你从[AutoHotKey官网](https://www.autohotkey.com)了解更多关于`AutoHotKey`的知识。
+For editing the mapping, please: Edit `OneHotkey.ahk`, compile it with `Ahk2Exe`, and run the compiled `.exe` file. You are recommended to learn more about `AutoHotKey` from its [website](https://www.autohotkey.com).
 
-`OneHotkey.ahk`中的代码非常容易理解，即使你没有学习过`AutoHotKey`。对于新手，代码的解释如下：
+The code of `OneHotkey.ahk` is very easy to understand, even if you have not learnt about `AutoHotKey`. For newcomers, the explanation of the code is as follows:
 
-代码的每一行都是一个输入到符号的映射。格式为`:(参数):输入::输出`。例如，`::\a::\alpha `意味着当你输入`\a`时，脚本会输出`\alpha `。
+Each line of the code is a mapping of the input code to the output symbol. The format is `:(parameters):input::output`. For example, `::\a::\alpha ` means that when you input `\a`, the script will output `\alpha `.
 
-脚本使用了全局热字串设置 `#Hotstring c o ?`，这些选项对所有映射生效：
+The script uses global hotstring settings `#Hotstring c o ?`, which apply to all mappings:
 
-|参数|作用|
+|Parameter|Meaning|
 |-|-|
-|`c`|区分大小写，比如`\a`和`\A`是不同的。|
-|`o`|删除你在代码末尾输入的`空格键`。|
-|`?`|即使代码紧跟在数字或字母后面，它也能正常输出。否则，在像是`x\h`的情况下它不会输出。|
+|`c`|Case-sensitive. `\a` and `\A` are different.|
+|`o`|Delete the `Space` you entered at the end.|
+|`?`|Output formula even if you have typed something before the code. Otherwise, it will fail in cases like `x\h`|
