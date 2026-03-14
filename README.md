@@ -51,6 +51,8 @@ If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf)
 
 The script contains multiple symbol mappings, including Greek letters, math fonts, frequently used letters, and structures. The following is a list of some typical mappings. Make sure that you have entered the formula input mode with `Alt`+`=`.
 
+If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf).
+
 |Code|Output|Category|Source|
 |----|------|----|---|
 |`\a`| $\alpha$ |lowercase Greek letters|`\alpha `|
@@ -155,6 +157,8 @@ You shall notice that ` `(space) is commonly used, which is the key feature of O
 | `\deg` | $\degree$ | `\degree{Space}` | `\st` | $\star$ | `\star{Space}` |
 
 #### Structures
+
+- If the formulas aren't displayed correctly, go to [README_EN.pdf](README_EN.pdf).
 
 | Code | Output | Source |
 |------|--------|--------|
